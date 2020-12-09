@@ -1,8 +1,18 @@
 import React from "react";
 import Header from "./components/Header";
+import styled from "styled-components";
 
-function App() {
-  return <div>{Header}</div>;
-}
+const Wrap = styled.div`
+  width: 100vw;
+
+  background: blue;
+`;
+const App = () => {
+  return (
+    <Wrap>
+      <Header />
+    </Wrap>
+  );
+};
 
 export default App;
