@@ -19,6 +19,7 @@ const WrapperBorder = styled.div`
 const LinksContainer = styled.div`
   width: 100%;
   height: 365px;
+  background: rgb(80, 80, 80, 28);
 `;
 const LinkDirectory = styled.div`
   width: 1176px;
@@ -35,6 +36,7 @@ const SiteLinks = styled.ul`
     font-size: 32.7px;
     font-family: "Lora", serif;
     font-weight: 700;
+    color: rgb(255, 255, 255);
     padding-right: 72px;
     img {
       width: 187px;
