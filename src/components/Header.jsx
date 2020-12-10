@@ -19,7 +19,7 @@ const WrapperBorder = styled.div`
 const LinksContainer = styled.div`
   width: 100%;
   height: 365px;
-  background: rgb(80, 80, 80, 28);
+  background: rgb(80, 80, 80, 0.3);
 `;
 const LinkDirectory = styled.div`
   width: 1176px;
