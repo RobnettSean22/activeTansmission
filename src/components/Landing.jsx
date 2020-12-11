@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import Footer from "./Footer";
+import Float from "./Float";
 import BlueColor from "../assets/atg_home_bluecolar.jpg";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  /* background: rgb(250, 250, 250); */
+`;
 const OpeningMessageContainer = styled.div`
   width: 1336px;
   height: 903px;
@@ -17,7 +20,7 @@ const OpeningMessageContainer = styled.div`
 const Promise = styled.div`
   width: 530px;
   height: 100%;
-  background: rgb(253, 232, 1);
+  background: rgb(253, 250, 1);
 
   h1 {
     font-family: "Lora", serif;
@@ -75,6 +78,7 @@ const Landing = (props) => {
   return (
     <Wrapper>
       <Header />
+      <Float />
       <OpeningMessageContainer>
         <Promise>
           <h1>We Tell The Truth</h1>
