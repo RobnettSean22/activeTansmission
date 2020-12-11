@@ -2,6 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import Landing from "./components/Landing";
+import AboutUs from "./components/AboutUs";
 
 const Wrap = styled.div`
   width: 100vw;
@@ -11,7 +12,7 @@ const Wrap = styled.div`
 const App = () => {
   return (
     <Wrap>
-      <Landing />
+      <AboutUs />
     </Wrap>
   );
 };
