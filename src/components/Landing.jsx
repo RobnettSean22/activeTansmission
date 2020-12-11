@@ -10,7 +10,6 @@ const OpeningMessageContainer = styled.div`
   height: 903px;
   display: flex;
   justify-content: flex-start;
-  background: pink;
   margin: 214px 0px 110px 52px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.87);
 `;
@@ -18,15 +17,20 @@ const OpeningMessageContainer = styled.div`
 const Promise = styled.div`
   width: 530px;
   height: 100%;
-  background: orange;
+  background: rgb(253, 232, 1);
 
   h1 {
-    font-family: Lora;
-    font-size: 37px;
+    font-family: "Lora", serif;
+    font-size: 36px;
     font-style: italic;
+    font-weight: 600;
+    margin: 29px 0 31px 35px;
+    color: rgb(36 39 140);
+    -webkit-text-stroke: 1px rgb(227, 227, 227);
   }
 
   ul {
+    margin: 31px 0 0 68px;
   }
 `;
 const LocationInfo = styled.div`
@@ -37,15 +41,43 @@ const LocationInfo = styled.div`
     height: 100%;
   }
 `;
+const Caption = styled.div`
+  position: relative;
+  width: 100%;
+  height: 235px;
+  bottom: 238.5px;
+  background: rgb(28, 28, 28, 0.67);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  h1 {
+    color: rgb(227, 227, 227);
+    -webkit-text-stroke: 1px rgb(36 39 140);
+    font-size: 41px;
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-weight: 600;
+    margin: 2px 0 0 0;
+  }
+  h2 {
+    color: rgb(227, 227, 227);
+    text-align: center;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: 500;
+    margin: 31px 0 0 0;
+  }
+`;
 const Landing = (props) => {
   return (
     <Wrapper>
       <Header />
       <OpeningMessageContainer>
         <Promise>
-          <div>
-            <h1>We Tell The Truth</h1>
-          </div>
+          <h1>We Tell The Truth</h1>
           <ul>
             <li></li>
             <li></li>
@@ -68,6 +100,13 @@ const Landing = (props) => {
         </Promise>
         <LocationInfo>
           <img src={BlueColor} alt='shop image' />
+          <Caption>
+            <h1>Active Transmission and Gear</h1>
+            <h2>Monday - Friday 8am to 5:30pm</h2>
+            <h2>
+              7223 W 118th Pl unit a, Broomfield, <br /> CO 80020,United States
+            </h2>
+          </Caption>
         </LocationInfo>
       </OpeningMessageContainer>
       <Footer />
