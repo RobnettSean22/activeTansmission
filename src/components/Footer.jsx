@@ -21,22 +21,24 @@ const AdressContainer = styled.div`
   display: inline-block;
   height: 100%;
   & h5 {
+    color: rgb(245, 245, 245);
   }
 `;
 
 const Hours = styled.h5`
-  margin: 23px 13px 14px 0;
+  margin: 7px 13px 14px 0;
 `;
 
 const Location = styled.h5`
-  margin: 0 13px 14px 0;
+  margin: 0 13px 7px 0;
 `;
 
 const RightsContainer = styled.div`
   display: inline-block;
   height: 100%;
   & h5 {
-    position: absolute;
+    color: rgb(245, 245, 245);
+    position: relative;
     bottom: 14px;
     left: 13px;
   }

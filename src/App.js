@@ -1,18 +1,17 @@
 import React from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
 import styled from "styled-components";
+import Landing from "./components/Landing";
 
 const Wrap = styled.div`
   width: 100vw;
 
-  background: blue;
+  overflow: hidden;
 `;
 const App = () => {
   return (
     <Wrap>
-      <Header />
-      <Footer />
+      <Landing />
     </Wrap>
   );
 };
