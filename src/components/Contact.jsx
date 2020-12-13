@@ -57,7 +57,12 @@ const MessageForm = styled.div`
   width: 1059px;
   height: 591px;
 `;
-const SenderInfo = styled.div``;
+const SenderInfo = styled.div`
+  div {
+    width: 405px;
+    height: 131.5px;
+  }
+`;
 const Message = styled.div``;
 const Button = styled.div`
   width: 351px;
@@ -88,7 +93,22 @@ const Contact = (props) => {
         </ContactMethods>
         <MessageContainer>
           <MessageForm>
-            <SenderInfo></SenderInfo>
+            <SenderInfo>
+              <div>
+                <h3>Your Name</h3>
+                <input placeholder='Michael Smith' />
+              </div>
+              <div>
+                {" "}
+                <h3>Your Email</h3>
+                <input placeholder='email@email.com' />
+              </div>
+              <div>
+                {" "}
+                <h3>Your Number</h3>
+                <input placeholder='000-000-0000' />
+              </div>
+            </SenderInfo>
             <Message></Message>
           </MessageForm>
           <Button>
