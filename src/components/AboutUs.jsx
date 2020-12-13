@@ -12,7 +12,7 @@ const MissionContainer = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  background: pink;
+  background: rgb(250, 250, 250); ;
 `;
 const MissionTitle = styled.div`
   width: 1030.2px;
@@ -26,6 +26,20 @@ const MissionTitle = styled.div`
 const MissionDescription = styled.div`
   width: 1030.2px;
   height: 469px;
+  display: flex;
+  justify-content: flex-start;
+`;
+const MissionStatement = styled.div`
+  width: 708px;
+  height: 344px;
+  margin: 0 47px 0 0;
+`;
+const OwnerInfo = styled.div`
+  width: 359px;
+  height: 334px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 `;
 const SectionBorder = styled.div`
   width: 100%;
@@ -34,8 +48,8 @@ const SectionBorder = styled.div`
 `;
 const EmployeeInfo = styled.div`
   width: 100%;
-  height: 1391px;
-  background: orange;
+
+  background: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -45,7 +59,7 @@ const EmployeeTitle = styled.div`
   width: 1030.2px;
   height: 161px;
   margin-bottom: 52px;
-  background: red;
+
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -56,8 +70,7 @@ const Employee = styled.div`
   display: flex;
   justify-content: flex-start;
 
-  margin-bottom: 173px;
-  background: green;
+  margin-bottom: 133px;
 `;
 const About = styled.div`
   width: 661px;
@@ -88,7 +101,7 @@ const AboutUs = (props) => {
           <h1>Our Mission</h1>
         </MissionTitle>
         <MissionDescription>
-          <div>
+          <MissionStatement>
             <p>
               Folly words widow one downs few age every seven. If miss part by
               fact he park just shew. Discovered had get considered projection
@@ -105,12 +118,12 @@ const AboutUs = (props) => {
               bore ten. Parish any chatty can elinor direct for former. Up as
               meant widow equal an share least.{" "}
             </p>
-          </div>
-          <div>
+          </MissionStatement>
+          <OwnerInfo>
             <img />
-            <h1>Name</h1>
-            <h2>positon</h2>
-          </div>
+            <h2>Leonard Vasquez</h2>
+            <h3>CEO</h3>
+          </OwnerInfo>
         </MissionDescription>
         <SectionBorder></SectionBorder>
       </MissionContainer>
@@ -118,6 +131,42 @@ const AboutUs = (props) => {
         <EmployeeTitle>
           <h1>Meet The Crew</h1>
         </EmployeeTitle>
+        <Employee>
+          <About>
+            <h2>Mike Brown</h2>
+            <h3>Mechanic</h3>
+            <p>
+              Folly words widow one downs few age every seven. If miss part by
+              fact he park just shew. Discovered had get considered projection
+              who favourable. Necessary up knowledge it tolerably. Unwilling
+              departure education is be dashwoods or an. Use off agreeable law
+              unwilling sir deficient curiosity instantly. Easy mind life fact
+              with see has bore ten. Parish any chatty can elinor direct for
+              former. Up as meant widow equal an share least.
+            </p>
+          </About>
+          <ProfilePicContain>
+            <img />
+          </ProfilePicContain>
+        </Employee>
+        <Employee>
+          <About>
+            <h2>Mike Brown</h2>
+            <h3>Mechanic</h3>
+            <p>
+              Folly words widow one downs few age every seven. If miss part by
+              fact he park just shew. Discovered had get considered projection
+              who favourable. Necessary up knowledge it tolerably. Unwilling
+              departure education is be dashwoods or an. Use off agreeable law
+              unwilling sir deficient curiosity instantly. Easy mind life fact
+              with see has bore ten. Parish any chatty can elinor direct for
+              former. Up as meant widow equal an share least.
+            </p>
+          </About>
+          <ProfilePicContain>
+            <img />
+          </ProfilePicContain>
+        </Employee>
         <Employee>
           <About>
             <h2>Mike Brown</h2>
