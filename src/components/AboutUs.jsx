@@ -8,19 +8,29 @@ const Wrapper = styled.div``;
 const MissionContainer = styled.div`
   width: 100%;
   height: 647px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
   background: pink;
 `;
 const MissionTitle = styled.div`
-  width: 100%;
+  width: 1030.2px;
   height: 161px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 `;
 const MissionDescription = styled.div`
-  width: 100%;
+  width: 1030.2px;
   height: 469px;
 `;
 const SectionBorder = styled.div`
   width: 100%;
   height: 47px;
+  background: rgb(253, 232, 1);
 `;
 const EmployeeInfo = styled.div`
   width: 100%;
@@ -35,27 +45,97 @@ const EmployeeTitle = styled.div`
   width: 1030.2px;
   height: 161px;
   margin-bottom: 52px;
+  background: red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 `;
 const Employee = styled.div`
   width: 1030.2px;
   height: 235px;
-  margin-bottom: 173px;
-`;
+  display: flex;
+  justify-content: flex-start;
 
+  margin-bottom: 173px;
+  background: green;
+`;
+const About = styled.div`
+  width: 661px;
+  height: 228px;
+  margin-right: 20.3px;
+  h2 {
+    margin: 0 0 11.5px 0;
+  }
+  h3 {
+    margin: 0 0 11.5px 0;
+  }
+  p {
+    line-height: 1.4;
+  }
+`;
+const ProfilePicContain = styled.div`
+  width: 307px;
+  height: 230px;
+  transform: skew(-20deg);
+  background: brown;
+`;
 const AboutUs = (props) => {
   return (
     <Wrapper>
       <Header />
       <MissionContainer>
-        <MissionTitle></MissionTitle>
-        <MissionDescription></MissionDescription>
+        <MissionTitle>
+          <h1>Our Mission</h1>
+        </MissionTitle>
+        <MissionDescription>
+          <div>
+            <p>
+              Folly words widow one downs few age every seven. If miss part by
+              fact he park just shew. Discovered had get considered projection
+              who favourable. Necessary up knowledge it tolerably. Unwilling
+              departure education is be dashwoods or an. Use off agreeable law
+              unwilling sir deficient curiosity instantly. Easy mind life fact
+              with see has bore ten. Parish any chatty can elinor direct for
+              former. Up as meant widow equal an share least. Folly words widow
+              one downs few age every seven. If miss part by fact he park just
+              shew. Discovered had get considered projection who favourable.
+              Necessary up knowledge it tolerably. Unwilling departure education
+              is be dashwoods or an. Use off agreeable law unwilling sir
+              deficient curiosity instantly. Easy mind life fact with see has
+              bore ten. Parish any chatty can elinor direct for former. Up as
+              meant widow equal an share least.{" "}
+            </p>
+          </div>
+          <div>
+            <img />
+            <h1>Name</h1>
+            <h2>positon</h2>
+          </div>
+        </MissionDescription>
         <SectionBorder></SectionBorder>
       </MissionContainer>
       <EmployeeInfo>
-        <EmployeeTitle></EmployeeTitle>
-        <Employee></Employee>
-        <Employee></Employee>
-        <Employee></Employee>
+        <EmployeeTitle>
+          <h1>Meet The Crew</h1>
+        </EmployeeTitle>
+        <Employee>
+          <About>
+            <h2>Mike Brown</h2>
+            <h3>Mechanic</h3>
+            <p>
+              Folly words widow one downs few age every seven. If miss part by
+              fact he park just shew. Discovered had get considered projection
+              who favourable. Necessary up knowledge it tolerably. Unwilling
+              departure education is be dashwoods or an. Use off agreeable law
+              unwilling sir deficient curiosity instantly. Easy mind life fact
+              with see has bore ten. Parish any chatty can elinor direct for
+              former. Up as meant widow equal an share least.
+            </p>
+          </About>
+          <ProfilePicContain>
+            <img />
+          </ProfilePicContain>
+        </Employee>
       </EmployeeInfo>
       <Footer />
     </Wrapper>
