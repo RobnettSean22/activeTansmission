@@ -53,17 +53,77 @@ const MessageContainer = styled.div`
   justify-content: flex-start;
   border-radius: 20px;
 `;
+const SenderInfo = styled.div`
+  width: 405px;
+  height: 529px;
+  background: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 73px 109.5px 0 88.5px;
+
+  h3 {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 0 0 44px 0;
+  }
+  input {
+    width: 100%;
+    height: 45.5px;
+    margin: 0 0 63.5px 0;
+    border: none;
+    background: rgb(247, 247, 247);
+    font-size: 23px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    &:focus {
+      outline: none;
+    }
+  }
+`;
 const MessageForm = styled.div`
   width: 1059px;
   height: 591px;
+  display: flex;
+  justify-content: flex-start;
 `;
-const SenderInfo = styled.div`
+
+const Message = styled.div`
+  width: 542px;
+  height: 529px;
+  margin: 73px 0 0 0;
+  background: pink;
   div {
-    width: 405px;
-    height: 131.5px;
+    width: 154px;
+    height: 42px;
+    background: linear-gradient(
+      180deg,
+      rgba(247, 247, 247, 0.5) 0%,
+      rgba(228, 228, 228, 1) 100%
+    );
+    position: relative;
+    bottom: -13px;
+    left: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-size: 36px;
+      margin: 0 0 0 0;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 456px;
+    border-radius: 20px;
+    background: rgb(228, 228, 228);
   }
 `;
-const Message = styled.div``;
 const Button = styled.div`
   width: 351px;
   height: 89px;
@@ -94,22 +154,20 @@ const Contact = (props) => {
         <MessageContainer>
           <MessageForm>
             <SenderInfo>
-              <div>
-                <h3>Your Name</h3>
-                <input placeholder='Michael Smith' />
-              </div>
-              <div>
-                {" "}
-                <h3>Your Email</h3>
-                <input placeholder='email@email.com' />
-              </div>
-              <div>
-                {" "}
-                <h3>Your Number</h3>
-                <input placeholder='000-000-0000' />
-              </div>
+              <h3>Your Name</h3>
+              <input placeholder='Michael Smith' />
+              <h3>Your Email</h3>
+              <input placeholder='email@email.com' />
+              <h3>Your Number</h3>
+              <input placeholder='000-000-0000' />
             </SenderInfo>
-            <Message></Message>
+            <Message>
+              <div>
+                <h3>Message</h3>
+              </div>
+
+              <textarea></textarea>
+            </Message>
           </MessageForm>
           <Button>
             <h2>Send Message</h2>
