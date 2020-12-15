@@ -8,7 +8,7 @@ const ContactInfo = styled.div`
   width: 100%;
   height: 1566px;
   margin: 36px 0 42px 0;
-  background: rgb(38, 39, 140);
+  background: rgb(40, 41, 80, 0.83);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +95,7 @@ const Message = styled.div`
   width: 542px;
   height: 529px;
   margin: 73px 0 0 0;
-  background: pink;
+
   div {
     width: 154px;
     height: 42px;
@@ -124,19 +124,32 @@ const Message = styled.div`
     background: rgb(228, 228, 228);
   }
 `;
+const ButtonContainer = styled.div`
+  width: 100%;
+  height: 304px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 const Button = styled.div`
   width: 351px;
   height: 89px;
   margin: 0 auto;
-  background: black;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background: rgb(247, 238, 136);
+  border: 4px solid rgb(36, 39, 140);
+  &:hover {
+    cursor: pointer;
+  }
   h2 {
-    color: White;
+    color: rgb(65, 64, 64);
     font-size: 36px;
+    font-family: "Lora", sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(36, 39, 140);
   }
 `;
 
@@ -147,9 +160,16 @@ const Contact = (props) => {
       <ContactInfo>
         <h1>Stop By or Get in Touch</h1>
         <ContactMethods>
-          <Email></Email>
-          <Phone></Phone>
-          <Address></Address>
+          <Email>
+            <h3>activebroomfield@gmail.com</h3>
+          </Email>
+          <Phone>
+            <h3>+1 303-466-1133</h3>
+          </Phone>
+          <Address>
+            {" "}
+            <h3>7223 W 118th Pl unit a</h3>
+          </Address>
         </ContactMethods>
         <MessageContainer>
           <MessageForm>
@@ -169,9 +189,11 @@ const Contact = (props) => {
               <textarea></textarea>
             </Message>
           </MessageForm>
-          <Button>
-            <h2>Send Message</h2>
-          </Button>
+          <ButtonContainer>
+            <Button>
+              <h2>Send Message</h2>
+            </Button>
+          </ButtonContainer>
         </MessageContainer>
       </ContactInfo>
       <Footer />

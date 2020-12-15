@@ -7,7 +7,7 @@ const Wrapper = styled.header`
   width: 100%;
   height: 411px;
   background-image: url(${HeaderImg});
-  background-size: 100% 411px;
+  background-size: 100% 337px;
   background-repeat: no-repeat;
 `;
 const WrapperBorder = styled.div`
@@ -18,7 +18,7 @@ const WrapperBorder = styled.div`
 
 const LinksContainer = styled.div`
   width: 100%;
-  height: 365px;
+  height: 314px;
   background: rgb(80, 80, 80, 0.3);
 `;
 const LinkDirectory = styled.div`
@@ -65,7 +65,6 @@ const Header = (props) => {
           </SiteLinks>
         </LinkDirectory>
       </LinksContainer>
-      <WrapperBorder></WrapperBorder>
     </Wrapper>
   );
 };

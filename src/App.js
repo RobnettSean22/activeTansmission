@@ -13,7 +13,7 @@ const Wrap = styled.div`
 const App = () => {
   return (
     <Wrap>
-      <Contact />
+      <Landing />
     </Wrap>
   );
 };
