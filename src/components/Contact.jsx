@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import Footer from "./Footer";
+import EmailIcon from "../assets/envelope_icon.png";
+import PhoneIcon from "../assets/phone_icon.png";
+import MapIcon from "../assets/map_icon.png";
 
 const Wrapper = styled.div``;
 const ContactInfo = styled.div`
   width: 100%;
   height: 1566px;
-  margin: 36px 0 42px 0;
+  margin: 0 0 42px 0;
   background: rgb(40, 41, 80, 0.83);
   display: flex;
   flex-direction: column;
@@ -33,16 +36,42 @@ const ContactMethods = styled.div`
     width: 383px;
     height: 159px;
     border-radius: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 
     &:hover {
       background: rgb(247, 238, 136);
       cursor: pointer;
     }
   }
+  h3 {
+    font-size: 20px;
+    color: rgb(247, 247, 247);
+    margin: 0 0 2px 0;
+  }
 `;
-const Email = styled.div``;
-const Phone = styled.div``;
-const Address = styled.div``;
+const Email = styled.div`
+  img {
+    width: 87px;
+    height: 87px;
+    margin-top: 29px;
+  }
+`;
+const Phone = styled.div`
+  img {
+    width: 127px;
+    height: 127px;
+  }
+`;
+const Address = styled.div`
+  img {
+    width: 76px;
+    height: 76px;
+    margin-top: 23px;
+  }
+`;
 const MessageContainer = styled.div`
   width: 1178px;
   height: 833px;
@@ -67,6 +96,7 @@ const SenderInfo = styled.div`
     font-size: 32px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+
     margin: 0 0 44px 0;
   }
   input {
@@ -161,13 +191,15 @@ const Contact = (props) => {
         <h1>Stop By or Get in Touch</h1>
         <ContactMethods>
           <Email>
+            <img src={EmailIcon} alt='enevlope image' />
             <h3>activebroomfield@gmail.com</h3>
           </Email>
           <Phone>
+            <img src={PhoneIcon} alt='phone image' />
             <h3>+1 303-466-1133</h3>
           </Phone>
           <Address>
-            {" "}
+            <img src={MapIcon} alt='enevlope image' />
             <h3>7223 W 118th Pl unit a</h3>
           </Address>
         </ContactMethods>
