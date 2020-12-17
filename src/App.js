@@ -15,7 +15,7 @@ const Wrap = styled.div`
 const App = () => {
   return (
     <Wrap>
-      <Location />
+      <Repair />
     </Wrap>
   );
 };

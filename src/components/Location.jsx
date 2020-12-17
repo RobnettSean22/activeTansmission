@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import Footer from "./Footer";
+import ShopImage from "../assets/active_shop1.jpg";
 
 const Wrapper = styled.div``;
 
@@ -9,6 +10,40 @@ const LocationDescription = styled.div`
   width: 1292px;
   height: 966px;
   margin: 46px 37px 66px 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  img {
+    width: 100%;
+    border-radius: 0 0 19px 19px;
+  }
+`;
+const Title = styled.div`
+  width: 100%;
+  height: 181px;
+  background: #ede07f;
+  border-radius: 19px 19px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  h1 {
+    font-size: 67px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 4px 0 0 0;
+    color: rgb(36, 39, 140);
+  }
+
+  h2 {
+    font-size: 43px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 4px 0 0 0;
+    color: rgb(36, 39, 140);
+  }
 `;
 const LocationInfo = styled.div`
   width: 1345px;
@@ -56,25 +91,31 @@ const GoogleMap = styled.div`
   height: 516px;
 `;
 const Location = (props) => {
-  // Initialize and add the map
-  function initMap() {
-    // The location of Uluru
-    const uluru = { lat: -25.344, lng: 131.036 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: uluru,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
-  }
+  // // Initialize and add the map
+  // function initMap() {
+  //   // The location of Uluru
+  //   const uluru = { lat: -25.344, lng: 131.036 };
+  //   // The map, centered at Uluru
+  //   const map = new google.maps.Map(document.getElementById("map"), {
+  //     zoom: 4,
+  //     center: uluru,
+  //   });
+  //   // The marker, positioned at Uluru
+  //   const marker = new google.maps.Marker({
+  //     position: uluru,
+  //     map: map,
+  //   });
+  // }
   return (
     <Wrapper>
       <Header />
-      <LocationDescription></LocationDescription>
+      <LocationDescription>
+        <Title>
+          <h1>Active Transmission and Gear</h1>
+          <h2>In Broomfield</h2>
+        </Title>
+        <img src={ShopImage} alt='image of shop' />
+      </LocationDescription>
       <LocationInfo>
         <Border></Border>
         <HoursLocation>
