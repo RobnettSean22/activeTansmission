@@ -1,5 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import Engine from "atg_engine_vect_white.png";
+import Tranny from "atg_trans_white.png";
+import Brake from "atg_brake_vect_white.png";
+import Hood from "atg_hood_white.png";
+import Tire from "tire_vect_white.png";
 
 const Wrapper = styled.div`
   width: 500px;
@@ -25,30 +30,42 @@ const Carousel = (props) => {
       {true ? (
         <CarouselCase>
           <EngineContain>
-            <NavEngine></NavEngine>
+            <NavEngine>
+              <img src={Engine} alt='engine png' />
+            </NavEngine>
             <h2></h2>
           </EngineContain>
           <TransmissionContain>
-            <NavTranny></NavTranny>
+            <NavTranny>
+              <img src={Tranny} alt='transmission png' />
+            </NavTranny>
             <h2></h2>
           </TransmissionContain>
           <BrakeContain>
-            <NavBrake></NavBrake>
+            <NavBrake>
+              <img src={Brake} alt='brake png' />
+            </NavBrake>
             <h2></h2>
           </BrakeContain>
         </CarouselCase>
       ) : (
         <CarouselCase>
           <HoodContain>
-            <NavHood></NavHood>
+            <NavHood>
+              <img src={Hood} alt='hood png' />
+            </NavHood>
             <h2></h2>
           </HoodContain>
           <TiresContain>
-            <NavTires></NavTires>
+            <NavTires>
+              <img src={Tire} alt='hood png' />
+            </NavTires>
             <h2></h2>
           </TiresContain>
           <MainBrakeContain>
-            <NavMainBrake></NavMainBrake>
+            <NavMainBrake>
+              <img src={Brake} alt='brake png' />
+            </NavMainBrake>
             <h2></h2>
           </MainBrakeContain>
         </CarouselCase>
