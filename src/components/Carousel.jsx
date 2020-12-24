@@ -33,19 +33,19 @@ const Carousel = (props) => {
             <NavEngine>
               <img src={Engine} alt='engine png' />
             </NavEngine>
-            <h2></h2>
+            <h2>Engine Work</h2>
           </EngineContain>
           <TransmissionContain>
             <NavTranny>
               <img src={Tranny} alt='transmission png' />
             </NavTranny>
-            <h2></h2>
+            <h2>Transmission</h2>
           </TransmissionContain>
           <BrakeContain>
             <NavBrake>
               <img src={Brake} alt='brake png' />
             </NavBrake>
-            <h2></h2>
+            <h2>Brakes</h2>
           </BrakeContain>
         </CarouselCase>
       ) : (
@@ -54,19 +54,19 @@ const Carousel = (props) => {
             <NavHood>
               <img src={Hood} alt='hood png' />
             </NavHood>
-            <h2></h2>
+            <h2>Under the Hood</h2>
           </HoodContain>
           <TiresContain>
             <NavTires>
               <img src={Tire} alt='hood png' />
             </NavTires>
-            <h2></h2>
+            <h2>Tires</h2>
           </TiresContain>
           <MainBrakeContain>
             <NavMainBrake>
               <img src={Brake} alt='brake png' />
             </NavMainBrake>
-            <h2></h2>
+            <h2>Brakes</h2>
           </MainBrakeContain>
         </CarouselCase>
       )}

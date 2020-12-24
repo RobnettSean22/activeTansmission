@@ -90,8 +90,34 @@ const Indicator = styled.div`
 const SecondaryNav = styled.div`
   width: 100%;
   height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rgba(36, 39, 140, 0.91);
 `;
+const SNCasing = styled.div`
+  width: 846px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  & div {
+    background: rgb(47, 46, 46);
+  }
+`;
+const NotFocused = styled.div`
+  width: 87px;
+  height: 87px;
+  border-radius: 50%;
+  background: black;
+`;
+const Focused = styled.div`
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: black;
+`;
+
 const Description = styled.div`
   width: 100%;
   height: 752px;
@@ -118,7 +144,15 @@ const Repair = (props) => {
             <Indicator></Indicator>
           </WarrantyInfo>
         </NavCase>
-        <SecondaryNav></SecondaryNav>
+        <SecondaryNav>
+          <SNCasing>
+            <NotFocused></NotFocused>
+            <NotFocused></NotFocused>
+            <Focused></Focused>
+            <NotFocused></NotFocused>
+            <NotFocused></NotFocused>
+          </SNCasing>
+        </SecondaryNav>
       </Nav>
       <Description></Description>
       <Footer />
