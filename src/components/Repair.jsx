@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Float from "./Float";
+import Carousel from "./Carousel";
 import styled from "styled-components";
 import Engine from "../assets/atg_engine_vect_white.png";
 import Tranny from "../assets/active_new_trany.jpg";
@@ -11,7 +11,7 @@ const Wrapper = styled.div``;
 const Nav = styled.div`
   width: 100%;
   height: 654px;
-  margin: 238px 0 0 0;
+  margin: 0px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -97,25 +97,31 @@ const SecondaryNav = styled.div`
 `;
 const SNCasing = styled.div`
   width: 846px;
-  height: 112px;
+  height: 118px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  & div {
-    background: rgb(47, 46, 46);
-  }
+`;
+const Capsule = styled.div`
+  background: pink;
+  width: 130px;
+  height: 118px;
 `;
 const NotFocused = styled.div`
   width: 87px;
   height: 87px;
   border-radius: 50%;
-  background: black;
+  background: rgb(47, 46, 46);
+  z-index: 1;
+  margin: 0 auto;
 `;
 const Focused = styled.div`
   width: 112px;
   height: 112px;
   border-radius: 50%;
-  background: black;
+  background: rgb(47, 46, 46);
+  z-index: 1;
+  margin: 0 auto;
 `;
 
 const Description = styled.div`
@@ -127,7 +133,7 @@ const Repair = (props) => {
   return (
     <Wrapper>
       <Header />
-      <Float />
+
       <Nav>
         <RepairTitleContainer>
           <Shadder>
@@ -143,14 +149,26 @@ const Repair = (props) => {
             <h5>Warranty Offered</h5>
             <Indicator></Indicator>
           </WarrantyInfo>
+          <Carousel />
         </NavCase>
+
         <SecondaryNav>
           <SNCasing>
-            <NotFocused></NotFocused>
-            <NotFocused></NotFocused>
-            <Focused></Focused>
-            <NotFocused></NotFocused>
-            <NotFocused></NotFocused>
+            <Capsule>
+              <NotFocused></NotFocused>
+            </Capsule>
+            <Capsule>
+              <NotFocused></NotFocused>
+            </Capsule>
+            <Capsule>
+              <Focused></Focused>
+            </Capsule>
+            <Capsule>
+              <NotFocused></NotFocused>
+            </Capsule>
+            <Capsule>
+              <NotFocused></NotFocused>
+            </Capsule>
           </SNCasing>
         </SecondaryNav>
       </Nav>
