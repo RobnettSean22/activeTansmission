@@ -103,9 +103,16 @@ const SNCasing = styled.div`
   justify-content: space-evenly;
 `;
 const Capsule = styled.div`
-  background: pink;
   width: 130px;
-  height: 118px;
+  height: 130px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 42px;
+  h5 {
+    margin-top: 6px;
+  }
 `;
 const NotFocused = styled.div`
   width: 87px;
@@ -113,7 +120,6 @@ const NotFocused = styled.div`
   border-radius: 50%;
   background: rgb(47, 46, 46);
   z-index: 1;
-  margin: 0 auto;
 `;
 const Focused = styled.div`
   width: 112px;
@@ -121,13 +127,47 @@ const Focused = styled.div`
   border-radius: 50%;
   background: rgb(47, 46, 46);
   z-index: 1;
-  margin: 0 auto;
 `;
 
 const Description = styled.div`
   width: 100%;
   height: 752px;
-  background: red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+const DescriptTitle = styled.div`
+  width: 218px;
+  height: 59px;
+  margin-left: 160px;
+  margin-bottom: 32px;
+  h2 {
+    margin: 0;
+    font-size: 51px;
+  }
+`;
+
+const Descript = styled.div`
+  width: 1038px;
+  height: 152px;
+  margin-left: 169px;
+  margin-bottom: 32px;
+  p {
+    font-size: 24px;
+    line-height: 1.29;
+  }
+`;
+
+const MoreInfo = styled.div`
+  width: 927px;
+  height: 227px;
+  margin-left: 225px;
+  ul {
+    li {
+      font-size: 23px;
+      line-height: 1.65;
+    }
+  }
 `;
 const Repair = (props) => {
   return (
@@ -156,23 +196,60 @@ const Repair = (props) => {
           <SNCasing>
             <Capsule>
               <NotFocused></NotFocused>
+              <h5></h5>
             </Capsule>
             <Capsule>
               <NotFocused></NotFocused>
+              <h5></h5>
             </Capsule>
             <Capsule>
               <Focused></Focused>
+              <h5></h5>
             </Capsule>
             <Capsule>
               <NotFocused></NotFocused>
+              <h5></h5>
             </Capsule>
             <Capsule>
               <NotFocused></NotFocused>
+              <h5></h5>
             </Capsule>
           </SNCasing>
         </SecondaryNav>
       </Nav>
-      <Description></Description>
+      <Description>
+        <DescriptTitle>
+          <h2>Re-build</h2>
+        </DescriptTitle>
+        <Descript>
+          <p>
+            One advanced diverted domestic sex repeated bringing you old.
+            Possible procured her trifling laughter thoughts property she met
+            way. Companions shy had solicitude favourable own. Which could saw
+            guest man now heard but. Lasted my coming uneasy marked so should.
+            Gravity letters it amongst herself dearest an windows by. Wooded
+            ladies she basket season age her uneasy saw. Discourse unwilling am
+            no described dejection incommode no listening of. Before nature his
+            parish boy.
+          </p>
+        </Descript>
+        <MoreInfo>
+          <ul>
+            <li>
+              One advanced diverted domestic sex repeated bringing you old
+            </li>
+            <li>Possible procured her trifling laughter thoughts property </li>
+            <li>
+              Companions shy had solicitude favourable own. Which could saw
+              guest man now{" "}
+            </li>
+            <li>
+              Lasted my coming uneasy marked so should. Gravity letters it
+              amongst herself dearest{" "}
+            </li>
+          </ul>
+        </MoreInfo>
+      </Description>
       <Footer />
     </Wrapper>
   );
