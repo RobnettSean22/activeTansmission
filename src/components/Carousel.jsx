@@ -14,7 +14,7 @@ const CarouselCase = styled.div`
   width: 620px;
   height: 100%;
   position: relative;
-  left: 392.5px;
+  left: 413.5px;
   top: -31px;
   z-index: 1;
   display: flex;

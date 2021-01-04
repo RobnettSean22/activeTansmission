@@ -22,7 +22,7 @@ const LocationDescription = styled.div`
 const Title = styled.div`
   width: 100%;
   height: 181px;
-  background: #ede07f;
+  background: rgb(253, 232, 1);
   border-radius: 19px 19px 0 0;
   display: flex;
   flex-direction: column;

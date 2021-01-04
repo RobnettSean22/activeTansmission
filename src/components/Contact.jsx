@@ -11,7 +11,7 @@ const ContactInfo = styled.div`
   width: 100%;
   height: 1566px;
   margin: 0 0 42px 0;
-  background: rgb(40, 41, 80, 0.83);
+  background: #464996;
   display: flex;
   flex-direction: column;
   align-items: center;

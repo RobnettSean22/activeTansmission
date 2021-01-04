@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import HeaderImg from "../assets/atg_header.jpg";
 import Logo from "../assets/activetransimission_logo.png";
@@ -36,8 +37,12 @@ const SiteLinks = styled.ul`
     font-size: 32.7px;
     font-family: "Lora", serif;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+
     padding-right: 72px;
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
     img {
       width: 187px;
       height: 102.3px;
@@ -54,14 +59,32 @@ const Header = (props) => {
       <LinksContainer>
         <LinkDirectory>
           <SiteLinks>
-            <li>About Us</li>
-            <li>Services</li>
+            <li>
+              <Link exact to='/aboutus/'>
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link exact to='/repair/'>
+                Services
+              </Link>
+            </li>
             <li>
               {" "}
-              <img src={Logo} alt='company Logo' />
+              <Link exact to='/'>
+                <img src={Logo} alt='company Logo' />
+              </Link>
             </li>
-            <li>Location</li>
-            <LastLink>Contact</LastLink>
+            <li>
+              <Link exact to='/location/'>
+                Location
+              </Link>
+            </li>
+            <LastLink>
+              <Link exact to='/contact/'>
+                Contact
+              </Link>
+            </LastLink>
           </SiteLinks>
         </LinkDirectory>
       </LinksContainer>

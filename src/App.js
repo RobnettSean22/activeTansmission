@@ -1,4 +1,5 @@
 import React from "react";
+import { Switch, Route } from "react-router";
 
 import styled from "styled-components";
 import Landing from "./components/Landing";
@@ -15,7 +16,13 @@ const Wrap = styled.div`
 const App = () => {
   return (
     <Wrap>
-      <Repair />
+      <Switch>
+        <Route exact path='/' component={Landing} />
+        <Route exact path='/aboutus/' component={AboutUs} />
+        <Route exact path='/contact/' component={Contact} />
+        <Route exact path='/repair/' component={Repair} />
+        <Route exact path='/location/' component={Location} />
+      </Switch>
     </Wrap>
   );
 };
