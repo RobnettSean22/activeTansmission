@@ -1,6 +1,5 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import React, { useState } from "react";
+
 import Carousel from "./Carousel";
 import styled from "styled-components";
 import Engine from "../assets/atg_engine_vect_white.png";
@@ -170,10 +169,9 @@ const MoreInfo = styled.div`
   }
 `;
 const Repair = (props) => {
+  const [repNav, setRepNav] = useState(2);
   return (
     <Wrapper>
-      <Header />
-
       <Nav>
         <RepairTitleContainer>
           <Shadder>
@@ -189,7 +187,7 @@ const Repair = (props) => {
             <h5>Warranty Offered</h5>
             <Indicator></Indicator>
           </WarrantyInfo>
-          <Carousel />
+          <Carousel forRepair={repNav} />
         </NavCase>
 
         <SecondaryNav>
@@ -250,7 +248,6 @@ const Repair = (props) => {
           </ul>
         </MoreInfo>
       </Description>
-      <Footer />
     </Wrapper>
   );
 };

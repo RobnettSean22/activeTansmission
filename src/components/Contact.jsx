@@ -169,7 +169,7 @@ const Button = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(247, 238, 136);
+  background: rgb(253, 232, 1);
   border: 4px solid rgb(36, 39, 140);
   &:hover {
     cursor: pointer;

@@ -7,7 +7,7 @@ const Wrapper = styled.div``;
 
 const MissionContainer = styled.div`
   width: 100%;
-  height: 647px;
+  height: 450px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;

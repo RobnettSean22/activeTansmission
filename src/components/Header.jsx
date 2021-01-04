@@ -6,7 +6,7 @@ import Logo from "../assets/activetransimission_logo.png";
 
 const Wrapper = styled.header`
   width: 100%;
-  height: 411px;
+  height: 350px;
   background-image: url(${HeaderImg});
   background-size: 100% 337px;
   background-repeat: no-repeat;
@@ -65,7 +65,7 @@ const Header = (props) => {
               </Link>
             </li>
             <li>
-              <Link exact to='/repair/'>
+              <Link exact to='/services/'>
                 Services
               </Link>
             </li>

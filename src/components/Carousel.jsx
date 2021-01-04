@@ -102,25 +102,46 @@ const NavHood = styled.div`
   width: 134px;
   height: 134px;
   border-radius: 50%;
-  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(47, 46, 46);
+  img {
+    width: 166px;
+    height: 166px;
+  }
 `;
 const NavTires = styled.div`
   width: 134px;
   height: 134px;
   border-radius: 50%;
-  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(47, 46, 46);
+  img {
+    width: 212px;
+    height: 212px;
+  }
 `;
 const NavMainBrake = styled.div`
   width: 134px;
   height: 134px;
   border-radius: 50%;
-  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(47, 46, 46);
+  img {
+    width: 134px;
+    height: 134px;
+  }
 `;
 
-const Carousel = (props) => {
+const Carousel = ({ forRepair }) => {
   return (
     <Wrapper>
-      {true ? (
+      {forRepair ? (
         <CarouselCase>
           <EngineContain>
             <NavEngine>
