@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Engine from "../assets/atg_engine_vect_white.png";
 import Tranny from "../assets/atg_trans_white.png";

@@ -139,7 +139,6 @@ const MoreInfo = styled.div`
 const Repair = (props) => {
   const [repNav, setRepNav] = useState(2);
   const [repViewOptions, setRepViewOptions] = useState(1);
-  const [mainViewOptions, setMainViewOption] = useState(1);
 
   return (
     <Wrapper>
@@ -158,18 +157,11 @@ const Repair = (props) => {
             <h5>Warranty Offered</h5>
             <Indicator></Indicator>
           </WarrantyInfo>
-          <Carousel
-            setMainOption={setMainViewOption}
-            setRepairOptions={setRepViewOptions}
-            forRepair={repNav}
-          />
+          <Carousel setRepairOptions={setRepViewOptions} forRepair={repNav} />
         </NavCase>
 
         <SecondNav>
-          <SecondaryNav
-            mainOptions={mainViewOptions}
-            repairOptions={repViewOptions}
-          />
+          <SecondaryNav repairOptions={repViewOptions} />
         </SecondNav>
       </Nav>
       <Description>
