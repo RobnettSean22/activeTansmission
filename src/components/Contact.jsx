@@ -191,15 +191,15 @@ const Contact = (props) => {
         <h1>Stop By or Get in Touch</h1>
         <ContactMethods>
           <Email>
-            <img src={EmailIcon} alt='enevlope image' />
+            <img src={EmailIcon} alt='enevlope' />
             <h3>activebroomfield@gmail.com</h3>
           </Email>
           <Phone>
-            <img src={PhoneIcon} alt='phone image' />
+            <img src={PhoneIcon} alt='phone ' />
             <h3>+1 303-466-1133</h3>
           </Phone>
           <Address>
-            <img src={MapIcon} alt='enevlope image' />
+            <img src={MapIcon} alt='enevlope ' />
             <h3>7223 W 118th Pl unit a</h3>
           </Address>
         </ContactMethods>

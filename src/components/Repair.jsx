@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 import Carousel from "./Carousel";
 import styled from "styled-components";
-import Engine from "../assets/atg_engine_vect_white.png";
+import SecondaryNav from "./SecondaryNav";
+
 import Tranny from "../assets/active_new_trany.jpg";
 
 const Wrapper = styled.div``;
@@ -64,6 +65,14 @@ const NavCase = styled.div`
   height: 355px;
   background: rgba(50, 65, 108, 0.25);
 `;
+const SecondNav = styled.div`
+  width: 100%;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(36, 39, 140, 0.91);
+`;
 const WarrantyInfo = styled.div`
   width: 223px;
 
@@ -85,47 +94,6 @@ const Indicator = styled.div`
   background: #51f74a;
   border: solid 1px #363995;
   margin-left: 23px;
-`;
-const SecondaryNav = styled.div`
-  width: 100%;
-  height: 59px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(36, 39, 140, 0.91);
-`;
-const SNCasing = styled.div`
-  width: 846px;
-  height: 118px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-const Capsule = styled.div`
-  width: 130px;
-  height: 130px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 42px;
-  h5 {
-    margin-top: 6px;
-  }
-`;
-const NotFocused = styled.div`
-  width: 87px;
-  height: 87px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  z-index: 1;
-`;
-const Focused = styled.div`
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  z-index: 1;
 `;
 
 const Description = styled.div`
@@ -170,6 +138,7 @@ const MoreInfo = styled.div`
 `;
 const Repair = (props) => {
   const [repNav, setRepNav] = useState(2);
+  const [viewOptions, setViewOptions] = useState(1);
   return (
     <Wrapper>
       <Nav>
@@ -187,33 +156,12 @@ const Repair = (props) => {
             <h5>Warranty Offered</h5>
             <Indicator></Indicator>
           </WarrantyInfo>
-          <Carousel forRepair={repNav} />
+          <Carousel setRepairOptions={setViewOptions} forRepair={repNav} />
         </NavCase>
 
-        <SecondaryNav>
-          <SNCasing>
-            <Capsule>
-              <NotFocused></NotFocused>
-              <h5></h5>
-            </Capsule>
-            <Capsule>
-              <NotFocused></NotFocused>
-              <h5></h5>
-            </Capsule>
-            <Capsule>
-              <Focused></Focused>
-              <h5></h5>
-            </Capsule>
-            <Capsule>
-              <NotFocused></NotFocused>
-              <h5></h5>
-            </Capsule>
-            <Capsule>
-              <NotFocused></NotFocused>
-              <h5></h5>
-            </Capsule>
-          </SNCasing>
-        </SecondaryNav>
+        <SecondNav>
+          <SecondaryNav repairOptions={viewOptions} />
+        </SecondNav>
       </Nav>
       <Description>
         <DescriptTitle>

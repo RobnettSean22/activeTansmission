@@ -114,7 +114,7 @@ const Location = (props) => {
           <h1>Active Transmission and Gear</h1>
           <h2>In Broomfield</h2>
         </Title>
-        <img src={ShopImage} alt='image of shop' />
+        <img src={ShopImage} alt='shop' />
       </LocationDescription>
       <LocationInfo>
         <Border></Border>
