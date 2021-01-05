@@ -19,7 +19,7 @@ const SNCasing = styled.div`
 const SecondaryNav = ({ repairOptions, mainOptions }) => {
   return (
     <Wrapper>
-      {true ? (
+      {repairOptions ? (
         <SNCasing>
           {repairOptions === 1 ? (
             <EngineOptions />

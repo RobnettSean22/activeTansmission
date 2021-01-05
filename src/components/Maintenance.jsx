@@ -156,7 +156,10 @@ const Maintenance = (props) => {
             <h5>Warranty Offered</h5>
             <Indicator></Indicator>
           </WarrantyInfo>
-          <Carousel forMaintanence={maiNav} setMainOption={setMainViewOption} />
+          <Carousel
+            forMaintanence={maiNav}
+            setMainOptions={setMainViewOption}
+          />
         </NavCase>
 
         <SecondNav>

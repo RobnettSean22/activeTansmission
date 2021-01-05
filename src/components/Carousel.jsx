@@ -138,7 +138,7 @@ const NavMainBrake = styled.div`
   }
 `;
 
-const Carousel = ({ forRepair, setRepairOptions }) => {
+const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
   return (
     <Wrapper>
       {forRepair ? (
@@ -178,19 +178,31 @@ const Carousel = ({ forRepair, setRepairOptions }) => {
         <CarouselCase>
           <HoodContain>
             <NavHood>
-              <img src={Hood} alt='hood png' />
+              <img
+                onClick={(e) => setMainOptions(1)}
+                src={Hood}
+                alt='hood png'
+              />
             </NavHood>
             <h2>Under the Hood</h2>
           </HoodContain>
           <TiresContain>
             <NavTires>
-              <img src={Tire} alt='hood png' />
+              <img
+                onClick={(e) => setMainOptions(2)}
+                src={Tire}
+                alt='tire png'
+              />
             </NavTires>
             <h2>Tires</h2>
           </TiresContain>
           <MainBrakeContain>
             <NavMainBrake>
-              <img src={Brake} alt='brake png' />
+              <img
+                onClick={(e) => setMainOptions(3)}
+                src={Brake}
+                alt='brake png'
+              />
             </NavMainBrake>
             <h2>Brakes</h2>
           </MainBrakeContain>
