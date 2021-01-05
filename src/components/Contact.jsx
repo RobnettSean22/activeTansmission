@@ -85,7 +85,6 @@ const MessageContainer = styled.div`
 const SenderInfo = styled.div`
   width: 405px;
   height: 529px;
-  background: ;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

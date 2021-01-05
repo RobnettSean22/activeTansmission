@@ -16,7 +16,7 @@ const SNCasing = styled.div`
   justify-content: space-evenly;
 `;
 
-const SecondaryNav = ({ repairOptions }) => {
+const SecondaryNav = ({ repairOptions, mainOptions }) => {
   return (
     <Wrapper>
       {true ? (
@@ -30,7 +30,15 @@ const SecondaryNav = ({ repairOptions }) => {
           )}
         </SNCasing>
       ) : (
-        <SNCasing>{1 ? "hello" : 2 ? "2" : "3"}</SNCasing>
+        <SNCasing>
+          {mainOptions === 1 ? (
+            <HoodOptions />
+          ) : mainOptions === 2 ? (
+            <TireOptions />
+          ) : (
+            <MainBrakesOptions />
+          )}
+        </SNCasing>
       )}
     </Wrapper>
   );

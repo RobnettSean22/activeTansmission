@@ -138,6 +138,7 @@ const MoreInfo = styled.div`
 `;
 const Maintenance = (props) => {
   const [maiNav, setMaiNav] = useState(1);
+  const [mainViewOptions, setMainViewOption] = useState(1);
   return (
     <Wrapper>
       <Nav>
@@ -155,11 +156,11 @@ const Maintenance = (props) => {
             <h5>Warranty Offered</h5>
             <Indicator></Indicator>
           </WarrantyInfo>
-          <Carousel />
+          <Carousel forMaintanence={maiNav} setMainOption={setMainViewOption} />
         </NavCase>
 
         <SecondNav>
-          <SecondaryNav />
+          <SecondaryNav mainOptions={mainViewOptions} />
         </SecondNav>
       </Nav>
       <Description>
