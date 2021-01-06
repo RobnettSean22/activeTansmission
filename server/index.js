@@ -9,7 +9,7 @@ const { DB_CONNECTION } = process.env;
 mongoose.connect(
   DB_CONNECTION,
   { useNewUrlParser: true, useUnifiedTopology: true },
-  () => console.log("connected to db")
+  () => console.log("db connected")
 );
 
 let port = 4000 || 5000;
