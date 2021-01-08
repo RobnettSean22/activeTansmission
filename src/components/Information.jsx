@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Description = styled.div`
@@ -43,6 +43,7 @@ const MoreInfo = styled.div`
 `;
 
 const Information = (props) => {
+  const [info, setInfo] = useState([]);
   return (
     <Description>
       <DescriptTitle>
