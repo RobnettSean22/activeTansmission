@@ -71,11 +71,11 @@ const Information = (props) => {
           <li>Possible procured her trifling laughter thoughts property </li>
           <li>
             Companions shy had solicitude favourable own. Which could saw guest
-            man now{" "}
+            man now
           </li>
           <li>
             Lasted my coming uneasy marked so should. Gravity letters it amongst
-            herself dearest{" "}
+            herself dearest
           </li>
         </ul>
       </MoreInfo>

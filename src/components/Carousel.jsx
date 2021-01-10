@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Engine from "../assets/atg_engine_vect_white.png";
-import Tranny from "../assets/atg_trans_white.png";
-import Brake from "../assets/atg_brake_vect_white.png";
-import Hood from "../assets/atg_hood_white.png";
+import Frame from "../assets/atg-frame-white.png";
 import Tire from "../assets/atg_tire_vect_white.png";
+import Hood from "../assets/atg_uth.png";
 
 const Wrapper = styled.div`
   width: 500px;
@@ -21,64 +19,25 @@ const CarouselCase = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
-const EngineContain = styled.div`
+const WheelContain = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 `;
-const TransmissionContain = styled.div`
+const UthContain = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 `;
-const BrakeContain = styled.div`
+const FrameContain = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 `;
-const NavEngine = styled.div`
-  width: 134px;
-  height: 134px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: 116px;
-    height: 116px;
-  }
-`;
-const NavTranny = styled.div`
-  width: 134px;
-  height: 134px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: 148px;
-    height: 136px;
-    margin-bottom: 8px;
-  }
-`;
-const NavBrake = styled.div`
-  width: 134px;
-  height: 134px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: 116px;
-    height: 116px;
-  }
-`;
+
 const HoodContain = styled.div`
   display: flex;
   justify-content: space-evenly;
@@ -92,13 +51,8 @@ const TiresContain = styled.div`
   align-items: center;
   flex-direction: column;
 `;
-const MainBrakeContain = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-`;
-const NavHood = styled.div`
+
+const Tires = styled.div`
   width: 134px;
   height: 134px;
   border-radius: 50%;
@@ -107,11 +61,11 @@ const NavHood = styled.div`
   align-items: center;
   background: rgb(47, 46, 46);
   img {
-    width: 166px;
-    height: 166px;
+    width: 200px;
+    height: 200px;
   }
 `;
-const NavTires = styled.div`
+const TheHood = styled.div`
   width: 134px;
   height: 134px;
   border-radius: 50%;
@@ -120,11 +74,11 @@ const NavTires = styled.div`
   align-items: center;
   background: rgb(47, 46, 46);
   img {
-    width: 212px;
-    height: 212px;
+    width: 191px;
+    height: 191px;
   }
 `;
-const NavMainBrake = styled.div`
+const FrameWork = styled.div`
   width: 134px;
   height: 134px;
   border-radius: 50%;
@@ -133,8 +87,8 @@ const NavMainBrake = styled.div`
   align-items: center;
   background: rgb(47, 46, 46);
   img {
-    width: 134px;
-    height: 134px;
+    width: 174px;
+    height: 174px;
   }
 `;
 
@@ -143,69 +97,69 @@ const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
     <Wrapper>
       {forRepair ? (
         <CarouselCase>
-          <EngineContain>
-            <NavEngine>
+          <WheelContain>
+            <Tires>
               <img
                 onClick={(e) => setRepairOptions(1)}
-                src={Engine}
+                src={Tire}
                 alt='engine png'
               />
-            </NavEngine>
-            <h2>Engine Work</h2>
-          </EngineContain>
-          <TransmissionContain>
-            <NavTranny>
+            </Tires>
+            <h2>Wheels</h2>
+          </WheelContain>
+          <UthContain>
+            <TheHood>
               <img
                 onClick={(e) => setRepairOptions(2)}
-                src={Tranny}
+                src={Hood}
                 alt='transmission png'
               />
-            </NavTranny>
-            <h2>Transmission</h2>
-          </TransmissionContain>
-          <BrakeContain>
-            <NavBrake>
+            </TheHood>
+            <h2>Under the Hood</h2>
+          </UthContain>
+          <FrameContain>
+            <FrameWork>
               <img
                 onClick={(e) => setRepairOptions(3)}
-                src={Brake}
+                src={Frame}
                 alt='brake png'
               />
-            </NavBrake>
-            <h2>Brakes</h2>
-          </BrakeContain>
+            </FrameWork>
+            <h2>Frame</h2>
+          </FrameContain>
         </CarouselCase>
       ) : (
         <CarouselCase>
           <HoodContain>
-            <NavHood>
+            <Tires>
               <img
                 onClick={(e) => setMainOptions(1)}
-                src={Hood}
+                src={Tire}
                 alt='hood png'
               />
-            </NavHood>
-            <h2>Under the Hood</h2>
+            </Tires>
+            <h2>Wheels</h2>
           </HoodContain>
           <TiresContain>
-            <NavTires>
+            <TheHood>
               <img
                 onClick={(e) => setMainOptions(2)}
-                src={Tire}
+                src={Hood}
                 alt='tire png'
               />
-            </NavTires>
-            <h2>Tires</h2>
+            </TheHood>
+            <h2>Under the Hood</h2>
           </TiresContain>
-          <MainBrakeContain>
-            <NavMainBrake>
+          <FrameContain>
+            <FrameWork>
               <img
                 onClick={(e) => setMainOptions(3)}
-                src={Brake}
+                src={Frame}
                 alt='brake png'
               />
-            </NavMainBrake>
-            <h2>Brakes</h2>
-          </MainBrakeContain>
+            </FrameWork>
+            <h2>Frame</h2>
+          </FrameContain>
         </CarouselCase>
       )}
     </Wrapper>
