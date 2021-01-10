@@ -21,41 +21,23 @@ const Capsule = styled.div`
     margin-top: 6px;
   }
 `;
-const NotFocused = styled.div`
-  width: 87px;
-  height: 87px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  z-index: 1;
-`;
-const Focused = styled.div`
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  z-index: 1;
-`;
+
 const TireOptions = (props) => {
   return (
     <Wrapper>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Tire Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Tire Options</h5>
       </Capsule>
       <Capsule>
-        <Focused></Focused>
         <h5>Tire Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Tire Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Tire Options</h5>
       </Capsule>
     </Wrapper>

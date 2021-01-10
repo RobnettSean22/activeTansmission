@@ -39,23 +39,18 @@ const TransmissionOptions = (props) => {
   return (
     <Wrapper>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Transmission Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Transmission Options</h5>
       </Capsule>
       <Capsule>
-        <Focused></Focused>
         <h5>Transmission Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Transmission Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Transmission Options</h5>
       </Capsule>
     </Wrapper>

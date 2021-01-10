@@ -39,23 +39,18 @@ const HoodOptions = (props) => {
   return (
     <Wrapper>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Hood Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Hood Options</h5>
       </Capsule>
       <Capsule>
-        <Focused></Focused>
         <h5>Hood Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Hood Options</h5>
       </Capsule>
       <Capsule>
-        <NotFocused></NotFocused>
         <h5>Hood Options</h5>
       </Capsule>
     </Wrapper>

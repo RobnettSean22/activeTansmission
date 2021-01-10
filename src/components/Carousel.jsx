@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Frame from "../assets/atg-frame-white.png";
 import Tire from "../assets/atg_tire_vect_white.png";
@@ -86,6 +86,7 @@ const FrameWork = styled.div`
   justify-content: center;
   align-items: center;
   background: rgb(47, 46, 46);
+
   img {
     width: 174px;
     height: 174px;
@@ -93,6 +94,7 @@ const FrameWork = styled.div`
 `;
 
 const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
+  const [focused, setFocused] = useState(1);
   return (
     <Wrapper>
       {forRepair ? (
