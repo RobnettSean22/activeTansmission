@@ -11,36 +11,36 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const TireOptions = ({ repUthOps, setRepUthOps }) => {
+const TireOptions = ({ mainTireOps, setMainTireOps }) => {
   return (
     <Wrapper>
       <div
-        onClick={(e) => setRepUthOps(1)}
-        className={repUthOps === 1 ? "targeted" : "untargeted"}
+        onClick={(e) => setMainTireOps(1)}
+        className={mainTireOps === 1 ? "targeted" : "untargeted"}
       >
         <h5>Under the Hood</h5>
       </div>
       <div
-        onClick={(e) => setRepUthOps(2)}
-        className={repUthOps === 2 ? "targeted" : "untargeted"}
+        onClick={(e) => setMainTireOps(2)}
+        className={mainTireOps === 2 ? "targeted" : "untargeted"}
       >
         <h5>Under the Hood</h5>
       </div>
       <div
-        onClick={(e) => setRepUthOps(3)}
-        className={repUthOps === 3 ? "targeted" : "untargeted"}
+        onClick={(e) => setMainTireOps(3)}
+        className={mainTireOps === 3 ? "targeted" : "untargeted"}
       >
         <h5>Under the Hood</h5>
       </div>
       <div
-        onClick={(e) => setRepUthOps(4)}
-        className={repUthOps === 4 ? "targeted" : "untargeted"}
+        onClick={(e) => setMainTireOps(4)}
+        className={mainTireOps === 4 ? "targeted" : "untargeted"}
       >
         <h5>Under the Hood</h5>
       </div>
       <div
-        onClick={(e) => setRepUthOps(5)}
-        className={repUthOps === 5 ? "targeted" : "untargeted"}
+        onClick={(e) => setMainTireOps(5)}
+        className={mainTireOps === 5 ? "targeted" : "untargeted"}
       >
         <h5>Under the Hood</h5>
       </div>
