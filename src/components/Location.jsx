@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./Header";
 import Footer from "./Footer";
 import ShopImage from "../assets/active_shop1.jpg";
+import axios from "axios";
 
 const Wrapper = styled.div``;
 
@@ -91,6 +92,12 @@ const GoogleMap = styled.div`
   height: 516px;
 `;
 const Location = (props) => {
+  const maps = async () => {
+    const res = await axios.get(
+      "https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&region=JP"
+    );
+    const { data } = res.data;
+  };
   // // Initialize and add the map
   // function initMap() {
   //   // The location of Uluru
@@ -106,6 +113,7 @@ const Location = (props) => {
   //     map: map,
   //   });
   // }
+
   return (
     <Wrapper>
       <Header />
