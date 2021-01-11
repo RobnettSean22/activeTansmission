@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import HoodOptions from "./maintanence_options/HoodOptions";
 import TireOptions from "./maintanence_options/TiresOptions";
@@ -17,26 +17,33 @@ const SNCasing = styled.div`
 `;
 
 const SecondaryNav = ({ repairOptions, mainOptions }) => {
+  const [options, setOptions] = useState(1);
   return (
     <Wrapper>
       {repairOptions ? (
         <SNCasing>
           {repairOptions === 1 ? (
-            <EngineOptions />
+            <EngineOptions repTireOps={options} setRepTireOps={setOptions} />
           ) : repairOptions === 2 ? (
-            <TransmissionOptions />
+            <TransmissionOptions
+              repUthOps={options}
+              setRepUthOps={setOptions}
+            />
           ) : (
-            <BrakesOptions />
+            <BrakesOptions RepFrameOps={options} setRepFrameOps={setOptions} />
           )}
         </SNCasing>
       ) : (
         <SNCasing>
           {mainOptions === 1 ? (
-            <HoodOptions />
+            <HoodOptions mainUthOps={options} setMainUthOps={setOptions} />
           ) : mainOptions === 2 ? (
-            <TireOptions />
+            <TireOptions mainTireOps={options} setMainTireOps={setOptions} />
           ) : (
-            <MainBrakesOptions />
+            <MainBrakesOptions
+              mainFrameOps={options}
+              setMainFrameOps={setOptions}
+            />
           )}
         </SNCasing>
       )}

@@ -1,0 +1,27 @@
+.targeted {
+  width: 130px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: pink;
+  h5 {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.untargeted {
+  width: 130px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: pink;
+  h5 {
+    font-size: 20px;
+    margin: 0;
+  }
+}
