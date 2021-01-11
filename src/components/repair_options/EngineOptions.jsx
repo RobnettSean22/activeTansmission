@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../css_sheets/options.scss";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -10,36 +11,39 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Capsule = styled.div`
-  width: 130px;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  background: pink;
-  h5 {
-  }
-`;
-
-const EngineOptions = (props) => {
+const EngineOptions = ({ repTireOps, setRepTireOps }) => {
   return (
     <Wrapper>
-      <Capsule>
-        <h5>Engine Options</h5>
-      </Capsule>
-      <Capsule>
-        <h5>Engine Options</h5>
-      </Capsule>
-      <Capsule>
-        <h5>Engine Options</h5>
-      </Capsule>
-      <Capsule>
-        <h5>Engine Options</h5>
-      </Capsule>
-      <Capsule>
-        <h5>Engine Options</h5>
-      </Capsule>
+      <div
+        onClick={(e) => setRepTireOps(1)}
+        className={repTireOps === 1 ? "targeted" : "untargeted"}
+      >
+        <h5>Tire Options</h5>
+      </div>
+      <div
+        onClick={(e) => setRepTireOps(2)}
+        className={repTireOps === 2 ? "targeted" : "untargeted"}
+      >
+        <h5>Tire Options</h5>
+      </div>
+      <div
+        onClick={(e) => setRepTireOps(3)}
+        className={repTireOps === 3 ? "targeted" : "untargeted"}
+      >
+        <h5>Tire Options</h5>
+      </div>
+      <div
+        onClick={(e) => setRepTireOps(4)}
+        className={repTireOps === 4 ? "targeted" : "untargeted"}
+      >
+        <h5>Tire Options</h5>
+      </div>
+      <div
+        onClick={(e) => setRepTireOps(5)}
+        className={repTireOps === 5 ? "targeted" : "untargeted"}
+      >
+        <h5>Tire Options</h5>
+      </div>
     </Wrapper>
   );
 };

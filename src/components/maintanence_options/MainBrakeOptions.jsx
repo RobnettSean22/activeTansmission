@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../css_sheets/options.scss";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -10,36 +11,39 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Capsule = styled.div`
-  width: 130px;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  background: pink;
-  h5 {
-  }
-`;
-
-const MainBrakeOptions = (props) => {
+const MainBrakeOptions = ({ mainFrameOps, setMainFrameOps }) => {
   return (
     <Wrapper>
-      <Capsule>
-        <h5>Main Brake Options</h5>
-      </Capsule>
-      <Capsule>
-        <h5>Main Brake Options</h5>
-      </Capsule>
-      <Capsule>
-        <h5>Main Brake Options</h5>
-      </Capsule>
-      <Capsule>
-        <h5>Main Brake Options</h5>
-      </Capsule>
-      <Capsule>
-        <h5>Main Brake Options</h5>
-      </Capsule>
+      <div
+        onClick={(e) => setMainFrameOps(1)}
+        className={mainFrameOps === 1 ? "targeted" : "untargeted"}
+      >
+        <h5>Frame Options</h5>
+      </div>
+      <div
+        onClick={(e) => setMainFrameOps(2)}
+        className={mainFrameOps === 2 ? "targeted" : "untargeted"}
+      >
+        <h5>Frame Options</h5>
+      </div>
+      <div
+        onClick={(e) => setMainFrameOps(3)}
+        className={mainFrameOps === 3 ? "targeted" : "untargeted"}
+      >
+        <h5>Frame Options</h5>
+      </div>
+      <div
+        onClick={(e) => setMainFrameOps(4)}
+        className={mainFrameOps === 4 ? "targeted" : "untargeted"}
+      >
+        <h5>Frame Options</h5>
+      </div>
+      <div
+        onClick={(e) => setMainFrameOps(5)}
+        className={mainFrameOps === 5 ? "targeted" : "untargeted"}
+      >
+        <h5>Frame Options</h5>
+      </div>
     </Wrapper>
   );
 };

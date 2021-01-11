@@ -17,7 +17,7 @@ const SNCasing = styled.div`
 `;
 
 const SecondaryNav = ({ repairOptions, mainOptions }) => {
-  const [options, setOptions] = useState(1);
+  const [options, setOptions] = useState(5);
   return (
     <Wrapper>
       {repairOptions ? (
@@ -30,7 +30,7 @@ const SecondaryNav = ({ repairOptions, mainOptions }) => {
               setRepUthOps={setOptions}
             />
           ) : (
-            <BrakesOptions RepFrameOps={options} setRepFrameOps={setOptions} />
+            <BrakesOptions repFrameOps={options} setRepFrameOps={setOptions} />
           )}
         </SNCasing>
       ) : (

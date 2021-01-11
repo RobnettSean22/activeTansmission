@@ -14,19 +14,34 @@ const Wrapper = styled.div`
 const HoodOptions = ({ mainUthOps, setMainUthOps }) => {
   return (
     <Wrapper>
-      <div className={1 ? "targeted" : "untargeted"}>
+      <div
+        onClick={(e) => setMainUthOps(1)}
+        className={mainUthOps === 1 ? "targeted" : "untargeted"}
+      >
         <h5>Hood Options</h5>
       </div>
-      <div className={1 ? "targeted" : "untargeted"}>
+      <div
+        onClick={(e) => setMainUthOps(2)}
+        className={mainUthOps === 2 ? "targeted" : "untargeted"}
+      >
         <h5>Hood Options</h5>
       </div>
-      <div className={1 ? "targeted" : "untargeted"}>
+      <div
+        onClick={(e) => setMainUthOps(3)}
+        className={mainUthOps === 3 ? "targeted" : "untargeted"}
+      >
         <h5>Hood Options</h5>
       </div>
-      <div className={1 ? "targeted" : "untargeted"}>
+      <div
+        onClick={(e) => setMainUthOps(4)}
+        className={mainUthOps === 4 ? "targeted" : "untargeted"}
+      >
         <h5>Hood Options</h5>
       </div>
-      <div className={1 ? "targeted" : "untargeted"}>
+      <div
+        onClick={(e) => setMainUthOps(5)}
+        className={mainUthOps === 5 ? "targeted" : "untargeted"}
+      >
         <h5>Hood Options</h5>
       </div>
     </Wrapper>

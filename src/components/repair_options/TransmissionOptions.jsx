@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../css_sheets/options.scss";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -10,49 +11,39 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Capsule = styled.div`
-  width: 130px;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  background: pink;
-  h5 {
-  }
-`;
-const NotFocused = styled.div`
-  width: 87px;
-  height: 87px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  z-index: 1;
-`;
-const Focused = styled.div`
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  background: rgb(47, 46, 46);
-  z-index: 1;
-`;
-const TransmissionOptions = (props) => {
+const TransmissionOptions = ({ repUthOps, setRepUthOps }) => {
   return (
     <Wrapper>
-      <Capsule>
+      <div
+        onClick={(e) => setRepUthOps(1)}
+        className={repUthOps === 1 ? "targeted" : "untargeted"}
+      >
         <h5>Transmission Options</h5>
-      </Capsule>
-      <Capsule>
+      </div>
+      <div
+        onClick={(e) => setRepUthOps(2)}
+        className={repUthOps === 2 ? "targeted" : "untargeted"}
+      >
         <h5>Transmission Options</h5>
-      </Capsule>
-      <Capsule>
+      </div>
+      <div
+        onClick={(e) => setRepUthOps(3)}
+        className={repUthOps === 3 ? "targeted" : "untargeted"}
+      >
         <h5>Transmission Options</h5>
-      </Capsule>
-      <Capsule>
+      </div>
+      <div
+        onClick={(e) => setRepUthOps(4)}
+        className={repUthOps === 4 ? "targeted" : "untargeted"}
+      >
         <h5>Transmission Options</h5>
-      </Capsule>
-      <Capsule>
+      </div>
+      <div
+        onClick={(e) => setRepUthOps(5)}
+        className={repUthOps === 5 ? "targeted" : "untargeted"}
+      >
         <h5>Transmission Options</h5>
-      </Capsule>
+      </div>
     </Wrapper>
   );
 };
