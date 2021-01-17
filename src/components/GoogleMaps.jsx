@@ -9,8 +9,7 @@ const GoogleMaps = (props) => {
     let googleScript = document.createElement("script");
     googleScript.type = "type/javascript";
     googleScript.src = `https://maps.googleapis.com/maps/api/js?key=${REACT_APP_MAP_KEY}`;
-    // googleScript.src =
-    //   "https://maps.googleapis.com/maps/api/js?key=AIzaSyC1udU0xCubZpHEoCLDFddidIru1espKzo";
+  
     googleScript.defer = true;
     document.head.appendChild(googleScript);
     let pickUpTag = document.getElementsByTagName("script")[0];
