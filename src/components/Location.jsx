@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Header from "./Header";
 import Footer from "./Footer";
 import ShopImage from "../assets/active_shop1.jpg";
-import axios from "axios";
+import GoogleMaps from "./GoogleMaps";
 
 const Wrapper = styled.div``;
 
@@ -87,33 +87,8 @@ const HoursLocation = styled.div`
     }
   }
 `;
-const GoogleMap = styled.div`
-  width: 624px;
-  height: 516px;
-`;
-const Location = (props) => {
-  const maps = async () => {
-    const res = await axios.get(
-      "https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&region=JP"
-    );
-    const { data } = res.data;
-  };
-  // // Initialize and add the map
-  // function initMap() {
-  //   // The location of Uluru
-  //   const uluru = { lat: -25.344, lng: 131.036 };
-  //   // The map, centered at Uluru
-  //   const map = new google.maps.Map(document.getElementById("map"), {
-  //     zoom: 4,
-  //     center: uluru,
-  //   });
-  //   // The marker, positioned at Uluru
-  //   const marker = new google.maps.Marker({
-  //     position: uluru,
-  //     map: map,
-  //   });
-  // }
 
+const Location = (props) => {
   return (
     <Wrapper>
       <Header />
@@ -144,7 +119,7 @@ const Location = (props) => {
             <li>7223 W 118th Pl unit a</li>
           </ul>
         </HoursLocation>
-        <GoogleMap></GoogleMap>
+        <GoogleMaps />
       </LocationInfo>
       <Footer />
     </Wrapper>
