@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import axios from "axios";
 import Header from "./Header";
 import Footer from "./Footer";
 import EmailIcon from "../assets/envelope_icon.png";
@@ -183,6 +184,21 @@ const Button = styled.div`
 `;
 
 const Contact = (props) => {
+  const [contactName, setContactName] = useState("");
+  const [contactEmail, setContactEmail] = useState("");
+  const [contactNumber, setContactNumber] = useState("");
+  const [inquiry, setInquiry] = useState("");
+
+  const sendEmail = async () => {
+    const res = await axios.post("/message", {
+      customerName: contactName,
+      customerEmail: contactEmail,
+      customerNumber: contactNumber,
+      message: inquiry,
+    });
+    const { data } = await res;
+    return data;
+  };
   return (
     <Wrapper>
       <Header />
@@ -206,22 +222,43 @@ const Contact = (props) => {
           <MessageForm>
             <SenderInfo>
               <h3>Your Name</h3>
-              <input placeholder='Michael Smith' />
+              <input
+                value={contactName}
+                onChange={(e) => {
+                  setContactName(e.target.value);
+                }}
+                placeholder='Michael Smith'
+              />
               <h3>Your Email</h3>
-              <input placeholder='email@email.com' />
+              <input
+                value={contactEmail}
+                onChange={(e) => {
+                  setContactEmail(e.target.value);
+                }}
+                placeholder='email@email.com'
+              />
               <h3>Your Number</h3>
-              <input placeholder='000-000-0000' />
+              <input
+                value={contactNumber}
+                onChange={(e) => {
+                  setContactNumber(e.target.value);
+                }}
+                placeholder='000-000-0000'
+              />
             </SenderInfo>
             <Message>
               <div>
                 <h3>Message</h3>
               </div>
 
-              <textarea></textarea>
+              <textarea
+                value={inquiry}
+                onChange={(e) => setInquiry(e.target.value)}
+              />
             </Message>
           </MessageForm>
           <ButtonContainer>
-            <Button>
+            <Button onClick={(e) => sendEmail()}>
               <h2>Send Message</h2>
             </Button>
           </ButtonContainer>

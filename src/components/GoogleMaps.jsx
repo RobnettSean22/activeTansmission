@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from "react";
 
 const GoogleMaps = (props) => {
   useLayoutEffect(() => {
+    const { REACT_APP_MAP_KEY } = process.env;
     if (window.google) {
       window.initMap = onScriptLoad();
     }
@@ -17,7 +18,6 @@ const GoogleMaps = (props) => {
       onScriptLoad();
     });
   }, []);
-  const { REACT_APP_MAP_KEY } = process.env;
 
   const onScriptLoad = () => {
     const myLatLng = { lat: 39.91084, lng: -105.07783 };
