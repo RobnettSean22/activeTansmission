@@ -19,37 +19,22 @@ const CarouselCase = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
-const WheelContain = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-`;
-const UthContain = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-`;
-const FrameContain = styled.div`
+
+const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 `;
 
-const HoodContain = styled.div`
+const IconContainer = styled.div`
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-`;
-
-const TiresContain = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
+  background: rgb(47, 46, 46);
 `;
 
 const Tires = styled.div`
@@ -93,14 +78,19 @@ const FrameWork = styled.div`
   }
 `;
 
-const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
-  const [focused, setFocused] = useState(1);
+const Carousel = ({
+  forRepair,
+  setRepairOptions,
+  setMainOptions,
+  repairOptions,
+  mainOptions,
+}) => {
   return (
     <Wrapper>
       {forRepair ? (
         <CarouselCase>
-          <WheelContain>
-            <Tires>
+          <Container>
+            <Tires className={repairOptions === 1 ? "active" : "inactive"}>
               <img
                 onClick={(e) => setRepairOptions(1)}
                 src={Tire}
@@ -108,9 +98,9 @@ const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
               />
             </Tires>
             <h2>Wheels</h2>
-          </WheelContain>
-          <UthContain>
-            <TheHood>
+          </Container>
+          <Container>
+            <TheHood className={repairOptions === 2 ? "active" : "inactive"}>
               <img
                 onClick={(e) => setRepairOptions(2)}
                 src={Hood}
@@ -118,9 +108,9 @@ const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
               />
             </TheHood>
             <h2>Under the Hood</h2>
-          </UthContain>
-          <FrameContain>
-            <FrameWork>
+          </Container>
+          <Container>
+            <FrameWork className={repairOptions === 3 ? "active" : "inactive"}>
               <img
                 onClick={(e) => setRepairOptions(3)}
                 src={Frame}
@@ -128,12 +118,12 @@ const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
               />
             </FrameWork>
             <h2>Frame</h2>
-          </FrameContain>
+          </Container>
         </CarouselCase>
       ) : (
         <CarouselCase>
-          <HoodContain>
-            <Tires>
+          <Container>
+            <Tires className={mainOptions === 1 ? "active" : "inactive"}>
               <img
                 onClick={(e) => setMainOptions(1)}
                 src={Tire}
@@ -141,9 +131,9 @@ const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
               />
             </Tires>
             <h2>Wheels</h2>
-          </HoodContain>
-          <TiresContain>
-            <TheHood>
+          </Container>
+          <Container>
+            <TheHood className={mainOptions === 2 ? "active" : "inactive"}>
               <img
                 onClick={(e) => setMainOptions(2)}
                 src={Hood}
@@ -151,9 +141,9 @@ const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
               />
             </TheHood>
             <h2>Under the Hood</h2>
-          </TiresContain>
-          <FrameContain>
-            <FrameWork>
+          </Container>
+          <Container>
+            <FrameWork className={mainOptions === 3 ? "active" : "inactive"}>
               <img
                 onClick={(e) => setMainOptions(3)}
                 src={Frame}
@@ -161,7 +151,7 @@ const Carousel = ({ forRepair, setRepairOptions, setMainOptions }) => {
               />
             </FrameWork>
             <h2>Frame</h2>
-          </FrameContain>
+          </Container>
         </CarouselCase>
       )}
     </Wrapper>

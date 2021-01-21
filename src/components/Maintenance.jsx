@@ -119,6 +119,7 @@ const Maintenance = (props) => {
           <Carousel
             forMaintanence={maiNav}
             setMainOptions={setMainViewOption}
+            mainOptions={mainViewOptions}
           />
         </NavCase>
 

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import styled from "styled-components";
+import axios from "axios";
 
 const Wrapper = styled.div`
   width: 620px;
@@ -72,6 +73,11 @@ const NameContainer = styled.div`
 `;
 
 const Float = (props) => {
+  // const reviews = async () => {
+  //   const res = await axios.get(
+  //     `https://mybusiness.googleapis.com/v4/accounts/{accountId}/locations/{locationId}/reviews`
+  //   );
+  // };
   return (
     <Wrapper>
       <TitleContainer>

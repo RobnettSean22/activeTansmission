@@ -117,7 +117,11 @@ const Repair = (props) => {
             <h5>Warranty Offered</h5>
             <Indicator></Indicator>
           </WarrantyInfo>
-          <Carousel setRepairOptions={setRepViewOptions} forRepair={repNav} />
+          <Carousel
+            setRepairOptions={setRepViewOptions}
+            forRepair={repNav}
+            repairOtions={repViewOptions}
+          />
         </NavCase>
 
         <SecondNav>
