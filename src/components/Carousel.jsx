@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import Frame from "../assets/atg-frame-white.png";
 import Tire from "../assets/atg_tire_vect_white.png";
 import Hood from "../assets/atg_uth.png";
@@ -27,7 +27,9 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const IconContainer = styled.div`
+const IconContainer = styled.div.attrs((props) => ({
+  className: props.className,
+}))`
   width: 134px;
   height: 134px;
   border-radius: 50%;
@@ -35,23 +37,23 @@ const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: rgb(47, 46, 46);
-  .active {
-  }
-  .inactive {
-  }
-  & ::hover {
-    cursor: pointer;
+  border: 3px solid rgb(253, 232, 1);
+  overflow: hidden;
+  img {
+    :hover {
+      cursor: pointer;
+    }
   }
 
-  .tires {
+  & .tires {
     width: 200px;
     height: 200px;
   }
-  .hood {
+  & .hood {
     width: 191px;
     height: 191px;
   }
-  .frame {
+  & .frame {
     width: 174px;
     height: 174px;
   }
@@ -69,9 +71,7 @@ const Carousel = ({
       {forRepair ? (
         <CarouselCase>
           <Container>
-            <IconContainer
-              className={repairOptions === 1 ? "active" : "inactive"}
-            >
+            <IconContainer>
               <img
                 className='tires'
                 onClick={(e) => setRepairOptions(1)}
@@ -79,6 +79,7 @@ const Carousel = ({
                 alt='engine png'
               />
             </IconContainer>
+
             <h2>Wheels</h2>
           </Container>
           <Container>

@@ -1,3 +1,9 @@
+h5 {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+}
+
 .targeted {
   width: 130px;
   height: 100%;
@@ -5,10 +11,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: pink;
+
   h5 {
-    font-size: 20px;
-    margin: 0;
+    border-bottom: 2px solid rgb(253, 232, 1);
   }
 }
 
@@ -19,9 +24,4 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  h5 {
-    font-size: 20px;
-    margin: 0;
-  }
 }
