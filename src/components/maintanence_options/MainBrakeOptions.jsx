@@ -1,19 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+
 import "../css_sheets/options.scss";
-
-const Wrapper = styled.div`
-  width: 100%;
-  height: 50%;
-  display: flex;
-
-  justify-content: space-evenly;
-  align-items: center;
-`;
 
 const MainBrakeOptions = ({ mainFrameOps, setMainFrameOps }) => {
   return (
-    <Wrapper>
+    <div className='wrapper'>
       <div
         onClick={(e) => setMainFrameOps(1)}
         className={mainFrameOps === 1 ? "targeted" : "untargeted"}
@@ -44,7 +35,7 @@ const MainBrakeOptions = ({ mainFrameOps, setMainFrameOps }) => {
       >
         <h5>Frame Options</h5>
       </div>
-    </Wrapper>
+    </div>
   );
 };
 export default MainBrakeOptions;

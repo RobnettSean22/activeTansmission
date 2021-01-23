@@ -1,19 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+
 import "../css_sheets/options.scss";
-
-const Wrapper = styled.div`
-  width: 100%;
-  height: 50%;
-  display: flex;
-
-  justify-content: space-evenly;
-  align-items: center;
-`;
 
 const TireOptions = ({ mainTireOps, setMainTireOps }) => {
   return (
-    <Wrapper>
+    <div className='wrapper'>
       <div
         onClick={(e) => setMainTireOps(1)}
         className={mainTireOps === 1 ? "targeted" : "untargeted"}
@@ -44,7 +35,7 @@ const TireOptions = ({ mainTireOps, setMainTireOps }) => {
       >
         <h5>Under the Hood</h5>
       </div>
-    </Wrapper>
+    </div>
   );
 };
 export default TireOptions;
