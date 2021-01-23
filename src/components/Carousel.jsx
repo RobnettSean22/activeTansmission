@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from "styled-components";
 import Frame from "../assets/atg-frame-white.png";
 import Tire from "../assets/atg_tire_vect_white.png";
 import Hood from "../assets/atg_uth.png";
+import "../components/css_sheets/topOptions.scss";
 
 const Wrapper = styled.div`
   width: 500px;
@@ -25,37 +26,40 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-`;
 
-const IconContainer = styled.div.attrs((props) => ({
-  className: props.className,
-}))`
-  width: 134px;
-  height: 134px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(47, 46, 46);
-  border: 3px solid rgb(253, 232, 1);
-  overflow: hidden;
-  img {
-    :hover {
-      cursor: pointer;
+  & div {
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(47, 46, 46); */
+    border: 3px solid white;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+    & img {
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+    & .tires {
+      width: 200px;
+      height: 200px;
+    }
+    & .hood {
+      width: 191px;
+      height: 191px;
+    }
+    & .frame {
+      width: 174px;
+      height: 174px;
     }
   }
-
-  & .tires {
-    width: 200px;
-    height: 200px;
-  }
-  & .hood {
-    width: 191px;
-    height: 191px;
-  }
-  & .frame {
-    width: 174px;
-    height: 174px;
+  .active {
+    border: 3px solid rgb(253, 232, 1);
+    background: rgb(47, 46, 46);
   }
 `;
 
@@ -71,83 +75,73 @@ const Carousel = ({
       {forRepair ? (
         <CarouselCase>
           <Container>
-            <IconContainer>
+            <div className={repairOptions === 1 ? "active" : null}>
               <img
                 className='tires'
                 onClick={(e) => setRepairOptions(1)}
                 src={Tire}
                 alt='engine png'
               />
-            </IconContainer>
+            </div>
 
             <h2>Wheels</h2>
           </Container>
           <Container>
-            <IconContainer
-              className={repairOptions === 2 ? "active" : "inactive"}
-            >
+            <div className={repairOptions === 2 ? "active" : null}>
               <img
                 className='hood'
                 onClick={(e) => setRepairOptions(2)}
                 src={Hood}
                 alt='transmission png'
               />
-            </IconContainer>
+            </div>
             <h2>Under the Hood</h2>
           </Container>
           <Container>
-            <IconContainer
-              className={repairOptions === 3 ? "active" : "inactive"}
-            >
+            <div className={repairOptions === 3 ? "active" : null}>
               <img
                 className='frame'
                 onClick={(e) => setRepairOptions(3)}
                 src={Frame}
                 alt='brake png'
               />
-            </IconContainer>
+            </div>
             <h2>Frame</h2>
           </Container>
         </CarouselCase>
       ) : (
         <CarouselCase>
           <Container>
-            <IconContainer
-              className={mainOptions === 1 ? "active" : "inactive"}
-            >
+            <div className={mainOptions === 1 ? "active" : null}>
               <img
                 className='tires'
                 onClick={(e) => setMainOptions(1)}
                 src={Tire}
                 alt='hood png'
               />
-            </IconContainer>
+            </div>
             <h2>Wheels</h2>
           </Container>
           <Container>
-            <IconContainer
-              className={mainOptions === 2 ? "active" : "inactive"}
-            >
+            <div className={mainOptions === 2 ? "active" : null}>
               <img
                 className='hood'
                 onClick={(e) => setMainOptions(2)}
                 src={Hood}
                 alt='tire png'
               />
-            </IconContainer>
+            </div>
             <h2>Under the Hood</h2>
           </Container>
           <Container>
-            <IconContainer
-              className={mainOptions === 3 ? "active" : "inactive"}
-            >
+            <div className={mainOptions === 3 ? "active" : null}>
               <img
                 className='frame'
                 onClick={(e) => setMainOptions(3)}
                 src={Frame}
                 alt='brake png'
               />
-            </IconContainer>
+            </div>
             <h2>Frame</h2>
           </Container>
         </CarouselCase>
