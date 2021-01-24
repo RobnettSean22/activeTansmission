@@ -13,14 +13,14 @@ const OpeningMessageContainer = styled.div`
   height: 903px;
   display: flex;
   justify-content: flex-start;
-  margin: 214px 0px 110px 52px;
+  margin: 0px 0px 110px 52px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.87);
 `;
 
 const Promise = styled.div`
   width: 530px;
   height: 100%;
-  background: rgb(253, 250, 1);
+  background: rgb(253, 232, 1);
 
   h1 {
     font-family: "Lora", serif;
@@ -42,8 +42,10 @@ const LocationInfo = styled.div`
   & img {
     width: 100%;
     height: 100%;
+    filter: blur(1px);
   }
 `;
+
 const Caption = styled.div`
   position: relative;
   width: 100%;
@@ -104,6 +106,7 @@ const Landing = (props) => {
         </Promise>
         <LocationInfo>
           <img src={BlueColor} alt='shop image' />
+
           <Caption>
             <h1>Active Transmission and Gear</h1>
             <h2>Monday - Friday 8am to 5:30pm</h2>

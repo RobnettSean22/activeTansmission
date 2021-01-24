@@ -107,7 +107,7 @@ const Repair = (props) => {
           <Shadder>
             <LeftLine />
             <RepairTitle>
-              <h1>Reparis</h1>
+              <h1>Repairs</h1>
             </RepairTitle>
             <RightLine />
           </Shadder>

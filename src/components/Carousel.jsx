@@ -27,14 +27,13 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  & div {
+  div {
     width: 134px;
     height: 134px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: rgb(47, 46, 46); */
     border: 3px solid white;
     overflow: hidden;
     box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
@@ -43,19 +42,18 @@ const Container = styled.div`
         cursor: pointer;
       }
     }
-
-    & .tires {
-      width: 200px;
-      height: 200px;
-    }
-    & .hood {
-      width: 191px;
-      height: 191px;
-    }
-    & .frame {
-      width: 174px;
-      height: 174px;
-    }
+  }
+  & .tires {
+    width: 200px;
+    height: 200px;
+  }
+  & .hood {
+    width: 191px;
+    height: 191px;
+  }
+  & .frame {
+    width: 174px;
+    height: 174px;
   }
   .active {
     border: 3px solid rgb(253, 232, 1);
