@@ -98,7 +98,7 @@ const Indicator = styled.div`
 
 const Repair = (props) => {
   const [repNav, setRepNav] = useState(2);
-  const [repViewOptions, setRepViewOptions] = useState(1);
+  const [repViewOptions, setRepViewOptions] = useState(2);
 
   return (
     <Wrapper>

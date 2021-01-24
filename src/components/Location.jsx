@@ -16,13 +16,14 @@ const LocationDescription = styled.div`
   justify-content: flex-start;
 
   img {
-    width: 100%;
+    width: 250px;
+    height: 250px;
     border-radius: 0 0 19px 19px;
   }
 `;
 const Title = styled.div`
   width: 100%;
-  height: 181px;
+  height: 152px;
   background: rgb(253, 232, 1);
   border-radius: 19px 19px 0 0;
   display: flex;
@@ -106,8 +107,8 @@ const Location = (props) => {
             <h3>Hours:</h3>
           </div>
           <ul>
-            <li>Monday - Friday: 7am - 530pm</li>
-            <li>Saturday: 8am-12 noon</li>
+            <li>Monday - Friday: 7am - 5:30pm</li>
+            <li>Saturday: 8am -1 2 noon</li>
             <li>Sunday: Closed</li>
           </ul>
           <h3>Phone:</h3>

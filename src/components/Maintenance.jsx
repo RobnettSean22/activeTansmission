@@ -98,7 +98,7 @@ const SecondNav = styled.div`
 
 const Maintenance = (props) => {
   const [maiNav, setMaiNav] = useState(1);
-  const [mainViewOptions, setMainViewOption] = useState(1);
+  const [mainViewOptions, setMainViewOption] = useState(2);
   return (
     <Wrapper>
       <Nav>

@@ -98,25 +98,13 @@ const AboutUs = (props) => {
       <Header />
       <MissionContainer>
         <MissionTitle>
-          <h1>Our Mission</h1>
+          <h1>Word From the Leonard</h1>
         </MissionTitle>
         <MissionDescription>
           <MissionStatement>
             <p>
-              Folly words widow one downs few age every seven. If miss part by
-              fact he park just shew. Discovered had get considered projection
-              who favourable. Necessary up knowledge it tolerably. Unwilling
-              departure education is be dashwoods or an. Use off agreeable law
-              unwilling sir deficient curiosity instantly. Easy mind life fact
-              with see has bore ten. Parish any chatty can elinor direct for
-              former. Up as meant widow equal an share least. Folly words widow
-              one downs few age every seven. If miss part by fact he park just
-              shew. Discovered had get considered projection who favourable.
-              Necessary up knowledge it tolerably. Unwilling departure education
-              is be dashwoods or an. Use off agreeable law unwilling sir
-              deficient curiosity instantly. Easy mind life fact with see has
-              bore ten. Parish any chatty can elinor direct for former. Up as
-              meant widow equal an share least.{" "}
+              Here at Actvie Transmission and Gear we firmly believe that trust
+              and honesty...
             </p>
           </MissionStatement>
           <OwnerInfo>
@@ -129,21 +117,13 @@ const AboutUs = (props) => {
       </MissionContainer>
       <EmployeeInfo>
         <EmployeeTitle>
-          <h1>Meet The Crew</h1>
+          <h1>The Active Crew</h1>
         </EmployeeTitle>
         <Employee>
           <About>
-            <h2>Mike Brown</h2>
-            <h3>Mechanic</h3>
-            <p>
-              Folly words widow one downs few age every seven. If miss part by
-              fact he park just shew. Discovered had get considered projection
-              who favourable. Necessary up knowledge it tolerably. Unwilling
-              departure education is be dashwoods or an. Use off agreeable law
-              unwilling sir deficient curiosity instantly. Easy mind life fact
-              with see has bore ten. Parish any chatty can elinor direct for
-              former. Up as meant widow equal an share least.
-            </p>
+            <h2>Ritchie</h2>
+            <h3>Senior Technicion</h3>
+            <p>8 years</p>
           </About>
           <ProfilePicContain>
             <img />
@@ -151,17 +131,9 @@ const AboutUs = (props) => {
         </Employee>
         <Employee>
           <About>
-            <h2>Mike Brown</h2>
+            <h2>Jerry</h2>
             <h3>Mechanic</h3>
-            <p>
-              Folly words widow one downs few age every seven. If miss part by
-              fact he park just shew. Discovered had get considered projection
-              who favourable. Necessary up knowledge it tolerably. Unwilling
-              departure education is be dashwoods or an. Use off agreeable law
-              unwilling sir deficient curiosity instantly. Easy mind life fact
-              with see has bore ten. Parish any chatty can elinor direct for
-              former. Up as meant widow equal an share least.
-            </p>
+            <p>transmission rebuild and mechanic</p>
           </About>
           <ProfilePicContain>
             <img />
@@ -169,17 +141,9 @@ const AboutUs = (props) => {
         </Employee>
         <Employee>
           <About>
-            <h2>Mike Brown</h2>
+            <h2>Miseal</h2>
             <h3>Mechanic</h3>
-            <p>
-              Folly words widow one downs few age every seven. If miss part by
-              fact he park just shew. Discovered had get considered projection
-              who favourable. Necessary up knowledge it tolerably. Unwilling
-              departure education is be dashwoods or an. Use off agreeable law
-              unwilling sir deficient curiosity instantly. Easy mind life fact
-              with see has bore ten. Parish any chatty can elinor direct for
-              former. Up as meant widow equal an share least.
-            </p>
+            <p>6 years at active...</p>
           </About>
           <ProfilePicContain>
             <img />

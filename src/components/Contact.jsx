@@ -150,10 +150,15 @@ const Message = styled.div`
   }
 
   textarea {
-    width: 100%;
-    height: 456px;
+    width: 579px;
+    height: 434px;
     border-radius: 20px;
     background: rgb(228, 228, 228);
+    padding: 20px 12px 12px 12px;
+    font-size: 26px;
+    :focus {
+      outline: none;
+    }
   }
 `;
 const ButtonContainer = styled.div`
@@ -163,7 +168,7 @@ const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const Button = styled.div`
+const Button = styled.button`
   width: 351px;
   height: 89px;
   margin: 0 auto;
@@ -207,18 +212,31 @@ const Contact = (props) => {
       <ContactInfo>
         <h1>Stop By or Get in Touch</h1>
         <ContactMethods>
-          <Email>
-            <img src={EmailIcon} alt='enevlope' />
-            <h3>activebroomfield@gmail.com</h3>
-          </Email>
-          <Phone>
-            <img src={PhoneIcon} alt='phone ' />
-            <h3>+1 303-466-1133</h3>
-          </Phone>
-          <Address>
-            <img src={MapIcon} alt='enevlope ' />
-            <h3>7223 W 118th Pl unit a</h3>
-          </Address>
+          <a
+            style={{ textDecoration: "none" }}
+            href='mailto:activebroomfield@gmail.com'
+          >
+            <Email>
+              <img src={EmailIcon} alt='enevlope' />
+              <h3>activebroomfield@gmail.com</h3>
+            </Email>
+          </a>
+          <a style={{ textDecoration: "none" }} href='tel:3034661133'>
+            <Phone>
+              <img src={PhoneIcon} alt='phone ' />
+              <h3> +1 303-466-1133</h3>
+            </Phone>
+          </a>
+          <a
+            style={{ textDecoration: "none" }}
+            href='https://www.google.com/maps/place/Active+Transmission+and+gear/@39.9108341,-105.0800227,17z/data=!3m1!4b1!4m5!3m4!1s0x876b8a4b0e2aa43b:0x5c91e5c97ab2425f!8m2!3d39.91083!4d-105.077834'
+            target='_blank'
+          >
+            <Address>
+              <img src={MapIcon} alt='enevlope ' />
+              <h3>7223 W 118th Pl unit a</h3>
+            </Address>
+          </a>
         </ContactMethods>
         <MessageContainer>
           <MessageForm>
