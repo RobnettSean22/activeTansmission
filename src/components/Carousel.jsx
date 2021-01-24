@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 import Frame from "../assets/atg-frame-white.png";
 import Tire from "../assets/atg_tire_vect_white.png";
 import Hood from "../assets/atg_uth.png";
@@ -68,6 +68,7 @@ const Carousel = ({
   repairOptions,
   mainOptions,
 }) => {
+  console.log(repairOptions);
   return (
     <Wrapper>
       {forRepair ? (

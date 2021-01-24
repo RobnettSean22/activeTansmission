@@ -33,12 +33,14 @@ const ContactMethods = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+
   div {
-    width: 383px;
-    height: 159px;
+    /* width: 383px; */
+    width: 333px;
+    height: 139px;
     border-radius: 33px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 
@@ -57,13 +59,13 @@ const Email = styled.div`
   img {
     width: 87px;
     height: 87px;
-    margin-top: 29px;
+    margin-top: 20px;
   }
 `;
 const Phone = styled.div`
   img {
-    width: 127px;
-    height: 127px;
+    width: 153px;
+    height: 103px;
   }
 `;
 const Address = styled.div`

@@ -6,10 +6,13 @@ import Logo from "../assets/activetransimission_logo.png";
 
 const Wrapper = styled.header`
   width: 100%;
-  height: 350px;
+  height: 283px;
   background-image: url(${HeaderImg});
   background-size: 100% 337px;
   background-repeat: no-repeat;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
 `;
 const WrapperBorder = styled.div`
   width: 100%;
@@ -19,13 +22,13 @@ const WrapperBorder = styled.div`
 
 const LinksContainer = styled.div`
   width: 100%;
-  height: 314px;
+  height: 265px;
   background: rgb(80, 80, 80, 0.3);
 `;
 const LinkDirectory = styled.div`
   width: 1176px;
   height: 126.5px;
-  margin: 0 auto;
+  margin: 15px 132px 0px 132px;
   border-bottom: 2px solid rgb(253, 232, 1);
 `;
 const SiteLinks = styled.ul`

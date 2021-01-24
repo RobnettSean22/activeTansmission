@@ -120,7 +120,7 @@ const Repair = (props) => {
           <Carousel
             setRepairOptions={setRepViewOptions}
             forRepair={repNav}
-            repairOtions={repViewOptions}
+            repairOptions={repViewOptions}
           />
         </NavCase>
 

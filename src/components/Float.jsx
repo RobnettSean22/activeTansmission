@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 
-const Wrapper = styled.div`11
+const Wrapper = styled.div`
   width: 1336px;
   height: 214px;
 
