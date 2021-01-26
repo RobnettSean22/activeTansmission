@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import HeaderImg from "../assets/atg_header.jpg";
 import Logo from "../assets/activetransimission_logo.png";
+import Stickynav from "./StickyNav";
 
 const Wrapper = styled.header`
   width: 100%;
@@ -91,6 +92,7 @@ const Header = (props) => {
           </SiteLinks>
         </LinkDirectory>
       </LinksContainer>
+      <Stickynav />
     </Wrapper>
   );
 };

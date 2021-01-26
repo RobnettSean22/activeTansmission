@@ -204,6 +204,10 @@ const Contact = (props) => {
       message: inquiry,
     });
     const { data } = await res;
+    setContactName("");
+    setContactEmail("");
+    setContactNumber("");
+    setInquiry("");
     return data;
   };
   return (
