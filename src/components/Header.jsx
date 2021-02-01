@@ -29,7 +29,7 @@ const LinksContainer = styled.div`
 const LinkDirectory = styled.div`
   width: 1176px;
   height: 126.5px;
-  margin: 15px 132px 0px 132px;
+  margin: 38px 132px 0px 132px;
   border-bottom: 2px solid rgb(253, 232, 1);
 `;
 const SiteLinks = styled.ul`
@@ -59,7 +59,6 @@ const LastLink = styled.li`
 const Header = (props) => {
   return (
     <Wrapper>
-      <WrapperBorder></WrapperBorder>
       <LinksContainer>
         <LinkDirectory>
           <SiteLinks>

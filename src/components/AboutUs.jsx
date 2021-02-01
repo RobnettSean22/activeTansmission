@@ -98,7 +98,7 @@ const AboutUs = (props) => {
       <Header />
       <MissionContainer>
         <MissionTitle>
-          <h1>Word From the Leonard</h1>
+          <h1>Our Drive</h1>
         </MissionTitle>
         <MissionDescription>
           <MissionStatement>

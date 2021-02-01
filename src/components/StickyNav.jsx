@@ -1,26 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { keyframes } from "styled-components";
-import styled from "styled-components";
-
-const navFadeIn = keyframes`
-0%{opacity:0}
-100%{opacity:1}
-`;
-
-const NavWrapper = styled.div`
-  width: 100%;
-  height: 70px;
-  background: blue;
-  animation-name: ${navFadeIn};
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-`;
+import "../components/css_sheets/navbar.scss";
 
 const Stickynav = (props) => {
-  return <NavWrapper></NavWrapper>;
+  const [scrolled, setScrolled] = React.useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 200) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+  let navbarClasses = ["navbar"];
+  if (scrolled) {
+    navbarClasses.push("scrolled");
+  }
+  return <div></div>;
 };
 export default Stickynav;
