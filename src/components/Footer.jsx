@@ -9,6 +9,9 @@ const FootWrap = styled.footer`
   flex-direction: column;
 
   background: rgb(65, 64, 64);
+  @media screen and (max-width: 414px) {
+    height: 148px;
+  }
 `;
 
 const AdressRightsContainer = styled.div`
@@ -62,6 +65,15 @@ const Streak = styled.div`
     height: 92px;
     position: relative;
     margin-left: 30px;
+  }
+  @media screen and (max-width: 414px) {
+    height: 14px;
+    margin-top: 32px;
+    img {
+      width: 92px;
+      height: 50px;
+      margin-left: 8px;
+    }
   }
 `;
 const Footer = (props) => {

@@ -2,8 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  width: 414px;
-  height: 561px;
+  display: none;
+  @media screen and (max-width: 414px) {
+    display: block;
+    width: 414px;
+    height: 561px;
+    background: #f7ee88;
+  }
 `;
 const Mobileopeningcontainer = (props) => {
   return (
@@ -29,3 +34,5 @@ const Mobileopeningcontainer = (props) => {
     </Wrapper>
   );
 };
+
+export default Mobileopeningcontainer;

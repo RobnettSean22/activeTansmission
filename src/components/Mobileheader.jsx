@@ -4,7 +4,7 @@ import Logo from "../assets/activetransimission_logo.png";
 
 const Wrapper = styled.header`
   display: none;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 414px) {
     display: flex;
     justify-content: space-between;
     width: 414px;
