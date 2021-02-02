@@ -4,11 +4,18 @@ import Logo from "../../assets/activetransimission_logo.png";
 const Wrapper = styled.div`
   width: 414px;
   height: 131px;
+  background-image: url(${Logo});
+  background-repeat: no-repeat;
+  background-size: 615px 336px;
+  background-position: center;
 `;
 
 const TitleContainer = styled.div`
   height: 30px;
   width: 141px;
+  h2 {
+    margin: 0;
+  }
 `;
 
 const Hours = styled.div`
