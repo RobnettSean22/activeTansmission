@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     width: 414px;
     height: 561px;
     background: #f7ee88;
+    text-align: center;
   }
 `;
 const Mobileopeningcontainer = (props) => {

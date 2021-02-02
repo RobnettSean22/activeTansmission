@@ -13,6 +13,9 @@ const Wrapper = styled.div`
   div {
     width: 100%;
   }
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
 `;
 
 const Rating = styled.div`

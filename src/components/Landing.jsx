@@ -4,6 +4,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Float from "./Float";
 import BlueColor from "../assets/atg_home_bluecolar.jpg";
+import Mobileopeningcontainer from "./mobile_components/MobileOpeningContainer";
+import Mobilelandinglocation from "./mobile_components/MobileLandingLocation";
+import Mobileheader from "./mobile_components/Mobileheader";
 
 const Wrapper = styled.div`
   /* background: rgb(250, 250, 250); */
@@ -15,6 +18,10 @@ const OpeningMessageContainer = styled.div`
   justify-content: flex-start;
   margin: 0px 0px 110px 52px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.87);
+
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
 `;
 
 const Promise = styled.div`
@@ -80,7 +87,10 @@ const Landing = (props) => {
   return (
     <Wrapper>
       <Header />
+      <Mobileheader />
+      <Mobilelandinglocation />
       <Float />
+      <Mobileopeningcontainer />
       <OpeningMessageContainer>
         <Promise>
           <h1>We Tell The Truth</h1>

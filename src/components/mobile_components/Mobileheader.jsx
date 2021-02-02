@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../assets/activetransimission_logo.png";
+import Logo from "../../assets/activetransimission_logo.png";
 
 const Wrapper = styled.header`
   display: none;

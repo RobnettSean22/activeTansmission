@@ -14,6 +14,9 @@ const Wrapper = styled.header`
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
 `;
 const WrapperBorder = styled.div`
   width: 100%;
