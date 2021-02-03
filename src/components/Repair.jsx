@@ -133,7 +133,11 @@ const Repair = (props) => {
           <SecondaryNav repairOptions={repViewOptions} />
         </SecondNav>
       </Nav>
-      <Mobilerepair />
+      <Mobilerepair
+        setMobileRepairOptions={setRepViewOptions}
+        forMobileRepair={repNav}
+        mobileRepairOptions={repViewOptions}
+      />
       <Information />
     </Wrapper>
   );

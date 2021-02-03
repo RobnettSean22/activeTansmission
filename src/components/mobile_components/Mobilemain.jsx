@@ -39,10 +39,10 @@ const LinkToInformation = styled.div`
   justify-content: space-evenly;
   align-items: center;
 `;
-const Mobilerepair = ({
-  setMobileRepairOptions,
-  forMobileRepair,
-  mobileRepairOptions,
+const Mobilemain = ({
+  forMobileMaintanence,
+  setMobileMainOptions,
+  mobileMainOptions,
 }) => {
   return (
     <Wrapper>
@@ -55,13 +55,14 @@ const Mobilerepair = ({
         <Information />
         <LinkToInformation>
           <Carousel
-            setRepairOptions={setMobileRepairOptions}
-            forRepair={forMobileRepair}
-            repairOptions={mobileRepairOptions}
+            forMaintanence={forMobileMaintanence}
+            setMainOptions={setMobileMainOptions}
+            mainOptions={mobileMainOptions}
           />
         </LinkToInformation>
       </InfoContainer>
     </Wrapper>
   );
 };
-export default Mobilerepair;
+
+export default Mobilemain;

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import SecondaryNav from "./SecondaryNav";
 import Information from "./Information";
 import Tranny from "../assets/active_new_trany.jpg";
+import Mobilemain from "./mobile_components/Mobilemain";
 
 const Wrapper = styled.div``;
 
@@ -15,6 +16,10 @@ const Nav = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
 `;
 const RepairTitleContainer = styled.div`
   width: 100%;
@@ -127,6 +132,11 @@ const Maintenance = (props) => {
           <SecondaryNav mainOptions={mainViewOptions} />
         </SecondNav>
       </Nav>
+      <Mobilemain
+        forMobileMaintanence={maiNav}
+        setMobileMainOptions={setMainViewOption}
+        mobileMainOptions={mainViewOptions}
+      />
       <Information />
     </Wrapper>
   );
