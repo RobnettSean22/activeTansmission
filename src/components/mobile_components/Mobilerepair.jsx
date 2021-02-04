@@ -53,13 +53,12 @@ const Mobilerepair = ({
       <LinkTo></LinkTo>
       <InfoContainer>
         <Information />
-        <LinkToInformation>
-          <Carousel
-            setRepairOptions={setMobileRepairOptions}
-            forRepair={forMobileRepair}
-            repairOptions={mobileRepairOptions}
-          />
-        </LinkToInformation>
+
+        <Carousel
+          setRepairOptions={setMobileRepairOptions}
+          forRepair={forMobileRepair}
+          repairOptions={mobileRepairOptions}
+        />
       </InfoContainer>
     </Wrapper>
   );

@@ -8,6 +8,13 @@ const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media screen and (max-width: 414px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 `;
 const DescriptTitle = styled.div`
   width: 218px;
@@ -17,6 +24,11 @@ const DescriptTitle = styled.div`
   h2 {
     margin: 0;
     font-size: 51px;
+  }
+  @media screen and (max-width: 414px) {
+    background: blue;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 `;
 
@@ -29,6 +41,10 @@ const Descript = styled.div`
     font-size: 24px;
     line-height: 1.29;
   }
+  @media screen and (max-width: 414px) {
+    width: 362px;
+    margin-left: 40px;
+  }
 `;
 
 const MoreInfo = styled.div`
@@ -40,6 +56,10 @@ const MoreInfo = styled.div`
       font-size: 23px;
       line-height: 1.65;
     }
+  }
+  @media screen and (max-width: 414px) {
+    margin-left: 0;
+    margin-bottom: 0;
   }
 `;
 

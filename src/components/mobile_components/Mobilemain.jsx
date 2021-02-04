@@ -53,13 +53,11 @@ const Mobilemain = ({
       <LinkTo></LinkTo>
       <InfoContainer>
         <Information />
-        <LinkToInformation>
-          <Carousel
-            forMaintanence={forMobileMaintanence}
-            setMainOptions={setMobileMainOptions}
-            mainOptions={mobileMainOptions}
-          />
-        </LinkToInformation>
+        <Carousel
+          forMaintanence={forMobileMaintanence}
+          setMainOptions={setMobileMainOptions}
+          mainOptions={mobileMainOptions}
+        />
       </InfoContainer>
     </Wrapper>
   );
