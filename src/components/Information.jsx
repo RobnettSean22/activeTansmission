@@ -10,10 +10,12 @@ const Description = styled.div`
   align-items: flex-start;
 
   @media screen and (max-width: 414px) {
+    width: 362px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background: blue;
   }
 `;
 const DescriptTitle = styled.div`
@@ -44,6 +46,7 @@ const Descript = styled.div`
   @media screen and (max-width: 414px) {
     width: 362px;
     margin-left: 40px;
+    background: blue;
   }
 `;
 

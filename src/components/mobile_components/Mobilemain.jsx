@@ -30,6 +30,7 @@ const InfoContainer = styled.div`
 
   justify-content: flex-start;
   width: 100%;
+  background: pink;
 `;
 
 const Mobilemain = ({

@@ -8,6 +8,15 @@ import "../components/css_sheets/topOptions.scss";
 const Wrapper = styled.div`
   width: 500px;
   height: 100%;
+  @media screen and (max-width: 414px) {
+    width: 39px;
+    height: 170px;
+    background: orange;
+    margin-left: 10px;
+    position: fixed;
+    right: 0px;
+    top: 50%;
+  }
 `;
 const CarouselCase = styled.div`
   width: 620px;
