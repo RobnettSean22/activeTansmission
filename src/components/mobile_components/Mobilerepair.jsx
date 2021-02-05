@@ -11,6 +11,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     width: 414px;
+    order: 4;
   }
 `;
 const WarrentyDisplay = styled.div`
@@ -21,10 +22,7 @@ const PageTitle = styled.div`
   width: 100%;
   height: 62px;
 `;
-const LinkTo = styled.button`
-  width: 100%;
-  height: 21px;
-`;
+
 const InfoContainer = styled.div`
   display: flex;
 
@@ -32,13 +30,6 @@ const InfoContainer = styled.div`
   width: 100%;
 `;
 
-const LinkToInformation = styled.div`
-  width: 45px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-`;
 const Mobilerepair = ({
   setMobileRepairOptions,
   forMobileRepair,
@@ -50,7 +41,7 @@ const Mobilerepair = ({
         <h3>Warrenty Offered</h3>
       </WarrentyDisplay>
       <PageTitle></PageTitle>
-      <LinkTo></LinkTo>
+
       <InfoContainer>
         <Information />
 

@@ -20,6 +20,11 @@ const SwitchLinkContainer = styled.div`
       color: rgba(36, 39, 140, 0.91);
     }
   }
+  @media screen and (max-width: 414px) {
+    position: relative;
+    top: 134px;
+    height: 21px;
+  } ;
 `;
 const RepairLink = styled.div`
   width: 426px;

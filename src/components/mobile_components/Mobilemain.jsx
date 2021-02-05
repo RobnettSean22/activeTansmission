@@ -32,13 +32,6 @@ const InfoContainer = styled.div`
   width: 100%;
 `;
 
-const LinkToInformation = styled.div`
-  width: 45px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-`;
 const Mobilemain = ({
   forMobileMaintanence,
   setMobileMainOptions,
