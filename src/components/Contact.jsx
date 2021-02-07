@@ -212,9 +212,8 @@ const Contact = (props) => {
   };
   return (
     <Wrapper>
-      <Header />
       <ContactInfo>
-        <h1>Stop By or Get in Touch</h1>
+        <h1>Contact us or Stop By</h1>
         <ContactMethods>
           <a
             style={{ textDecoration: "none" }}

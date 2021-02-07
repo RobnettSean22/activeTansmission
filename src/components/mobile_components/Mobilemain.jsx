@@ -27,6 +27,10 @@ const WarrentyDisplay = styled.div`
 const StatusIndicator = styled.div`
   width: 8px;
   height: 7.6px;
+  border-radius: 50%;
+  background: #51f74a;
+  margin-left: 8px;
+  margin-bottom: 15px;
 `;
 const PageTitle = styled.div`
   width: 100%;
