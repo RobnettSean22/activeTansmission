@@ -28,6 +28,15 @@ const CarouselCase = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 414px) {
+    width: 100%;
+    position: static;
+    left: 0;
+    top: 0;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
 `;
 
 const Container = styled.div`
@@ -67,6 +76,34 @@ const Container = styled.div`
   .active {
     border: 3px solid rgb(253, 232, 1);
     background: rgb(47, 46, 46);
+  }
+  @media screen and (max-width: 414px) {
+    h2 {
+      display: none;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid white;
+    }
+    .tires {
+      width: 58px;
+      height: 58px;
+    }
+    .frame {
+      width: 46px;
+      height: 46px;
+    }
+    .hood {
+      width: 50px;
+      height: 50px;
+    }
+    .active {
+      border: solid 1px rgb(253, 232, 1);
+    }
   }
 `;
 
