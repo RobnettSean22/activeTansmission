@@ -13,7 +13,7 @@ const Description = styled.div`
     width: 362px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
   }
 `;
@@ -27,9 +27,11 @@ const DescriptTitle = styled.div`
     font-size: 51px;
   }
   @media screen and (max-width: 414px) {
-    background: green;
+    width: 192px;
+    height: 35px;
+    margin-top: 40px;
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 `;
 
@@ -46,6 +48,10 @@ const Descript = styled.div`
     width: 322px;
     margin-left: 40px;
     background: blue;
+    margin-bottom: 1px;
+    p {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -61,8 +67,14 @@ const MoreInfo = styled.div`
   }
   @media screen and (max-width: 414px) {
     width: 308px;
-    margin-left: 0;
+    margin-left: 47px;
     margin-bottom: 0;
+    ul {
+      li {
+        font-size: 16px;
+        line-height: 2.4;
+      }
+    }
   }
 `;
 

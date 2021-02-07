@@ -107,7 +107,6 @@ const Mobilemain = ({
       </PageTitle>
       <LinkTo></LinkTo>
       <InfoContainer>
-        <Information />
         <Carousel
           forMaintanence={forMobileMaintanence}
           setMainOptions={setMobileMainOptions}
