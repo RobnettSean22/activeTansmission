@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Carousel from "../Carousel";
 import Information from "../Information";
-
+import Tranny from "../../assets/active_new_trany.jpg";
 const Wrapper = styled.div`
   display: none;
 
@@ -21,6 +21,10 @@ const WarrentyDisplay = styled.div`
 const PageTitle = styled.div`
   width: 100%;
   height: 62px;
+  background-repeat: no-repeat;
+  background-size: 2000px 465px;
+  background-position: 50% 43%;
+  background-image: url(${Tranny});
 `;
 
 const InfoContainer = styled.div`

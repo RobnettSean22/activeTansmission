@@ -24,6 +24,11 @@ const SwitchLinkContainer = styled.div`
     position: relative;
     top: 134px;
     height: 21px;
+
+    h2 {
+      font-size: 17px;
+      margin: 0;
+    }
   } ;
 `;
 const RepairLink = styled.div`

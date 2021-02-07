@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 414px) {
     width: 39px;
     height: 170px;
-    background: orange;
+
     margin-left: 10px;
     position: fixed;
     right: 3px;
@@ -55,6 +55,7 @@ const Container = styled.div`
     border: 3px solid white;
     overflow: hidden;
     box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+    background: rgb(47, 46, 46);
     & img {
       :hover {
         cursor: pointer;

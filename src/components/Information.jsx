@@ -15,7 +15,6 @@ const Description = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: blue;
   }
 `;
 const DescriptTitle = styled.div`
@@ -28,7 +27,7 @@ const DescriptTitle = styled.div`
     font-size: 51px;
   }
   @media screen and (max-width: 414px) {
-    background: blue;
+    background: green;
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -44,7 +43,7 @@ const Descript = styled.div`
     line-height: 1.29;
   }
   @media screen and (max-width: 414px) {
-    width: 362px;
+    width: 322px;
     margin-left: 40px;
     background: blue;
   }
@@ -61,6 +60,7 @@ const MoreInfo = styled.div`
     }
   }
   @media screen and (max-width: 414px) {
+    width: 308px;
     margin-left: 0;
     margin-bottom: 0;
   }
