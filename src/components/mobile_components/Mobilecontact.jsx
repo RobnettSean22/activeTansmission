@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Marker from "../../assets/map_icon.png";
-import Phone from "../../assets/phone_icon.png";
-import Envelope from "../../assets/envelope_icon.png";
+import PhoneWhite from "../../assets/phone_icon.png";
+import EnvelopeWhite from "../../assets/envelope_icon.png";
+import Phone from "../../assets/phone_icon_black.png";
+import Envelope from "../../assets/envelope_icon_black.png";
+import Identity from "../../assets/profile_icon.png";
 
 const Wrapper = styled.div`
   display: none;
@@ -31,10 +34,24 @@ const ContactInfo = styled.div`
   width: 65px;
   height: 147px;
   background: green;
-
-  div {
-    width: 28px;
-    height: 28px;
+  a {
+    div {
+      width: 28px;
+      height: 28px;
+      border-radius: 3px;
+      .envelope {
+        width: 20px;
+        height: 20px;
+      }
+      .phone {
+        width: 20px;
+        height: 20px;
+      }
+      .marker {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 `;
 const ContactTitle = styled.div`
@@ -55,6 +72,24 @@ const CustomerInputsContainer = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  .name {
+    background-image: url(${Identity});
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px 30px;
+  }
+  .email {
+    background-image: url(${Envelope});
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 29px 29px;
+  }
+  .mobile {
+    background-image: url(${Phone});
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 35px 35px;
+  }
 `;
 
 const Message = styled.textarea`
@@ -72,6 +107,9 @@ const SendButton = styled.button`
   margin-left: 58px;
   margin-bottom: 50px;
   font-size: 20px;
+  background: rgb(253, 232, 1);
+  border-radius: 5px;
+  border: solid 2px #24278c;
 `;
 
 const Mobilecontact = (props) => {
@@ -82,35 +120,35 @@ const Mobilecontact = (props) => {
       </ContactTitle>
       <ContactContainer>
         <CustomerInputsContainer>
-          <input className='name' />
-          <input className='email' />
-          <input className='phone' />
+          <input placeholder='Your Name' className='name' />
+          <input placeholder='Your Email' className='email' />
+          <input placeholder='Your Number' className='mobile' />
           <Message />
           <SendButton>Send</SendButton>
         </CustomerInputsContainer>
         <ContactInfo>
-          <div className='envelope'>
-            <a
-              style={{ textDecoration: "none" }}
-              href='mailto:activebroomfield@gmail.com'
-            >
-              <img />
-            </a>
-          </div>
-          <div className='phone'>
-            <a style={{ textDecoration: "none" }} href='tel:3034661133'>
-              <img />
-            </a>
-          </div>
-          <div className='marker'>
-            <a
-              style={{ textDecoration: "none" }}
-              href='https://www.google.com/maps/place/Active+Transmission+and+gear/@39.9108341,-105.0800227,17z/data=!3m1!4b1!4m5!3m4!1s0x876b8a4b0e2aa43b:0x5c91e5c97ab2425f!8m2!3d39.91083!4d-105.077834'
-              target='_blank'
-            >
-              <img />
-            </a>
-          </div>
+          <a
+            style={{ textDecoration: "none" }}
+            href='mailto:activebroomfield@gmail.com'
+          >
+            <div>
+              <img className='envelope' src={EnvelopeWhite} alt='mail' />
+            </div>
+          </a>
+          <a style={{ textDecoration: "none" }} href='tel:3034661133'>
+            <div>
+              <img className='phone' src={PhoneWhite} alt='phone' />
+            </div>
+          </a>
+          <a
+            style={{ textDecoration: "none" }}
+            href='https://www.google.com/maps/place/Active+Transmission+and+gear/@39.9108341,-105.0800227,17z/data=!3m1!4b1!4m5!3m4!1s0x876b8a4b0e2aa43b:0x5c91e5c97ab2425f!8m2!3d39.91083!4d-105.077834'
+            target='_blank'
+          >
+            <div>
+              <img className='marker' src={Marker} alt='pin' />
+            </div>
+          </a>
         </ContactInfo>
       </ContactContainer>
     </Wrapper>
