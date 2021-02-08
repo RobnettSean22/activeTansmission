@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import EmailIcon from "../assets/envelope_icon.png";
 import PhoneIcon from "../assets/phone_icon.png";
 import MapIcon from "../assets/map_icon.png";
+import Mobilecontact from "./mobile_components/Mobilecontact";
 
 const Wrapper = styled.div``;
 const ContactInfo = styled.div`
@@ -25,6 +26,9 @@ const ContactInfo = styled.div`
     font-weight: 700;
     color: rgb(247, 247, 247);
     -webkit-text-stroke: 1px rgb(253, 232, 1);
+  }
+  @media screen and (max-width: 414px) {
+    display: none;
   }
 `;
 const ContactMethods = styled.div`
@@ -212,6 +216,7 @@ const Contact = (props) => {
   };
   return (
     <Wrapper>
+      <Mobilecontact />
       <ContactInfo>
         <h1>Contact us or Stop By</h1>
         <ContactMethods>

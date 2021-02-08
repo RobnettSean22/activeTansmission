@@ -9,18 +9,29 @@ const Wrapper = styled.div`
   @media screen and (max-width: 414px) {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
     background: #464996;
     input {
       width: 284px;
       height: 27px;
+      border-radius: 4px;
+      margin-left: 60px;
+      margin-bottom: 34px;
     }
   }
 `;
-
+const ContactContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`;
 const ContactInfo = styled.div`
-  width: 44px;
+  width: 65px;
   height: 147px;
+  background: green;
+
   div {
     width: 28px;
     height: 28px;
@@ -29,24 +40,44 @@ const ContactInfo = styled.div`
 const ContactTitle = styled.div`
   width: 315px;
   height: 42px;
+
+  margin-top: 62.6px;
+  margin-bottom: 44.5px;
+  h1 {
+    margin: 0;
+    font-size: 31px;
+  }
 `;
 
 const CustomerInputsContainer = styled.div`
   width: 349px;
   height: 548px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 `;
 
-const Message = styled.textarea``;
+const Message = styled.textarea`
+  width: 284px;
+  height: 218px;
+  border-radius: 4px;
+  margin-left: 60px;
+  margin-top: 20px;
+`;
 
 const Mobilecontact = (props) => {
   return (
     <Wrapper>
-      <ContactTitle></ContactTitle>
-      <CustomerInputsContainer>
-        <input className='name' />
-        <input className='email' />
-        <input className='phone' />
-        <Message />
+      <ContactTitle>
+        <h1>Contact us or Stop by</h1>
+      </ContactTitle>
+      <ContactContainer>
+        <CustomerInputsContainer>
+          <input className='name' />
+          <input className='email' />
+          <input className='phone' />
+          <Message />
+        </CustomerInputsContainer>
         <ContactInfo>
           <div className='envelope'>
             <a
@@ -71,7 +102,7 @@ const Mobilecontact = (props) => {
             </a>
           </div>
         </ContactInfo>
-      </CustomerInputsContainer>
+      </ContactContainer>
     </Wrapper>
   );
 };
