@@ -63,6 +63,15 @@ const Message = styled.textarea`
   border-radius: 4px;
   margin-left: 60px;
   margin-top: 20px;
+  margin-bottom: 38px;
+`;
+
+const SendButton = styled.button`
+  width: 298px;
+  height: 55px;
+  margin-left: 58px;
+  margin-bottom: 50px;
+  font-size: 20px;
 `;
 
 const Mobilecontact = (props) => {
@@ -77,6 +86,7 @@ const Mobilecontact = (props) => {
           <input className='email' />
           <input className='phone' />
           <Message />
+          <SendButton>Send</SendButton>
         </CustomerInputsContainer>
         <ContactInfo>
           <div className='envelope'>

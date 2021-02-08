@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Location from "./components/Location";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const Wrap = styled.div`
   width: 100vw;
@@ -26,6 +27,7 @@ const App = () => {
         <Route exact path='/services/' component={Services} />
         <Route exact path='/location/' component={Location} />
       </Switch>
+      <Footer />
     </Wrap>
   );
 };

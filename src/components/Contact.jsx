@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
-import Header from "./Header";
-import Footer from "./Footer";
 import EmailIcon from "../assets/envelope_icon.png";
 import PhoneIcon from "../assets/phone_icon.png";
 import MapIcon from "../assets/map_icon.png";
@@ -292,7 +290,6 @@ const Contact = (props) => {
           </ButtonContainer>
         </MessageContainer>
       </ContactInfo>
-      <Footer />
     </Wrapper>
   );
 };
