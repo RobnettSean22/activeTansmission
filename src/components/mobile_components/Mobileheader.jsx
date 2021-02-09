@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "../../assets/activetransimission_logo.png";
+import NavMenu from "../../assets/menu_icon.png";
 
 const Wrapper = styled.header`
   display: none;
@@ -17,7 +18,7 @@ const Mobileheader = (props) => {
   return (
     <Wrapper>
       <img src={Logo} alt='active logo' />
-      <img />
+      <img src={NavMenu} alt='nav icon' />
     </Wrapper>
   );
 };

@@ -214,7 +214,15 @@ const Contact = (props) => {
   };
   return (
     <Wrapper>
-      <Mobilecontact />
+      <Mobilecontact
+        mobileSendEmail={sendEmail}
+        mobileContactName={contactName}
+        setMobileContactName={setContactName}
+        mobileContactEmail={contactEmail}
+        setMobileContactEmail={setContactEmail}
+        mobileContactNumber={contactEmail}
+        setMobileContactNumber={setContactEmail}
+      />
       <ContactInfo>
         <h1>Contact us or Stop By</h1>
         <ContactMethods>

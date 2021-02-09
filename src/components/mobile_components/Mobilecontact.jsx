@@ -72,8 +72,19 @@ const ContactTitle = styled.div`
   margin-top: 62.6px;
   margin-bottom: 44.5px;
   h1 {
-    margin: 0;
-    font-size: 31px;
+    width: 315px;
+    height: 42px;
+    margin: 0 5.5px 44.5px 0;
+    -webkit-text-stroke: 1px #fde801;
+    font-family: Lora;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f7f7f7;
   }
 `;
 
@@ -117,7 +128,14 @@ const SendButton = styled.button`
   height: 55px;
   margin-left: 58px;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-family: Lora;
+  font-size: 27px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.26;
+  color: #24278c;
+  letter-spacing: normal;
   background: rgb(253, 232, 1);
   border-radius: 5px;
   border: solid 2px #24278c;
@@ -131,11 +149,16 @@ const Mobilecontact = (props) => {
       </ContactTitle>
       <ContactContainer>
         <CustomerInputsContainer>
-          <input placeholder='Your Name' className='name' />
+          <input
+            value={props.mobileContactName}
+            onChange={props.setMobileContactName}
+            placeholder='Your Name'
+            className='name'
+          />
           <input placeholder='Your Email' className='email' />
           <input placeholder='Your Number' className='mobile' />
           <Message />
-          <SendButton>Send</SendButton>
+          <SendButton>Send Message</SendButton>
         </CustomerInputsContainer>
         <ContactInfo>
           <a
