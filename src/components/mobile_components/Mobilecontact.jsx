@@ -21,6 +21,7 @@ const Wrapper = styled.div`
       border-radius: 4px;
       margin-left: 60px;
       margin-bottom: 34px;
+      text-indent: 32px;
     }
   }
 `;
@@ -32,24 +33,34 @@ const ContactContainer = styled.div`
 `;
 const ContactInfo = styled.div`
   width: 65px;
-  height: 147px;
-  background: green;
+  height: 218px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
   a {
     div {
       width: 28px;
       height: 28px;
       border-radius: 3px;
+      border: solid 1px #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #24278c;
+      box-shadow: 1px 6px 9px 0px rgba(0, 0, 0, 0.66);
       .envelope {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
       }
       .phone {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
       }
       .marker {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
       }
     }
   }
