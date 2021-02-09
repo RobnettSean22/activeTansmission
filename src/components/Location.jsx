@@ -5,7 +5,13 @@ import Footer from "./Footer";
 import ShopImage from "../assets/active_shop1.jpg";
 import GoogleMaps from "./GoogleMaps";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  @media screen and (max-width: 414px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+`;
 
 const LocationDescription = styled.div`
   width: 1292px;
@@ -14,17 +20,16 @@ const LocationDescription = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
-  img {
-    width: 250px;
-    height: 250px;
-    border-radius: 0 0 19px 19px;
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    height: 321px;
   }
 `;
+const Directions = styled.div``;
 const Title = styled.div`
   width: 100%;
   height: 152px;
-  background: rgb(253, 232, 1);
+  background: #f7ee88;
   border-radius: 19px 19px 0 0;
   display: flex;
   flex-direction: column;
@@ -45,6 +50,11 @@ const Title = styled.div`
     font-weight: 600;
     margin: 4px 0 0 0;
     color: rgb(36, 39, 140);
+  }
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    height: 59px;
+    border-radius: none;
   }
 `;
 const LocationInfo = styled.div`
@@ -98,7 +108,7 @@ const Location = (props) => {
           <h1>Active Transmission and Gear</h1>
           <h2>In Broomfield</h2>
         </Title>
-        <img src={ShopImage} alt='shop' />
+        <Directions></Directions>
       </LocationDescription>
       <LocationInfo>
         <Border></Border>

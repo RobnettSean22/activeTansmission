@@ -222,6 +222,8 @@ const Contact = (props) => {
         setMobileContactEmail={setContactEmail}
         mobileContactNumber={contactEmail}
         setMobileContactNumber={setContactEmail}
+        mobileInquiry={inquiry}
+        setMobileInquiry={setInquiry}
       />
       <ContactInfo>
         <h1>Contact us or Stop By</h1>

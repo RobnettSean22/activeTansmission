@@ -151,14 +151,26 @@ const Mobilecontact = (props) => {
         <CustomerInputsContainer>
           <input
             value={props.mobileContactName}
-            onChange={props.setMobileContactName}
+            onChange={(e) => props.setMobileContactName(e.target.value)}
             placeholder='Your Name'
             className='name'
           />
-          <input placeholder='Your Email' className='email' />
-          <input placeholder='Your Number' className='mobile' />
-          <Message />
-          <SendButton>Send Message</SendButton>
+          <input
+            value={props.mobileContactEmail}
+            onChange={(e) => props.setMobileContactEmail(e.target.value)}
+            placeholder='Your Email'
+            className='email'
+          />
+          <input
+            value={props.mobileContactNumber}
+            onChange={(e) => props.setMobileContactNumber(e.target.value)}
+            placeholder='Your Number'
+            className='mobile'
+          />
+          <Message onChange={(e) => props.setMobileInquiry(e.target.value)} />
+          <SendButton onClick={(e) => props.mobileSendEmail(e.target.value)}>
+            Send Message
+          </SendButton>
         </CustomerInputsContainer>
         <ContactInfo>
           <a
