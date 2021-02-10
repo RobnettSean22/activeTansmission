@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
-import Footer from "./Footer";
 import ShopImage from "../assets/active_shop1.jpg";
 import GoogleMaps from "./GoogleMaps";
 

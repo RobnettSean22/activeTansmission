@@ -13,6 +13,7 @@ const TheMap = styled.div`
     height: 223px;
     margin-left: 0;
     margin-top: 10px;
+    border-radius: 15px 15px 0 0;
   }
 `;
 
