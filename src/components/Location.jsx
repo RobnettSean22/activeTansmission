@@ -23,6 +23,7 @@ const LocationDescription = styled.div`
   @media screen and (max-width: 414px) {
     width: 414px;
     height: 321px;
+    margin: 0;
   }
 `;
 const Directions = styled.div``;
@@ -54,7 +55,13 @@ const Title = styled.div`
   @media screen and (max-width: 414px) {
     width: 414px;
     height: 59px;
-    border-radius: none;
+    border-radius: 0 0 0 0;
+    h1 {
+      font-size: 27px;
+    }
+    h2 {
+      display: none;
+    }
   }
 `;
 const LocationInfo = styled.div`
@@ -66,12 +73,22 @@ const LocationInfo = styled.div`
   justify-content: flex-start;
   align-items: center;
   background: #464996;
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    height: 440px;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 0;
+  }
 `;
 const Border = styled.div`
   width: 8px;
   height: 99.9%;
   margin-left: 72px;
   background: #ffffff;
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
 `;
 const HoursLocation = styled.div`
   width: 415px;
@@ -97,6 +114,35 @@ const HoursLocation = styled.div`
       color: rgb(247, 247, 247);
     }
   }
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    height: 193px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+    h3 {
+      font-size: 23px;
+      margin-top: 0px;
+      margin-bottom: 6px;
+    }
+    ul {
+      margin-top: 0;
+      margin-bottom: 15px;
+      li {
+        font-size: 19px;
+        margin-bottom: 6px;
+      }
+    }
+    .location-title {
+      display: none;
+    }
+    .location {
+      display: none;
+    }
+  }
 `;
 
 const Location = (props) => {
@@ -113,9 +159,8 @@ const Location = (props) => {
       <LocationInfo>
         <Border></Border>
         <HoursLocation>
-          <div>
-            <h3>Hours:</h3>
-          </div>
+          <h3>Hours:</h3>
+
           <ul>
             <li>Monday - Friday: 7am - 5:30pm</li>
             <li>Saturday: 8am -1 2 noon</li>
@@ -125,14 +170,13 @@ const Location = (props) => {
           <ul>
             <li>1+ 303-466-1133</li>
           </ul>
-          <h3>Location:</h3>
-          <ul>
+          <h3 className='location-title'>Location:</h3>
+          <ul className='location'>
             <li>7223 W 118th Pl unit a</li>
           </ul>
         </HoursLocation>
         <GoogleMaps />
       </LocationInfo>
-      <Footer />
     </Wrapper>
   );
 };

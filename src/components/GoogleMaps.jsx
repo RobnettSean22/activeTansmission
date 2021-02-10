@@ -1,4 +1,20 @@
 import React, { useLayoutEffect } from "react";
+import styled from "styled-components";
+
+const TheMap = styled.div`
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.9);
+  margin-left: 142px;
+  border-radius: 15px;
+  height: 516px;
+  width: 624px;
+  background: pink;
+  @media screen and (max-width: 414px) {
+    width: 410px;
+    height: 223px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+`;
 
 const GoogleMaps = (props) => {
   useLayoutEffect(() => {
@@ -35,15 +51,16 @@ const GoogleMaps = (props) => {
     });
   };
   return (
-    <div
+    <TheMap
       id='map'
-      style={{
-        boxShadow: "0 3px 6px 0 rgba(0, 0, 0, 0.9)",
-        marginLeft: "142px",
-        borderRadius: "15px",
-        height: "516px",
-        width: "624px",
-      }}
+      // style={{
+      //   boxShadow: "0 3px 6px 0 rgba(0, 0, 0, 0.9)",
+      //   marginLeft: "142px",
+      //   borderRadius: "15px",
+      //   height: "516px",
+      //   width: "624px",
+      //   background: "pink",
+      // }}
     />
   );
 };
