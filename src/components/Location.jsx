@@ -74,7 +74,7 @@ const LocationInfo = styled.div`
   background: #464996;
   @media screen and (max-width: 414px) {
     width: 414px;
-    height: 440px;
+    height: 430px;
     flex-direction: column;
     margin: 0;
     border-radius: 0;

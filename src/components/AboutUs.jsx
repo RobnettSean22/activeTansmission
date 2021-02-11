@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+
 import styled from "styled-components";
 
 const Wrapper = styled.div``;
@@ -12,7 +11,7 @@ const MissionContainer = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  background: rgb(250, 250, 250); ;
+  background: rgb(250, 250, 250);
 `;
 const MissionTitle = styled.div`
   width: 1030.2px;
@@ -22,18 +21,31 @@ const MissionTitle = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const MissionDescription = styled.div`
   width: 1030.2px;
   height: 469px;
   display: flex;
   justify-content: flex-start;
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+    background: red;
+  }
 `;
 const MissionStatement = styled.div`
   width: 708px;
   height: 344px;
   margin: 0 47px 0 0;
+  @media screen and (max-width: 414px) {
+    width: 414px;
+  }
 `;
+
 const OwnerInfo = styled.div`
   width: 359px;
   height: 334px;
@@ -41,14 +53,15 @@ const OwnerInfo = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 `;
+
 const SectionBorder = styled.div`
   width: 100%;
   height: 47px;
   background: rgb(253, 232, 1);
 `;
+
 const EmployeeInfo = styled.div`
   width: 100%;
-
   background: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
@@ -71,6 +84,11 @@ const Employee = styled.div`
   justify-content: flex-start;
 
   margin-bottom: 133px;
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const About = styled.div`
   width: 661px;
@@ -85,17 +103,30 @@ const About = styled.div`
   p {
     line-height: 1.4;
   }
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    margin-right: 0;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 `;
 const ProfilePicContain = styled.div`
   width: 307px;
   height: 230px;
   transform: skew(-20deg);
   background: brown;
+  @media screen and (max-width: 414px) {
+    width: 159.5px;
+    height: 147.1px;
+    transform: none;
+  }
 `;
 const AboutUs = (props) => {
   return (
     <Wrapper>
-      <Header />
       <MissionContainer>
         <MissionTitle>
           <h1>Our Drive</h1>
@@ -103,8 +134,20 @@ const AboutUs = (props) => {
         <MissionDescription>
           <MissionStatement>
             <p>
-              Here at Actvie Transmission and Gear we firmly believe that trust
-              and honesty...
+              Folly words widow one downs few age every seven. If miss part by
+              fact he park just shew. Discovered had get considered projection
+              who favourable. Necessary up knowledge it tolerably. Unwilling
+              departure education is be dashwoods or an. Use off agreeable law
+              unwilling sir deficient curiosity instantly. Easy mind life fact
+              with see has bore ten. Parish any chatty can elinor direct for
+              former. Up as meant widow equal an share least. Folly words widow
+              one downs few age every seven. If miss part by fact he park just
+              shew. Discovered had get considered projection who favourable.
+              Necessary up knowledge it tolerably. Unwilling departure education
+              is be dashwoods or an. Use off agreeable law unwilling sir
+              deficient curiosity instantly. Easy mind life fact with see has
+              bore ten. Parish any chatty can elinor direct for former. Up as
+              meant widow equal an share least.{" "}
             </p>
           </MissionStatement>
           <OwnerInfo>
@@ -150,7 +193,6 @@ const AboutUs = (props) => {
           </ProfilePicContain>
         </Employee>
       </EmployeeInfo>
-      <Footer />
     </Wrapper>
   );
 };

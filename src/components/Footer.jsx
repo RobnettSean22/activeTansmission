@@ -7,7 +7,6 @@ const FootWrap = styled.footer`
   height: 300px;
   display: flex;
   flex-direction: column;
-
   background: rgb(65, 64, 64);
   @media screen and (max-width: 414px) {
     height: 148px;
