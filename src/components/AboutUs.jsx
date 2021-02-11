@@ -42,7 +42,12 @@ const MissionStatement = styled.div`
   height: 344px;
   margin: 0 47px 0 0;
   @media screen and (max-width: 414px) {
-    width: 414px;
+    width: 366px;
+    height: 196px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
