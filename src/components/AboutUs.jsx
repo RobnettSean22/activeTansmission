@@ -42,7 +42,7 @@ const MissionStatement = styled.div`
   height: 344px;
   margin: 0 47px 0 0;
   @media screen and (max-width: 414px) {
-    width: 366px;
+    width: 395px;
     height: 196px;
     margin: 0;
     display: flex;
@@ -57,6 +57,22 @@ const OwnerInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    height: 229px;
+    background: green;
+    img {
+      width: 159px;
+      height: 146px;
+      order: 3;
+    }
+    h2 {
+      margin-bottom: 4px;
+    }
+    h3 {
+      margin-bottom: 9px;
+    }
+  }
 `;
 
 const SectionBorder = styled.div`

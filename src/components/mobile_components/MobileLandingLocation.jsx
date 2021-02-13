@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../../assets/activetransimission_logo.png";
 const Wrapper = styled.div`
-  width: 414px;
-  height: 131px;
-  background-image: url(${Logo});
-  background-repeat: no-repeat;
-  background-size: 615px 336px;
-  background-position: center;
+  display: none;
+  @media screen and (max-width: 414px) {
+    display: block;
+    width: 414px;
+    height: 131px;
+    background-image: url(${Logo});
+    background-repeat: no-repeat;
+    background-size: 615px 336px;
+    background-position: center;
+  }
 `;
 
 const TitleContainer = styled.div`

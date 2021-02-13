@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "./Header";
-import Footer from "./Footer";
 import Float from "./Float";
 import BlueColor from "../assets/atg_home_bluecolar.jpg";
 import Mobileopeningcontainer from "./mobile_components/MobileOpeningContainer";
@@ -86,8 +84,6 @@ const Caption = styled.div`
 const Landing = (props) => {
   return (
     <Wrapper>
-      <Header />
-      <Mobileheader />
       <Mobilelandinglocation />
       <Float />
       <Mobileopeningcontainer />
@@ -126,7 +122,6 @@ const Landing = (props) => {
           </Caption>
         </LocationInfo>
       </OpeningMessageContainer>
-      <Footer />
     </Wrapper>
   );
 };

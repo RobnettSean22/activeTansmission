@@ -29,10 +29,16 @@ const AdressContainer = styled.div`
 
 const Hours = styled.h5`
   margin: 7px 13px 14px 0;
+  @media screen and (max-width: 414px) {
+    font-size: 9px;
+  }
 `;
 
 const Location = styled.h5`
   margin: 0 13px 7px 0;
+  @media screen and (max-width: 414px) {
+    font-size: 9px;
+  }
 `;
 
 const RightsContainer = styled.div`
@@ -41,8 +47,13 @@ const RightsContainer = styled.div`
   & h5 {
     color: rgb(245, 245, 245);
     position: relative;
-    bottom: 14px;
+    bottom: -50px;
     left: 13px;
+  }
+  @media screen and (max-width: 414px) {
+    h5 {
+      font-size: 9px;
+    }
   }
 `;
 
