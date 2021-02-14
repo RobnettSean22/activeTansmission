@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Frame from "../assets/atg-frame-white.png";
 import Tire from "../assets/atg_tire_vect_white.png";
 import Hood from "../assets/atg_uth.png";
-import "../components/css_sheets/topOptions.scss";
 
 const Wrapper = styled.div`
   width: 500px;

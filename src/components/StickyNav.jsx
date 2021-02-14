@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { keyframes } from "styled-components";
-import "../components/css_sheets/navbar.scss";
 
 const Stickynav = (props) => {
   const [scrolled, setScrolled] = React.useState(false);
