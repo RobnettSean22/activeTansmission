@@ -1,10 +1,9 @@
 import React from "react";
-
-import "../css_sheets/options.scss";
+import { OptionWrapper } from "../styled/options";
 
 const BrakesOptions = ({ repFrameOps, setRepFrameOps }) => {
   return (
-    <div className='wrapper'>
+    <OptionWrapper>
       <div
         onClick={(e) => setRepFrameOps(1)}
         className={repFrameOps === 1 ? "targeted" : "untargeted"}
@@ -35,7 +34,7 @@ const BrakesOptions = ({ repFrameOps, setRepFrameOps }) => {
       >
         <h5>Frame Options</h5>
       </div>
-    </div>
+    </OptionWrapper>
   );
 };
 export default BrakesOptions;

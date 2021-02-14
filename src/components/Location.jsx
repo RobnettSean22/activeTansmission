@@ -147,7 +147,6 @@ const HoursLocation = styled.div`
 const Location = (props) => {
   return (
     <Wrapper>
-      <Header />
       <LocationDescription>
         <Title>
           <h1>Active Transmission and Gear</h1>

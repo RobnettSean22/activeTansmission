@@ -1,10 +1,8 @@
 import React from "react";
-
-import "../css_sheets/options.scss";
-
+import { OptionWrapper } from "../styled/options";
 const TireOptions = ({ mainTireOps, setMainTireOps }) => {
   return (
-    <div className='wrapper'>
+    <OptionWrapper>
       <div
         onClick={(e) => setMainTireOps(1)}
         className={mainTireOps === 1 ? "targeted" : "untargeted"}
@@ -35,7 +33,7 @@ const TireOptions = ({ mainTireOps, setMainTireOps }) => {
       >
         <h5>Under the Hood</h5>
       </div>
-    </div>
+    </OptionWrapper>
   );
 };
 export default TireOptions;

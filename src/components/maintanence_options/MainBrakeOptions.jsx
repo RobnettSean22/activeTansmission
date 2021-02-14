@@ -1,10 +1,8 @@
 import React from "react";
-
-import "../css_sheets/options.scss";
-
+import { OptionWrapper } from "../styled/options";
 const MainBrakeOptions = ({ mainFrameOps, setMainFrameOps }) => {
   return (
-    <div className='wrapper'>
+    <OptionWrapper>
       <div
         onClick={(e) => setMainFrameOps(1)}
         className={mainFrameOps === 1 ? "targeted" : "untargeted"}
@@ -35,7 +33,7 @@ const MainBrakeOptions = ({ mainFrameOps, setMainFrameOps }) => {
       >
         <h5>Frame Options</h5>
       </div>
-    </div>
+    </OptionWrapper>
   );
 };
 export default MainBrakeOptions;

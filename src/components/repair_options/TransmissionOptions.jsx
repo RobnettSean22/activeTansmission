@@ -1,10 +1,9 @@
 import React from "react";
-
-import "../css_sheets/options.scss";
+import { OptionWrapper } from "../styled/options";
 
 const TransmissionOptions = ({ repUthOps, setRepUthOps }) => {
   return (
-    <div className='wrapper'>
+    <OptionWrapper>
       <div
         onClick={(e) => setRepUthOps(1)}
         className={repUthOps === 1 ? "targeted" : "untargeted"}
@@ -35,7 +34,7 @@ const TransmissionOptions = ({ repUthOps, setRepUthOps }) => {
       >
         <h5>Transmission Options</h5>
       </div>
-    </div>
+    </OptionWrapper>
   );
 };
 export default TransmissionOptions;

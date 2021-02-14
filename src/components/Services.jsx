@@ -54,7 +54,6 @@ const Services = (props) => {
 
   return (
     <Wrapper>
-      <Header />
       <SwitchLinkContainer>
         {repairListing === 1 ? (
           <MaintenanceLink onClick={(e) => setRepairListing(2)}>
@@ -67,7 +66,6 @@ const Services = (props) => {
         )}
       </SwitchLinkContainer>
       {repairListing === 1 ? <Repair /> : <Maintenance />}
-      <Footer />
     </Wrapper>
   );
 };
