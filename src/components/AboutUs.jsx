@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from "styled-components";
 
 const Wrapper = styled.div``;
@@ -21,8 +20,8 @@ const MissionTitle = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  @media screen and (max-width: 414px) {
-    width: 414px;
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -32,7 +31,7 @@ const MissionDescription = styled.div`
   height: 469px;
   display: flex;
   justify-content: flex-start;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     flex-direction: column;
     background: red;
   }
@@ -41,7 +40,7 @@ const MissionStatement = styled.div`
   width: 708px;
   height: 344px;
   margin: 0 47px 0 0;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 395px;
     height: 196px;
     margin: 0;
@@ -57,7 +56,7 @@ const OwnerInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     height: 229px;
     background: green;
@@ -105,7 +104,7 @@ const Employee = styled.div`
   justify-content: flex-start;
 
   margin-bottom: 133px;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     flex-direction: column;
     align-items: center;
@@ -124,7 +123,7 @@ const About = styled.div`
   p {
     line-height: 1.4;
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     margin-right: 0;
     background: blue;
@@ -139,7 +138,7 @@ const ProfilePicContain = styled.div`
   height: 230px;
   transform: skew(-20deg);
   background: brown;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 159.5px;
     height: 147.1px;
     transform: none;

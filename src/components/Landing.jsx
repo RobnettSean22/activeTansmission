@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Float from "./Float";
-import BlueColor from "../assets/atg_home_bluecolar.jpg";
+import BlueCallor from "../assets/atg_home_bluecolar.jpg";
 import Mobileopeningcontainer from "./mobile_components/MobileOpeningContainer";
 import Mobilelandinglocation from "./mobile_components/MobileLandingLocation";
-import Mobileheader from "./mobile_components/Mobileheader";
 
 const Wrapper = styled.div`
   /* background: rgb(250, 250, 250); */
@@ -17,7 +16,7 @@ const OpeningMessageContainer = styled.div`
   margin: 0px 0px 110px 52px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.87);
 
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
 `;
@@ -25,8 +24,7 @@ const OpeningMessageContainer = styled.div`
 const Promise = styled.div`
   width: 530px;
   height: 100%;
-  background: rgb(253, 232, 1);
-
+  background: ${(props) => props.theme.colors.yellows.dark};
   h1 {
     font-family: "Lora", serif;
     font-size: 36px;
@@ -66,7 +64,7 @@ const Caption = styled.div`
     color: rgb(227, 227, 227);
     -webkit-text-stroke: 1px rgb(36 39 140);
     font-size: 41px;
-    font-family: "Lora", serif;
+    font-family: ${(props) => props.theme.fonts.lora};
     font-style: italic;
     font-weight: 600;
     margin: 2px 0 0 0;
@@ -75,8 +73,7 @@ const Caption = styled.div`
     color: rgb(227, 227, 227);
     text-align: center;
     font-size: 22px;
-    font-family: "Montserrat", sans-serif;
-
+    font-family: ${(props) => props.theme.fonts.montserrat};
     font-weight: 500;
     margin: 31px 0 0 0;
   }
@@ -111,7 +108,7 @@ const Landing = (props) => {
           </ul>
         </Promise>
         <LocationInfo>
-          <img src={BlueColor} alt='shop image' />
+          <img src={BlueCallor} alt='shop image' />
 
           <Caption>
             <h1>Active Transmission and Gear</h1>

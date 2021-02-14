@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   display: none;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: block;
-    width: 414px;
+    width: 100%;
     height: 561px;
     background: #f7ee88;
     text-align: center;

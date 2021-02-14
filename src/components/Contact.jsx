@@ -25,7 +25,7 @@ const ContactInfo = styled.div`
     color: rgb(247, 247, 247);
     -webkit-text-stroke: 1px rgb(253, 232, 1);
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
 `;

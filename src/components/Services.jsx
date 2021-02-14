@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Header from "./Header";
-import Footer from "./Footer";
 import Repair from "./Repair";
 import Maintenance from "./Maintenance";
 
@@ -20,7 +18,7 @@ const SwitchLinkContainer = styled.div`
       color: rgba(36, 39, 140, 0.91);
     }
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     position: relative;
     top: 134px;
     height: 21px;

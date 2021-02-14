@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Logo from "../../assets/activetransimission_logo.png";
 const Wrapper = styled.div`
   display: none;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: block;
-    width: 414px;
+    width: 100%;
     height: 131px;
     background-image: url(${Logo});
     background-repeat: no-repeat;
@@ -36,17 +36,10 @@ const Divider = styled.div`
   background: #24278c;
 `;
 
-// const Promise = styled.div`
-//   height: 561px;
-//   width: 414px;
-//   background: #f7ee88;
-// `;
-
 const Mobilelandinglocation = (props) => {
   return (
     <Wrapper>
       <TitleContainer>
-        {" "}
         <h2>Active Transmission and Gear</h2>
         <Hours>
           <h3>Monday-Friday 8 to 5:30</h3>

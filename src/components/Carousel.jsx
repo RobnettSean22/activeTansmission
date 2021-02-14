@@ -7,7 +7,7 @@ import Hood from "../assets/atg_uth.png";
 const Wrapper = styled.div`
   width: 500px;
   height: 100%;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 39px;
     height: 170px;
 
@@ -28,7 +28,7 @@ const CarouselCase = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
     position: static;
     left: 0;
@@ -77,7 +77,7 @@ const Container = styled.div`
     border: 3px solid rgb(253, 232, 1);
     background: rgb(47, 46, 46);
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     h2 {
       display: none;
     }

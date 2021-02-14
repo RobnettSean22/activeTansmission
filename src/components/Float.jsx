@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   div {
     width: 100%;
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
 `;

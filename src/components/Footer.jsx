@@ -8,7 +8,7 @@ const FootWrap = styled.footer`
   display: flex;
   flex-direction: column;
   background: rgb(65, 64, 64);
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     height: 148px;
   }
 `;

@@ -14,7 +14,7 @@ const Wrapper = styled.header`
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
 `;

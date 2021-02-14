@@ -5,11 +5,11 @@ import NavMenu from "../../assets/menu_icon.png";
 
 const Wrapper = styled.header`
   display: none;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: flex;
     justify-content: space-between;
-    width: 414px;
-    height: 43px;
+    width: 100%;
+    height: 53px;
     background: #242784;
   }
 `;
@@ -45,12 +45,12 @@ const Mobileheader = (props) => {
       <img src={Logo} alt='active logo' />
       <img src={NavMenu} alt='nav icon' />
 
-      <Navigate>
+      {/* <Navigate>
         <AboutLink></AboutLink>
         <ServicesLink></ServicesLink>
         <LocationLink></LocationLink>
         <ContactLink></ContactLink>
-      </Navigate>
+      </Navigate> */}
     </Wrapper>
   );
 };

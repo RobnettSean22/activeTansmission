@@ -9,8 +9,8 @@ const Description = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-  @media screen and (max-width: 414px) {
-    width: 362px;
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    width: 606px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -26,7 +26,7 @@ const DescriptTitle = styled.div`
     margin: 0;
     font-size: 51px;
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 192px;
     height: 35px;
     margin-top: 40px;
@@ -44,7 +44,7 @@ const Descript = styled.div`
     font-size: 24px;
     line-height: 1.29;
   }
-  @media screen and (max-width: 414px) {
+  @media${(props) => props.theme.mediaQueries.media576} {
     width: 322px;
     margin-left: 40px;
     background: blue;
@@ -65,7 +65,7 @@ const MoreInfo = styled.div`
       line-height: 1.65;
     }
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 308px;
     margin-left: 47px;
     margin-bottom: 0;

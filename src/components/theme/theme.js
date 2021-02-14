@@ -1,27 +1,39 @@
 export default {
   colors: {
     blues: {
-      heavy: "rgba(36,39,140,0.91)",
+      dark: "rgba(36,39,140,0.91)",
       light: "#464996",
     },
     yellows: {
-      heavy: "rgb(253,232,1)",
+      dark: "rgb(253,232,1)",
       light: "#f7ee88;",
     },
     white: "rgb(250,250,250)",
   },
-  mediaQueriesMobible: {
-    width: {
-      large: "576px",
-      medium: "414px",
-      small: "375px",
-    },
-    fonts: {
-      h1: "1rem",
-      h2: "1rem",
-      h3: "1rem",
-      h5: "1rem",
-      p: ".5rem",
+
+  fonts: {
+    montserrat: `"Montserrat", sans-serif`,
+    lora: `"Lora", sans-serif`,
+  },
+  mediaQueries: {
+    media992: `screen and (max-width:992)`,
+    media768: `screen and (max-width:768)`,
+    media576: `screen and (max-width:576px)`,
+
+    mediaQueriesMobible: {
+      width: {
+        large: "576px",
+        medium: "414px",
+        small: "375px",
+      },
+
+      fontsSizes: {
+        h1: "1rem",
+        h2: "1rem",
+        h3: "1rem",
+        h5: "1rem",
+        p: ".5rem",
+      },
     },
   },
 };

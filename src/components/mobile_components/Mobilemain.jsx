@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Carousel from "../Carousel";
-import Information from "../Information";
+
 import Tranny from "../../assets/active_new_trany.jpg";
 const Wrapper = styled.div`
   display: none;
 
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

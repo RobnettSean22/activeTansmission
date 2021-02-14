@@ -17,7 +17,7 @@ const Nav = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
 `;

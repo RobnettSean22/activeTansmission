@@ -9,7 +9,7 @@ import Identity from "../../assets/profile_icon.png";
 
 const Wrapper = styled.div`
   display: none;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
