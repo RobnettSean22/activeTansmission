@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 414px;
+    width: 100%;
   }
 `;
 const WarrentyDisplay = styled.div`
@@ -63,7 +63,7 @@ const LeftLine = styled.hr`
 `;
 
 const RepairTitle = styled.div`
-  width: 220px;
+  width: 382px;
   height: 38px;
   display: flex;
   justify-content: center;
@@ -71,7 +71,7 @@ const RepairTitle = styled.div`
   border: solid 2px rgb(253, 232, 1);
   background: rgb(50, 65, 108, 0.62);
   h1 {
-    font-size: 30px;
+    font-size: 2.4rem;
     font-family: "Lora", serif;
     font-weight: 700;
     color: rgb(247, 247, 247);
