@@ -2,31 +2,32 @@ import React from "react";
 import styled from "styled-components";
 import Carousel from "../Carousel";
 import Information from "../Information";
-import Tranny from "../../assets/active_new_trany.jpg";
-const Wrapper = styled.div`
-  display: none;
+import {
+  Wrapper,
+  PageTitle,
+  WarrentyDisplay,
+  StatusIndicator,
+  Shadder,
+  RightLine,
+  LeftLine,
+} from "../styled/mobileMainRepair";
 
-  @media ${(props) => props.theme.mediaQueries.media576} {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    order: 4;
+const RepairTitle = styled.div`
+  width: 382px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(253, 232, 1);
+  background: rgb(50, 65, 108, 0.62);
+  h1 {
+    font-size: 2.4rem;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(247, 247, 247);
+    margin: 0;
   }
 `;
-const WarrentyDisplay = styled.div`
-  width: 100%;
-  height: 51px;
-`;
-const PageTitle = styled.div`
-  width: 100%;
-  height: 62px;
-  background-repeat: no-repeat;
-  background-size: 2000px 465px;
-  background-position: 50% 43%;
-  background-image: url(${Tranny});
-`;
-
 const InfoContainer = styled.div`
   display: flex;
 
@@ -44,7 +45,15 @@ const Mobilerepair = ({
       <WarrentyDisplay>
         <h3>Warrenty Offered</h3>
       </WarrentyDisplay>
-      <PageTitle></PageTitle>
+      <PageTitle>
+        <Shadder>
+          <RightLine />
+          <RepairTitle>
+            <h1>Repairs</h1>
+          </RepairTitle>
+          <LeftLine />
+        </Shadder>
+      </PageTitle>
 
       <InfoContainer>
         <Information />
