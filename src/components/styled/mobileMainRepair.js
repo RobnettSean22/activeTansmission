@@ -61,3 +61,26 @@ export const LeftLine = styled.hr`
   left: 0;
   border: 1px solid rgb(253, 232, 1);
 `;
+
+export const RepairTitle = styled.div`
+  width: 382px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(253, 232, 1);
+  background: rgb(50, 65, 108, 0.62);
+  h1 {
+    font-size: 2.4rem;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(247, 247, 247);
+    margin: 0;
+  }
+`;
+
+export const InfoContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+`;
