@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
 import Tranny from "../../assets/active_new_trany.jpg";
+
 export const Wrapper = styled.div``;
 
 export const Nav = styled.div`

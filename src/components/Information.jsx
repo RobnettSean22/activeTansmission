@@ -45,7 +45,7 @@ const Descript = styled.div`
     line-height: 1.29;
   }
   @media${(props) => props.theme.mediaQueries.media576} {
-    width: 322px;
+    width: 100%;
     margin-left: 40px;
     background: blue;
     margin-bottom: 1px;
@@ -66,8 +66,9 @@ const MoreInfo = styled.div`
     }
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
-    width: 308px;
-    margin-left: 47px;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 0;
     ul {
       li {
