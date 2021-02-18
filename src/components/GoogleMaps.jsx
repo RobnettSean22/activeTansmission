@@ -8,8 +8,8 @@ const TheMap = styled.div`
   height: 516px;
   width: 624px;
   background: pink;
-  @media screen and (max-width: 414px) {
-    width: 410px;
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    width: 100%;
     height: 223px;
     margin-left: 0;
     margin-top: 10px;

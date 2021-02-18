@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     align-items: center;
     background: #464996;
     input {
-      width: 284px;
+      width: 77%;
       height: 27px;
       border-radius: 4px;
       margin-left: 60px;
@@ -66,18 +66,19 @@ const ContactInfo = styled.div`
   }
 `;
 const ContactTitle = styled.div`
-  width: 315px;
+  width: 506px;
   height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   margin-top: 62.6px;
   margin-bottom: 44.5px;
   h1 {
-    width: 315px;
-    height: 42px;
     margin: 0 5.5px 44.5px 0;
     -webkit-text-stroke: 1px #fde801;
     font-family: Lora;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: italic;
@@ -89,7 +90,7 @@ const ContactTitle = styled.div`
 `;
 
 const CustomerInputsContainer = styled.div`
-  width: 349px;
+  width: 452px;
   height: 548px;
   display: flex;
   align-items: flex-start;
@@ -115,7 +116,7 @@ const CustomerInputsContainer = styled.div`
 `;
 
 const Message = styled.textarea`
-  width: 284px;
+  width: 77%;
   height: 218px;
   border-radius: 4px;
   margin-left: 60px;
@@ -124,7 +125,7 @@ const Message = styled.textarea`
 `;
 
 const SendButton = styled.button`
-  width: 298px;
+  width: 77%;
   height: 55px;
   margin-left: 58px;
   margin-bottom: 50px;

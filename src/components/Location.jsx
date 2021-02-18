@@ -5,7 +5,7 @@ import ShopImage from "../assets/active_shop1.jpg";
 import GoogleMaps from "./GoogleMaps";
 
 const Wrapper = styled.div`
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -19,7 +19,7 @@ const LocationDescription = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     height: 321px;
     margin: 0;
@@ -51,7 +51,7 @@ const Title = styled.div`
     margin: 4px 0 0 0;
     color: rgb(36, 39, 140);
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     height: 59px;
     border-radius: 0 0 0 0;
@@ -72,8 +72,8 @@ const LocationInfo = styled.div`
   justify-content: flex-start;
   align-items: center;
   background: #464996;
-  @media screen and (max-width: 414px) {
-    width: 414px;
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    width: 100%;
     height: 430px;
     flex-direction: column;
     margin: 0;
@@ -85,7 +85,7 @@ const Border = styled.div`
   height: 99.9%;
   margin-left: 72px;
   background: #ffffff;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
 `;
@@ -113,7 +113,7 @@ const HoursLocation = styled.div`
       color: rgb(247, 247, 247);
     }
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     height: 193px;
     display: flex;

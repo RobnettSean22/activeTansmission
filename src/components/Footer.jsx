@@ -29,14 +29,14 @@ const AdressContainer = styled.div`
 
 const Hours = styled.h5`
   margin: 7px 13px 14px 0;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     font-size: 9px;
   }
 `;
 
 const Location = styled.h5`
   margin: 0 13px 7px 0;
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     font-size: 9px;
   }
 `;
@@ -50,7 +50,7 @@ const RightsContainer = styled.div`
     bottom: -50px;
     left: 13px;
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     h5 {
       font-size: 9px;
     }
@@ -76,7 +76,7 @@ const Streak = styled.div`
     position: relative;
     margin-left: 30px;
   }
-  @media screen and (max-width: 414px) {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     height: 14px;
     margin-top: 32px;
     img {
