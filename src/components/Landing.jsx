@@ -16,6 +16,9 @@ const OpeningMessageContainer = styled.div`
   margin: 0px 0px 110px 52px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.87);
 
+  /* @media ${(props) => props.theme.mediaQueries.media992} {
+
+  } */
   @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }

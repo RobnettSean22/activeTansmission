@@ -14,14 +14,6 @@ const Wrapper = styled.header`
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
-  @media ${(props) => props.theme.mediaQueries.media576} {
-    display: none;
-  }
-`;
-const WrapperBorder = styled.div`
-  width: 100%;
-  height: 23px;
-  background: rgb(36, 39, 140);
 `;
 
 const LinksContainer = styled.div`
@@ -30,10 +22,13 @@ const LinksContainer = styled.div`
   background: rgb(80, 80, 80, 0.3);
 `;
 const LinkDirectory = styled.div`
-  width: 1176px;
+  width: 86%;
   height: 126.5px;
   margin: 38px 132px 0px 132px;
   border-bottom: 2px solid rgb(253, 232, 1);
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    margin: 38px 5% 0px 6%;
+  }
 `;
 const SiteLinks = styled.ul`
   list-style: none;
@@ -41,7 +36,7 @@ const SiteLinks = styled.ul`
   padding: 0;
   & li {
     display: inline;
-    font-size: 32.7px;
+    font-size: 32.6px;
     font-family: "Lora", serif;
     font-weight: 700;
 
@@ -53,6 +48,18 @@ const SiteLinks = styled.ul`
     img {
       width: 187px;
       height: 102.3px;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    margin: 0 0 0 5%;
+    & li {
+      font-size: 20px;
+      padding-right: 2%;
+
+      img {
+        width: 145px;
+        height: 87.3px;
+      }
     }
   }
 `;

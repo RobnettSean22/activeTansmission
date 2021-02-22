@@ -16,8 +16,8 @@ export default {
     lora: `"Lora", sans-serif`,
   },
   mediaQueries: {
-    media992: `screen and (max-width:992)`,
-    media768: `screen and (max-width:768)`,
+    media992: `screen and (max-width:992px)`,
+    media768: `screen and (max-width:768px)`,
     media576: `screen and (max-width:576px)`,
 
     mediaQueriesMobible: {
