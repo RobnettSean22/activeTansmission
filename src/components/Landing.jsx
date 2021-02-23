@@ -16,9 +16,10 @@ const OpeningMessageContainer = styled.div`
   margin: 0px 0px 110px 52px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.87);
 
-  /* @media ${(props) => props.theme.mediaQueries.media992} {
-
-  } */
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    width: 90%;
+    height: 540px;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
@@ -79,6 +80,16 @@ const Caption = styled.div`
     font-family: ${(props) => props.theme.fonts.montserrat};
     font-weight: 500;
     margin: 31px 0 0 0;
+  }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    height: 170px;
+    bottom: 173.5px;
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 14px;
+    }
   }
 `;
 const Landing = (props) => {

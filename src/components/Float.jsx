@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   div {
     width: 100%;
   }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    width: 90%;
+    height: 174px;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }

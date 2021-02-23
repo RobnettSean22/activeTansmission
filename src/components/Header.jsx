@@ -53,7 +53,7 @@ const SiteLinks = styled.ul`
   @media ${(props) => props.theme.mediaQueries.media768} {
     margin: 0 0 0 5%;
     & li {
-      font-size: 20px;
+      font-size: 23px;
       padding-right: 2%;
 
       img {
