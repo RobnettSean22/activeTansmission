@@ -24,6 +24,7 @@ const MissionTitle = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
+    height: 100px;
   }
 `;
 const MissionDescription = styled.div`
@@ -33,7 +34,11 @@ const MissionDescription = styled.div`
   justify-content: flex-start;
   @media ${(props) => props.theme.mediaQueries.media576} {
     flex-direction: column;
-    background: red;
+
+    align-items: center;
+    /* background: red; */
+    width: 100%;
+    height: 300px;
   }
 `;
 const MissionStatement = styled.div`
@@ -47,6 +52,7 @@ const MissionStatement = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
   }
 `;
 
@@ -59,6 +65,8 @@ const OwnerInfo = styled.div`
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     height: 229px;
+
+    align-items: center;
     background: green;
     img {
       width: 159px;
@@ -78,6 +86,9 @@ const SectionBorder = styled.div`
   width: 100%;
   height: 47px;
   background: rgb(253, 232, 1);
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    height: 25px;
+  }
 `;
 
 const EmployeeInfo = styled.div`
@@ -87,6 +98,8 @@ const EmployeeInfo = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  @media ${(props) => props.theme.mediaQueries.media576} {
+  }
 `;
 const EmployeeTitle = styled.div`
   width: 1030.2px;
@@ -96,6 +109,17 @@ const EmployeeTitle = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 0px;
+    h1 {
+      margin: 0;
+    }
+  }
 `;
 const Employee = styled.div`
   width: 1030.2px;
@@ -108,6 +132,7 @@ const Employee = styled.div`
     width: 414px;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
   }
 `;
 const About = styled.div`
@@ -176,8 +201,8 @@ const AboutUs = (props) => {
             <h3>CEO</h3>
           </OwnerInfo>
         </MissionDescription>
-        <SectionBorder></SectionBorder>
       </MissionContainer>
+      <SectionBorder />
       <EmployeeInfo>
         <EmployeeTitle>
           <h1>The Active Crew</h1>

@@ -14,6 +14,9 @@ const Wrapper = styled.header`
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    display: none;
+  }
 `;
 
 const LinksContainer = styled.div`

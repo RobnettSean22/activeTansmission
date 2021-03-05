@@ -42,6 +42,15 @@ const Promise = styled.div`
   ul {
     margin: 31px 0 0 68px;
   }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    h1 {
+      font-size: 24px;
+      margin: 15px 0 24px 3px;
+    }
+    ul {
+      margin: 18px 0 0 0px;
+    }
+  }
 `;
 const LocationInfo = styled.div`
   width: 806px;
