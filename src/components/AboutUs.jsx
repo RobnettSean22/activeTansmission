@@ -11,6 +11,9 @@ const MissionContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background: rgb(250, 250, 250);
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    height: 490px;
+  }
 `;
 const MissionTitle = styled.div`
   width: 1030.2px;
@@ -129,7 +132,8 @@ const Employee = styled.div`
 
   margin-bottom: 133px;
   @media ${(props) => props.theme.mediaQueries.media576} {
-    width: 414px;
+    width: 100%;
+
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
@@ -149,7 +153,7 @@ const About = styled.div`
     line-height: 1.4;
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
-    width: 414px;
+    width: 100%;
     margin-right: 0;
     background: blue;
     display: flex;

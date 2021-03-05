@@ -14,6 +14,7 @@ const Wrapper = styled.header`
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
+
   @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
@@ -29,6 +30,7 @@ const LinkDirectory = styled.div`
   height: 126.5px;
   margin: 38px 132px 0px 132px;
   border-bottom: 2px solid rgb(253, 232, 1);
+
   @media ${(props) => props.theme.mediaQueries.media768} {
     margin: 38px 5% 0px 6%;
   }
@@ -51,6 +53,47 @@ const SiteLinks = styled.ul`
     img {
       width: 187px;
       height: 102.3px;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media1365} {
+    & li {
+      padding-right: 5%;
+
+      img {
+        width: 20%;
+        height: 25%;
+      }
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media1230} {
+    & li {
+      padding-right: 4%;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media1170} {
+    & li {
+      font-size: 27px;
+      padding-right: 4%;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    & li {
+      font-size: 22.5px;
+      padding-right: 3%;
+      img {
+        width: 23%;
+        height: 28%;
+      }
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media850} {
+    & li {
+      font-size: 21px;
+      padding-right: 3%;
+      img {
+        width: 24%;
+        height: 29%;
+      }
     }
   }
   @media ${(props) => props.theme.mediaQueries.media768} {
