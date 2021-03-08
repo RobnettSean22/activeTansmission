@@ -62,15 +62,19 @@ export const RepairTitle = styled.div`
 export const NavCase = styled.div`
   width: 100%;
   height: 355px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   background: rgba(50, 65, 108, 0.25);
 `;
 export const WarrantyInfo = styled.div`
   width: 223px;
-
+  align-self: flex-start;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 9px 0 0 9px;
+
   h5 {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;

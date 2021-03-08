@@ -7,6 +7,7 @@ import Hood from "../assets/atg_uth.png";
 const Wrapper = styled.div`
   width: 500px;
   height: 100%;
+
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 39px;
     height: 170px;
@@ -20,9 +21,10 @@ const Wrapper = styled.div`
 const CarouselCase = styled.div`
   width: 620px;
   height: 100%;
-  position: relative;
+  /* position: relative;
   left: 413.5px;
-  top: -31px;
+  top: -31px; */
+
   z-index: 1;
   display: flex;
   align-items: center;

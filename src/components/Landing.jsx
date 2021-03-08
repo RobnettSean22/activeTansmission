@@ -126,7 +126,7 @@ const Caption = styled.div`
     height: 170px;
     bottom: 173.5px;
     h1 {
-      font-size: 25px;
+      font-size: 23px;
     }
     h2 {
       font-size: 16px;

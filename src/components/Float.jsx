@@ -13,6 +13,9 @@ const Wrapper = styled.div`
   div {
     width: 100%;
   }
+  @media ${(props) => props.theme.mediaQueries.media1230} {
+    width: 100%;
+  }
   @media ${(props) => props.theme.mediaQueries.media768} {
     width: 90%;
     height: 174px;
@@ -58,6 +61,11 @@ const NameContainer = styled.div`
     font-style: italic;
     font-size: 24px;
     margin: 0 29px 0 0;
+  }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    h2 {
+      font-size: 22px;
+    }
   }
 `;
 
