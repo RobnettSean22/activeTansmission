@@ -6,15 +6,22 @@ import Mobileopeningcontainer from "./mobile_components/MobileOpeningContainer";
 import Mobilelandinglocation from "./mobile_components/MobileLandingLocation";
 
 const Wrapper = styled.div`
-  /* background: rgb(250, 250, 250); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 `;
 const OpeningMessageContainer = styled.div`
-  width: 1336px;
+  width: 95%;
   height: 903px;
   display: flex;
   justify-content: flex-start;
-  margin: 0px 0px 110px 52px;
+  margin: 0px 0px 110px 0px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.87);
+  @media ${(props) => props.theme.mediaQueries.media1230} {
+    width: 95%;
+    height: 803px;
+  }
 
   @media ${(props) => props.theme.mediaQueries.media768} {
     width: 90%;
@@ -42,6 +49,23 @@ const Promise = styled.div`
   ul {
     margin: 31px 0 0 68px;
   }
+
+  @media ${(props) => props.theme.mediaQueries.media1170} {
+    h1 {
+      font-size: 32px;
+      margin: 20px 0 29px 15px;
+    }
+    ul {
+      margin: 31px 0 0 30px;
+    }
+  }
+
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
   @media ${(props) => props.theme.mediaQueries.media768} {
     h1 {
       font-size: 24px;
@@ -90,14 +114,22 @@ const Caption = styled.div`
     font-weight: 500;
     margin: 31px 0 0 0;
   }
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
   @media ${(props) => props.theme.mediaQueries.media768} {
     height: 170px;
     bottom: 173.5px;
     h1 {
-      font-size: 20px;
+      font-size: 25px;
     }
     h2 {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 `;

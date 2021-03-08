@@ -30,6 +30,8 @@ const LinkDirectory = styled.div`
   height: 126.5px;
   margin: 38px 132px 0px 132px;
   border-bottom: 2px solid rgb(253, 232, 1);
+  @media ${(props) => props.theme.mediaQueries.media850} {
+  }
 
   @media ${(props) => props.theme.mediaQueries.media768} {
     margin: 38px 5% 0px 6%;
