@@ -61,6 +61,7 @@ const Container = styled.div`
     box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
     background: rgb(47, 46, 46);
     & img {
+      opacity: 0.73;
       :hover {
         cursor: pointer;
       }
@@ -81,6 +82,9 @@ const Container = styled.div`
   .active {
     border: 3px solid rgb(253, 232, 1);
     background: rgb(47, 46, 46);
+    img {
+      opacity: 1;
+    }
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
     h2 {
@@ -126,42 +130,24 @@ const Carousel = ({
         <CarouselCase>
           <Container>
             <div className={repairOptions === 1 ? "active" : null}>
-              {repairOptions === 1 ? (
-                <img
-                  className='tires'
-                  onClick={(e) => setRepairOptions(1)}
-                  src={Tire}
-                  alt='engine png'
-                />
-              ) : (
-                <img
-                  className='tires'
-                  onClick={(e) => setRepairOptions(1)}
-                  src={GreyTire}
-                  alt='engine png'
-                />
-              )}
+              <img
+                className='tires'
+                onClick={(e) => setRepairOptions(1)}
+                src={Tire}
+                alt='engine png'
+              />
             </div>
 
             <h2>Wheels</h2>
           </Container>
           <Container>
             <div className={repairOptions === 2 ? "active" : null}>
-              {repairOptions === 2 ? (
-                <img
-                  className='hood'
-                  onClick={(e) => setRepairOptions(2)}
-                  src={Hood}
-                  alt='transmission png'
-                />
-              ) : (
-                <img
-                  className='hood'
-                  onClick={(e) => setRepairOptions(2)}
-                  src={GreyHood}
-                  alt='transmission png'
-                />
-              )}
+              <img
+                className='hood'
+                onClick={(e) => setRepairOptions(2)}
+                src={Hood}
+                alt='transmission png'
+              />
             </div>
             <h2>Under the Hood</h2>
           </Container>
@@ -181,41 +167,23 @@ const Carousel = ({
         <CarouselCase>
           <Container>
             <div className={mainOptions === 1 ? "active" : null}>
-              {mainOptions === 1 ? (
-                <img
-                  className='tires'
-                  onClick={(e) => setMainOptions(1)}
-                  src={Tire}
-                  alt='engine png'
-                />
-              ) : (
-                <img
-                  className='tires'
-                  onClick={(e) => setMainOptions(1)}
-                  src={GreyTire}
-                  alt='engine png'
-                />
-              )}
+              <img
+                className='tires'
+                onClick={(e) => setMainOptions(1)}
+                src={Tire}
+                alt='engine png'
+              />
             </div>
             <h2>Wheels</h2>
           </Container>
           <Container>
             <div className={mainOptions === 2 ? "active" : null}>
-              {mainOptions === 2 ? (
-                <img
-                  className='hood'
-                  onClick={(e) => setMainOptions(2)}
-                  src={Hood}
-                  alt='transmission png'
-                />
-              ) : (
-                <img
-                  className='hood'
-                  onClick={(e) => setMainOptions(2)}
-                  src={GreyHood}
-                  alt='transmission png'
-                />
-              )}
+              <img
+                className='hood'
+                onClick={(e) => setMainOptions(2)}
+                src={Hood}
+                alt='transmission png'
+              />
             </div>
             <h2>Under the Hood</h2>
           </Container>

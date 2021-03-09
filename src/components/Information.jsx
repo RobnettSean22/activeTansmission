@@ -65,12 +65,29 @@ const MoreInfo = styled.div`
       line-height: 1.65;
     }
   }
+  @media ${(props) => props.theme.mediaQueries.media1170} {
+    margin-left: 2%;
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    width: 80%;
+  }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    margin-left: 5%;
+    ul {
+      li {
+        font-size: 20px;
+      }
+    }
+  }
+
   @media ${(props) => props.theme.mediaQueries.media576} {
-    width: 70%;
-    margin-left: 10%;
+    width: 50%;
+    margin-left: 8.5%;
     margin-right: 10%;
     margin-bottom: 0;
+    align-self: flex-start;
     ul {
+      padding: 0;
       li {
         font-size: 16px;
         line-height: 2.4;
