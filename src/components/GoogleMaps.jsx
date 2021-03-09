@@ -5,9 +5,16 @@ const TheMap = styled.div`
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.9);
   margin-left: 142px;
   border-radius: 15px;
-  height: 516px;
   width: 624px;
+  height: 516px;
   background: pink;
+  @media ${(props) => props.theme.mediaQueries.media1365} {
+    width: 44%;
+    margin-left: 130px;
+  }
+  @media ${(props) => props.theme.mediaQueries.media1170} {
+    margin-left: 8%;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
     height: 223px;

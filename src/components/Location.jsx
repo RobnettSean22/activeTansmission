@@ -81,6 +81,9 @@ const LocationInfo = styled.div`
   justify-content: flex-start;
   align-items: center;
   background: #464996;
+  @media ${(props) => props.theme.mediaQueries.media1365} {
+    width: 95%;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
     height: 430px;
@@ -120,6 +123,15 @@ const HoursLocation = styled.div`
       font-size: 24px;
       margin-bottom: 21px;
       color: rgb(247, 247, 247);
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media1365} {
+    width: 31%;
+  }
+  @media ${(props) => props.theme.mediaQueries.media1170} {
+    margin-left: 70px;
+    h3 {
+      margin-top: 15px;
     }
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
