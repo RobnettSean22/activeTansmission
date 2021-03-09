@@ -17,6 +17,7 @@ export const OptionWrapper = styled.div`
     font-size: 20px;
     margin: 0;
     color: white;
+    text-align: center;
   }
 
   .targeted {
@@ -38,5 +39,10 @@ export const OptionWrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  @media ${(props) => props.theme.mediaQueries.media1170} {
+    h5 {
+      font-size: 18px;
+    }
   }
 `;

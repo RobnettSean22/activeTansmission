@@ -58,6 +58,12 @@ export const RepairTitle = styled.div`
     color: rgb(247, 247, 247);
     margin: 0;
   }
+
+  @media ${(props) => props.theme.mediaQueries.media1230} {
+    h1 {
+      font-size: 55px;
+    }
+  }
 `;
 export const NavCase = styled.div`
   width: 100%;

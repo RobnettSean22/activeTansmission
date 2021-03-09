@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Frame from "../assets/atg-frame-white.png";
 import Tire from "../assets/atg_tire_vect_white.png";
 import Hood from "../assets/atg_uth.png";
+import GreyHood from "../assets/atg_uth_grey.png";
+import GreyTire from "../assets/atg_tire_vect_grey.png";
 
 const Wrapper = styled.div`
   width: 500px;
@@ -28,7 +30,8 @@ const CarouselCase = styled.div`
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-left: -12%;
 
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
@@ -123,24 +126,42 @@ const Carousel = ({
         <CarouselCase>
           <Container>
             <div className={repairOptions === 1 ? "active" : null}>
-              <img
-                className='tires'
-                onClick={(e) => setRepairOptions(1)}
-                src={Tire}
-                alt='engine png'
-              />
+              {repairOptions === 1 ? (
+                <img
+                  className='tires'
+                  onClick={(e) => setRepairOptions(1)}
+                  src={Tire}
+                  alt='engine png'
+                />
+              ) : (
+                <img
+                  className='tires'
+                  onClick={(e) => setRepairOptions(1)}
+                  src={GreyTire}
+                  alt='engine png'
+                />
+              )}
             </div>
 
             <h2>Wheels</h2>
           </Container>
           <Container>
             <div className={repairOptions === 2 ? "active" : null}>
-              <img
-                className='hood'
-                onClick={(e) => setRepairOptions(2)}
-                src={Hood}
-                alt='transmission png'
-              />
+              {repairOptions === 2 ? (
+                <img
+                  className='hood'
+                  onClick={(e) => setRepairOptions(2)}
+                  src={Hood}
+                  alt='transmission png'
+                />
+              ) : (
+                <img
+                  className='hood'
+                  onClick={(e) => setRepairOptions(2)}
+                  src={GreyHood}
+                  alt='transmission png'
+                />
+              )}
             </div>
             <h2>Under the Hood</h2>
           </Container>
@@ -160,23 +181,41 @@ const Carousel = ({
         <CarouselCase>
           <Container>
             <div className={mainOptions === 1 ? "active" : null}>
-              <img
-                className='tires'
-                onClick={(e) => setMainOptions(1)}
-                src={Tire}
-                alt='hood png'
-              />
+              {mainOptions === 1 ? (
+                <img
+                  className='tires'
+                  onClick={(e) => setMainOptions(1)}
+                  src={Tire}
+                  alt='engine png'
+                />
+              ) : (
+                <img
+                  className='tires'
+                  onClick={(e) => setMainOptions(1)}
+                  src={GreyTire}
+                  alt='engine png'
+                />
+              )}
             </div>
             <h2>Wheels</h2>
           </Container>
           <Container>
             <div className={mainOptions === 2 ? "active" : null}>
-              <img
-                className='hood'
-                onClick={(e) => setMainOptions(2)}
-                src={Hood}
-                alt='tire png'
-              />
+              {mainOptions === 2 ? (
+                <img
+                  className='hood'
+                  onClick={(e) => setMainOptions(2)}
+                  src={Hood}
+                  alt='transmission png'
+                />
+              ) : (
+                <img
+                  className='hood'
+                  onClick={(e) => setMainOptions(2)}
+                  src={GreyHood}
+                  alt='transmission png'
+                />
+              )}
             </div>
             <h2>Under the Hood</h2>
           </Container>
