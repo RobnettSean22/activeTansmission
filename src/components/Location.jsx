@@ -5,6 +5,10 @@ import ShopImage from "../assets/active_shop1.jpg";
 import GoogleMaps from "./GoogleMaps";
 
 const Wrapper = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   @media ${(props) => props.theme.mediaQueries.media576} {
     display: flex;
     justify-content: flex-start;
@@ -19,6 +23,9 @@ const LocationDescription = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @media ${(props) => props.theme.mediaQueries.media1365} {
+    width: 90%;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     height: 321px;
@@ -50,6 +57,8 @@ const Title = styled.div`
     font-weight: 600;
     margin: 4px 0 0 0;
     color: rgb(36, 39, 140);
+  }
+  @media ${(props) => props.theme.mediaQueries.media1365} {
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
