@@ -58,7 +58,27 @@ const Title = styled.div`
     margin: 4px 0 0 0;
     color: rgb(36, 39, 140);
   }
-  @media ${(props) => props.theme.mediaQueries.media1365} {
+  @media ${(props) => props.theme.mediaQueries.media1170} {
+    h1 {
+      font-size: 58px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    h1 {
+      font-size: 45px;
+    }
+    h2 {
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    h1 {
+      font-size: 33px;
+    }
+    h2 {
+    }
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
@@ -83,6 +103,9 @@ const LocationInfo = styled.div`
   background: #464996;
   @media ${(props) => props.theme.mediaQueries.media1365} {
     width: 95%;
+  }
+  @media ${(props) => props.theme.mediaQueries.media980} {
+    height: 400px;
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
@@ -132,6 +155,18 @@ const HoursLocation = styled.div`
     margin-left: 70px;
     h3 {
       margin-top: 15px;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media980} {
+    height: 380px;
+    h3 {
+      font-size: 25px;
+      margin-top: 8px;
+    }
+    ul {
+      li {
+        font-size: 17px;
+      }
     }
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
