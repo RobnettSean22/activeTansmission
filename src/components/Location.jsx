@@ -107,6 +107,9 @@ const LocationInfo = styled.div`
   @media ${(props) => props.theme.mediaQueries.media980} {
     height: 400px;
   }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    height: 300px;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
     height: 430px;
@@ -120,6 +123,10 @@ const Border = styled.div`
   height: 99.9%;
   margin-left: 72px;
   background: #ffffff;
+
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    margin-left: 40px;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     display: none;
   }
@@ -159,6 +166,7 @@ const HoursLocation = styled.div`
   }
   @media ${(props) => props.theme.mediaQueries.media980} {
     height: 380px;
+    margin-left: 45px;
     h3 {
       font-size: 25px;
       margin-top: 8px;
@@ -166,6 +174,22 @@ const HoursLocation = styled.div`
     ul {
       li {
         font-size: 17px;
+      }
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    height: 280px;
+    margin-left: 40px;
+    h3 {
+      font-size: 16px;
+      margin-top: 3px;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 5px 0;
+      padding-left: 25px;
+      li {
+        font-size: 13px;
       }
     }
   }

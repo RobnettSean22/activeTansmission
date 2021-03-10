@@ -19,6 +19,10 @@ const TheMap = styled.div`
     width: 43%;
     height: 375px;
   }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    height: 280px;
+    margin-left: 8%;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
     height: 223px;
