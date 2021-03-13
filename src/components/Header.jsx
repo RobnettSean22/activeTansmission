@@ -24,12 +24,19 @@ const LinksContainer = styled.div`
   width: 100%;
   height: 265px;
   background: rgb(80, 80, 80, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 const LinkDirectory = styled.div`
   width: 86%;
   height: 126.5px;
-  margin: 38px 132px 0px 132px;
+
   border-bottom: 2px solid rgb(253, 232, 1);
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
   @media ${(props) => props.theme.mediaQueries.media850} {
   }
 
@@ -39,77 +46,102 @@ const LinkDirectory = styled.div`
 `;
 const SiteLinks = styled.ul`
   list-style: none;
-  margin: 0 80.5px 0 80.5px;
+  display: inline;
   padding: 0;
+  width: 75%;
   & li {
     display: inline;
-    font-size: 32.6px;
+    font-size: 36px;
     font-family: "Lora", serif;
     font-weight: 700;
+    padding-right: 3%;
 
-    padding-right: 72px;
     a {
       text-decoration: none;
       color: rgb(255, 255, 255);
     }
     img {
-      width: 187px;
-      height: 102.3px;
+      width: 24%;
     }
   }
   @media ${(props) => props.theme.mediaQueries.media1365} {
+    width: 80%;
     & li {
-      padding-right: 5%;
-
+      font-size: 34px;
+      padding-right: 2.3%;
       img {
-        width: 20%;
+        width: 24%;
         height: 25%;
       }
     }
   }
   @media ${(props) => props.theme.mediaQueries.media1230} {
     & li {
-      padding-right: 4%;
+      font-size: 32px;
+      padding-right: 2%;
+      img {
+        width: 25%;
+      }
     }
   }
   @media ${(props) => props.theme.mediaQueries.media1170} {
+    margin-bottom: 45px;
+    width: 90%;
     & li {
-      font-size: 27px;
-      padding-right: 4%;
+      font-size: 30px;
+      padding-right: 2%;
+
+      img {
+        width: 28%;
+      }
     }
   }
   @media ${(props) => props.theme.mediaQueries.media998} {
+    width: 95%;
     & li {
-      font-size: 22.5px;
+      font-size: 26px;
       padding-right: 3%;
+
       img {
-        width: 23%;
-        height: 28%;
+        width: 26%;
       }
     }
   }
   @media ${(props) => props.theme.mediaQueries.media850} {
+    margin-left: 1%;
+    width: 99%;
     & li {
-      font-size: 21px;
+      font-size: 24px;
+
       padding-right: 3%;
       img {
-        width: 24%;
+        width: 27%;
         height: 29%;
       }
     }
   }
   @media ${(props) => props.theme.mediaQueries.media768} {
-    margin: 0 0 0 5%;
+    margin-left: 1%;
     & li {
-      font-size: 23px;
-      padding-right: 2%;
+      font-size: 20px;
+      padding-right: 3%;
 
       img {
-        width: 145px;
-        height: 87.3px;
+        width: 27%;
       }
     }
   }
+  @media ${(props) => props.theme.mediaQueries.media650} {
+    & li {
+      font-size: 17px;
+      padding-right: 3%;
+
+      img {
+        width: 28%;
+        height: 25%;
+      }
+    }
+  } ;
 `;
 const LastLink = styled.li`
   padding: 0 !important;

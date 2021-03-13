@@ -11,6 +11,9 @@ const MissionContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background: rgb(250, 250, 250);
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    height: 490px;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     height: 490px;
   }
@@ -23,6 +26,12 @@ const MissionTitle = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
     justify-content: center;
@@ -35,12 +44,14 @@ const MissionDescription = styled.div`
   height: 469px;
   display: flex;
   justify-content: flex-start;
-  @media ${(props) => props.theme.mediaQueries.media576} {
+  @media ${(props) => props.theme.mediaQueries.media998} {
     flex-direction: column;
-
     align-items: center;
-    /* background: red; */
     width: 100%;
+    height: 300px;
+  }
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    /* background: red; */
     height: 300px;
   }
 `;
@@ -48,6 +59,9 @@ const MissionStatement = styled.div`
   width: 708px;
   height: 344px;
   margin: 0 47px 0 0;
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    margin: 0;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 395px;
     height: 196px;
@@ -65,11 +79,15 @@ const OwnerInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    width: 100%;
+    height: 229px;
+    align-items: center;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 414px;
     height: 229px;
 
-    align-items: center;
     background: green;
     img {
       width: 159px;
@@ -131,11 +149,14 @@ const Employee = styled.div`
   justify-content: flex-start;
 
   margin-bottom: 133px;
-  @media ${(props) => props.theme.mediaQueries.media576} {
+  @media ${(props) => props.theme.mediaQueries.media998} {
     width: 100%;
-
+    height: 400px;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
+  }
+  @media ${(props) => props.theme.mediaQueries.media576} {
     margin-bottom: 50px;
   }
 `;
@@ -152,8 +173,9 @@ const About = styled.div`
   p {
     line-height: 1.4;
   }
-  @media ${(props) => props.theme.mediaQueries.media576} {
+  @media ${(props) => props.theme.mediaQueries.media998} {
     width: 100%;
+
     margin-right: 0;
     background: blue;
     display: flex;
@@ -161,16 +183,31 @@ const About = styled.div`
     justify-content: flex-start;
     flex-direction: column;
   }
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    /* width: 100%;
+    margin-right: 0;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column; */
+  }
 `;
 const ProfilePicContain = styled.div`
   width: 307px;
   height: 230px;
   transform: skew(-20deg);
   background: brown;
+
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    width: 207px;
+    height: 207px;
+    margin-top: 20px;
+    transform: none;
+  }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 159.5px;
     height: 147.1px;
-    transform: none;
   }
 `;
 const AboutUs = (props) => {

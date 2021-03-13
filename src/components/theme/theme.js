@@ -22,6 +22,7 @@ export default {
     media998: `screen and (max-width:998px)`,
     media850: `screen and (max-width:850px)`,
     media768: `screen and (max-width:768px)`,
+    media650: `screen and (max-width:650px)`,
     media576: `screen and (max-width:576px)`,
 
     mediaQueriesMobible: {
