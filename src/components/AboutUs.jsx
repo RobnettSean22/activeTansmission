@@ -61,6 +61,11 @@ const MissionStatement = styled.div`
   margin: 0 47px 0 0;
   @media ${(props) => props.theme.mediaQueries.media998} {
     margin: 0;
+    width: 100%;
+    p {
+      padding: 0 21px;
+      font-size: 12px;
+    }
   }
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 395px;
@@ -119,6 +124,7 @@ const EmployeeInfo = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
   @media ${(props) => props.theme.mediaQueries.media576} {
   }
 `;
@@ -130,11 +136,19 @@ const EmployeeTitle = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+  }
 
   @media ${(props) => props.theme.mediaQueries.media576} {
     width: 100%;
-    justify-content: center;
-    align-items: center;
+
     height: 100px;
     margin-bottom: 0px;
     h1 {

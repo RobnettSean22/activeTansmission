@@ -9,7 +9,7 @@ import Identity from "../../assets/profile_icon.png";
 
 const Wrapper = styled.div`
   display: none;
-  @media ${(props) => props.theme.mediaQueries.media576} {
+  @media ${(props) => props.theme.mediaQueries.media650} {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -24,6 +24,16 @@ const Wrapper = styled.div`
       text-indent: 32px;
     }
   }
+  /* @media ${(props) => props.theme.mediaQueries.media576} {
+    input {
+      width: 77%;
+      height: 27px;
+      border-radius: 4px;
+      margin-left: 60px;
+      margin-bottom: 34px;
+      text-indent: 32px;
+    }
+  } */
 `;
 const ContactContainer = styled.div`
   width: 100%;
