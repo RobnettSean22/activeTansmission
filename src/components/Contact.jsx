@@ -25,6 +25,9 @@ const ContactInfo = styled.div`
     color: rgb(247, 247, 247);
     -webkit-text-stroke: 1px rgb(253, 232, 1);
   }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    height: 1000px;
+  }
   @media ${(props) => props.theme.mediaQueries.media650} {
     display: none;
   }
@@ -56,6 +59,20 @@ const ContactMethods = styled.div`
     color: rgb(247, 247, 247);
     margin: 0 0 2px 0;
   }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    div {
+      width: 100px;
+      height: 100px;
+
+      justify-content: space-evenly;
+    }
+    h3 {
+      display: none;
+    }
+  } ;
 `;
 const Email = styled.div`
   img {
@@ -63,11 +80,23 @@ const Email = styled.div`
     height: 87px;
     margin-top: 20px;
   }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    img {
+      width: 70%;
+      margin-top: 5px;
+    }
+  }
 `;
 const Phone = styled.div`
   img {
     width: 153px;
     height: 103px;
+  }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    img {
+      width: 100%;
+      margin-top: 0;
+    }
   }
 `;
 const Address = styled.div`
@@ -75,6 +104,13 @@ const Address = styled.div`
     width: 76px;
     height: 76px;
     margin-top: 23px;
+  }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    img {
+      width: 70%;
+      height: 60%;
+      margin-top: 0;
+    }
   }
 `;
 const MessageContainer = styled.div`
@@ -88,7 +124,7 @@ const MessageContainer = styled.div`
   border-radius: 20px;
   @media ${(props) => props.theme.mediaQueries.media768} {
     width: 95%;
-    height: 35%;
+    height: 45%;
   }
 `;
 const SenderInfo = styled.div`
@@ -197,6 +233,9 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    margin-top: 40px;
+  }
 `;
 const Button = styled.button`
   width: 351px;
