@@ -16,24 +16,22 @@ const Wrapper = styled.div`
     align-items: center;
     background: #464996;
     input {
-      width: 77%;
+      width: 79%;
       height: 27px;
       border-radius: 4px;
-      margin-left: 60px;
+      margin-left: 11%;
+
       margin-bottom: 34px;
       text-indent: 32px;
     }
   }
-  /* @media ${(props) => props.theme.mediaQueries.media576} {
+  @media ${(props) => props.theme.mediaQueries.media576} {
     input {
       width: 77%;
-      height: 27px;
-      border-radius: 4px;
+
       margin-left: 60px;
-      margin-bottom: 34px;
-      text-indent: 32px;
     }
-  } */
+  }
 `;
 const ContactContainer = styled.div`
   width: 100%;
@@ -97,6 +95,18 @@ const ContactTitle = styled.div`
     text-align: left;
     color: #f7f7f7;
   }
+  @media ${(props) => props.theme.mediaQueries.media650} {
+    h1 {
+      margin: 0;
+      font-size: 46px;
+      margin: 0 5.5px 44.5px 0;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries576} {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 const CustomerInputsContainer = styled.div`
@@ -105,6 +115,7 @@ const CustomerInputsContainer = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+
   .name {
     background-image: url(${Identity});
     background-repeat: no-repeat;
@@ -123,6 +134,12 @@ const CustomerInputsContainer = styled.div`
     background-position: left;
     background-size: 35px 35px;
   }
+  @media ${(props) => props.theme.mediaQueries.media650} {
+    margin-right: 5.5%;
+  }
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    margin: 0;
+  }
 `;
 
 const Message = styled.textarea`
@@ -132,6 +149,14 @@ const Message = styled.textarea`
   margin-left: 60px;
   margin-top: 20px;
   margin-bottom: 38px;
+  @media ${(props) => props.theme.mediaQueries.media650} {
+    width: 79%;
+    margin-left: 12%;
+  }
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    width: 77%;
+    margin-left: 60px;
+  }
 `;
 
 const SendButton = styled.button`
