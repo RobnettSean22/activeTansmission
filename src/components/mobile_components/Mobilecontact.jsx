@@ -104,7 +104,7 @@ const ContactTitle = styled.div`
   }
   @media ${(props) => props.theme.mediaQueries576} {
     h1 {
-      font-size: 2rem;
+      font-size: 40px;
     }
   }
 `;

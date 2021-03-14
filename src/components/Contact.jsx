@@ -86,6 +86,10 @@ const MessageContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 20px;
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    width: 95%;
+    height: 35%;
+  }
 `;
 const SenderInfo = styled.div`
   width: 405px;
@@ -117,12 +121,29 @@ const SenderInfo = styled.div`
       outline: none;
     }
   }
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    width: 76%;
+    margin: 2% 0 0 1%;
+    h3 {
+      font-size: 20px;
+      margin: 28px 0 10px 0;
+    }
+    input {
+      width: 85%;
+      height: 5%;
+      font-size: 20px;
+    }
+  }
 `;
 const MessageForm = styled.div`
   width: 1059px;
   height: 591px;
   display: flex;
   justify-content: flex-start;
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const Message = styled.div`
@@ -160,6 +181,13 @@ const Message = styled.div`
     font-size: 26px;
     :focus {
       outline: none;
+    }
+  }
+
+  @media ${(props) => props.theme.mediaQueries.media768} {
+    textarea {
+      width: 90%;
+      height: 45%;
     }
   }
 `;
