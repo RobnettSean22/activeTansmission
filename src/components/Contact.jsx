@@ -25,9 +25,15 @@ const ContactInfo = styled.div`
     color: rgb(247, 247, 247);
     -webkit-text-stroke: 1px rgb(253, 232, 1);
   }
-  @media ${(props) => props.theme.mediaQueries.media768} {
+  @media ${(props) => props.theme.mediaQueries.meida1170} {
+    height: 1200px;
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
     height: 1000px;
   }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
+    height: 1000px;
+  } */
   @media ${(props) => props.theme.mediaQueries.media650} {
     display: none;
   }
@@ -59,7 +65,18 @@ const ContactMethods = styled.div`
     color: rgb(247, 247, 247);
     margin: 0 0 2px 0;
   }
-  @media ${(props) => props.theme.mediaQueries.media768} {
+
+  @media ${(props) => props.theme.mediaQueries.meida1170} {
+    height: 140px;
+    div {
+      width: 250px;
+      height: 130px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
     width: 100%;
     height: 100px;
     margin-bottom: 20px;
@@ -72,7 +89,21 @@ const ContactMethods = styled.div`
     h3 {
       display: none;
     }
-  } ;
+  }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    div {
+      width: 100px;
+      height: 100px;
+
+      justify-content: space-evenly;
+    }
+    h3 {
+      display: none;
+    }
+  } ; */
 `;
 const Email = styled.div`
   img {
@@ -80,24 +111,37 @@ const Email = styled.div`
     height: 87px;
     margin-top: 20px;
   }
-  @media ${(props) => props.theme.mediaQueries.media768} {
+
+  @media ${(props) => props.theme.mediaQueries.media998} {
     img {
       width: 70%;
       margin-top: 5px;
     }
   }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
+    img {
+      width: 70%;
+      margin-top: 5px;
+    }
+  } */
 `;
 const Phone = styled.div`
   img {
     width: 153px;
     height: 103px;
   }
-  @media ${(props) => props.theme.mediaQueries.media768} {
+  @media ${(props) => props.theme.mediaQueries.media998} {
     img {
       width: 100%;
       margin-top: 0;
     }
   }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
+    img {
+      width: 100%;
+      margin-top: 0;
+    }
+  } */
 `;
 const Address = styled.div`
   img {
@@ -105,13 +149,20 @@ const Address = styled.div`
     height: 76px;
     margin-top: 23px;
   }
-  @media ${(props) => props.theme.mediaQueries.media768} {
+  @media ${(props) => props.theme.mediaQueries.media998} {
     img {
       width: 70%;
       height: 60%;
       margin-top: 0;
     }
   }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
+    img {
+      width: 70%;
+      height: 60%;
+      margin-top: 0;
+    }
+  } */
 `;
 const MessageContainer = styled.div`
   width: 1178px;
@@ -122,10 +173,18 @@ const MessageContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 20px;
-  @media ${(props) => props.theme.mediaQueries.media768} {
+
+  @media ${(props) => props.theme.mediaQueries.meida1170} {
+    width: 95%;
+    height: 55%;
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    height: 60%;
+  }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
     width: 95%;
     height: 45%;
-  }
+  } */
 `;
 const SenderInfo = styled.div`
   width: 405px;
@@ -157,7 +216,33 @@ const SenderInfo = styled.div`
       outline: none;
     }
   }
-  @media ${(props) => props.theme.mediaQueries.media768} {
+  @media ${(props) => props.theme.mediaQueries.meida1170} {
+    width: 45%;
+    margin: 2% 0 0 2%;
+    h3 {
+      font-size: 25px;
+      margin: 28px 0 29px 0;
+    }
+    input {
+      width: 75%;
+      height: 5%;
+      font-size: 25px;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    width: 76%;
+    margin: 2% 0 0 1%;
+    h3 {
+      font-size: 20px;
+      margin: 28px 0 10px 0;
+    }
+    input {
+      width: 85%;
+      /* height: 5%; */
+      font-size: 20px;
+    }
+  }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
     width: 76%;
     margin: 2% 0 0 1%;
     h3 {
@@ -169,23 +254,31 @@ const SenderInfo = styled.div`
       height: 5%;
       font-size: 20px;
     }
-  }
+  } */
 `;
 const MessageForm = styled.div`
   width: 1059px;
   height: 591px;
   display: flex;
   justify-content: flex-start;
-  @media ${(props) => props.theme.mediaQueries.media768} {
+
+  @media ${(props) => props.theme.mediaQueries.meida1170} {
+    width: 100%;
+    height: 84%;
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    height: 85%;
+  }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
     width: 100%;
     height: 100%;
-  }
+  } */
 `;
 
 const Message = styled.div`
   width: 542px;
   height: 529px;
-  margin: 73px 0 0 0;
+  margin: 15px 0 0 0;
 
   div {
     width: 154px;
@@ -220,12 +313,25 @@ const Message = styled.div`
     }
   }
 
-  @media ${(props) => props.theme.mediaQueries.media768} {
+  @media ${(props) => props.theme.mediaQueries.media1170} {
+    margin: 79px 0 0 0;
+    textarea {
+      width: 90%;
+      height: 70%;
+    }
+  }
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    textarea {
+      /* width: 90%; */
+      height: 45%;
+    }
+  }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
     textarea {
       width: 90%;
       height: 45%;
     }
-  }
+  } */
 `;
 const ButtonContainer = styled.div`
   width: 100%;
@@ -233,9 +339,12 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media ${(props) => props.theme.mediaQueries.media768} {
-    margin-top: 40px;
+  @media ${(props) => props.theme.mediaQueries.media998} {
+    margin-bottom: 1px;
   }
+  /* @media ${(props) => props.theme.mediaQueries.media768} {
+    margin-top: 40px;
+  } */
 `;
 const Button = styled.button`
   width: 351px;
