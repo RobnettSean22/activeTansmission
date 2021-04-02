@@ -4,7 +4,10 @@ import Logo from "../../assets/activetransimission_logo.png";
 const Wrapper = styled.div`
   display: none;
   @media ${(props) => props.theme.mediaQueries.media576} {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 131px;
     background-image: url(${Logo});
@@ -15,19 +18,28 @@ const Wrapper = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  height: 30px;
+  height: 100%;
   width: 141px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   h2 {
     margin: 0;
   }
+`;
+const Title = styled.div`
+  width: 100%;
+  height: ;
 `;
 
 const Hours = styled.div`
   height: 55px;
   width: 414px;
+  background: pink;
+  h3 {
+    margin: 0;
+  }
 `;
 
 const Divider = styled.div`
@@ -40,14 +52,18 @@ const Mobilelandinglocation = (props) => {
   return (
     <Wrapper>
       <TitleContainer>
-        <h2>Active Transmission and Gear</h2>
+        <Title>
+          {" "}
+          <h2>Active Transmission and Gear</h2>
+        </Title>
+
         <Hours>
           <h3>Monday-Friday 8 to 5:30</h3>
           <h3>7223 W 118th Pl unit a, Broomfield, CO 80020,United States</h3>
         </Hours>
       </TitleContainer>
 
-      <Divider></Divider>
+      <Divider />
     </Wrapper>
   );
 };
