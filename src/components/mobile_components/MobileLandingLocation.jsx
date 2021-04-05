@@ -19,33 +19,49 @@ const Wrapper = styled.div`
 
 const TitleContainer = styled.div`
   height: 100%;
-  width: 141px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  h2 {
-    margin: 0;
-  }
+  background: rgb(28, 28, 28, 0.8);
 `;
 const Title = styled.div`
   width: 100%;
-  height: ;
+  height: 35px;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  h2 {
+    margin: 0;
+    color: #d8d7d7;
+    font-size: 24px;
+    text-align: center;
+  }
 `;
 
 const Hours = styled.div`
   height: 55px;
-  width: 414px;
-  background: pink;
+  width: 100%;
+  display: center;
+  justify-content: center;
+  align-items: center;
   h3 {
     margin: 0;
+    font-size: 18px;
+    color: #d8d7d7;
+    text-align: center;
   }
 `;
 
 const Divider = styled.div`
-  width: 414px;
+  width: 100%;
   height: 14px;
   background: #24278c;
+  justify-self: flex-end;
 `;
 
 const Mobilelandinglocation = (props) => {
