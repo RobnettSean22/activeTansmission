@@ -67,102 +67,21 @@ import Logo from "../../assets/activetransimission_logo.png";
 import styled from "styled-components";
 
 const Navigation = styled.header`
-  width: 100%;
-  border-bottom: 10px solid #222;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 100px 0;
-  height: 140px;
-  margin-bottom: 0;
-  background: #24278c;
-
-  .logo a {
-    padding-top: 33px;
-    display: flex;
-    flex-direction: column;
-    clear: both;
-    padding-bottom: 30px;
-    text-decoration: none;
-
-    p {
-      width: 500px;
-      display: block;
-    }
-    em {
-      font-size: 0.5em;
-      float: left;
-      display: block;
-      img {
-        display: inline-block;
-        margin-top: 5px;
-        height: 50px;
-        width: 100px;
-        float: left;
-      }
-      .letterhead {
-        display: inline-block;
-        line-height: 260%;
-        float: left;
-      }
-    }
-  }
-  .gray {
-    color: #ccc;
-  }
-  a {
-    color: #222;
-    opacity: 0.55;
-    transition: all 0.6s;
-    color: #222;
-    font-size: 1em;
-  }
-  a:hover {
-    opacity: 1;
-  }
-  .fa-bars {
-    display: none;
-    color: #222;
-    font-size: 2rem;
-  }
-  nav {
-    align-self: flex-start;
-    margin-top: 15px;
-    ul {
-      display: flex;
-      justify-content: space-between;
-    }
-    li {
-      margin: 0 15px;
-      justify-content: space-between;
-      font-size: 1em;
-    }
-    a {
-      font-size: 1em;
-      text-decoration: none;
-      .active {
-        color: tomato;
-      }
-    }
-    a.active {
-      color: #222;
-    }
-  }
-
-  @media only screen and (max-width: 800px) {
-    padding: 0px;
-    .logo {
-      padding-left: 15px;
-      padding-top: 0px !important;
-    }
-  }
-  @media only screen and (max-width: 600px) {
+  display: none;
+  @media ${(props) => props.theme.mediaQueries.media576} {
+    width: 100%;
+    border-bottom: 10px solid #222;
+    z-index: 1;
     height: auto;
     min-height: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
+    margin-bottom: 0;
+    padding: 0px;
+    background: #24278c;
     .logo {
       width: 100%;
       height: 17px;
@@ -170,18 +89,64 @@ const Navigation = styled.header`
       padding-top: 20px;
       margin: 0px;
       margin-left: -5px;
-      a {
-        padding: 0;
-      }
+      padding-left: 15px;
+      padding-top: 0px !important;
+    }
+    img {
+      display: inline-block;
+      margin-top: 5px;
+      height: 50px;
+      width: 100px;
+      float: left;
+    }
+    .gray {
+      color: #ccc;
+    }
+
+    a {
+      color: #222;
+      opacity: 0.55;
+      transition: all 0.6s;
+      color: #222;
+      font-size: 1em;
+      padding: 0;
+    }
+    a:hover {
+      opacity: 1;
     }
     .fa-bars {
       display: inline-block;
       position: absolute;
+      color: #222;
       top: 3px;
       right: -8px;
       cursor: pointer;
       width: 70px;
       height: 54px;
+      font-size: 2rem;
+    }
+    nav {
+      align-self: flex-start;
+      margin-top: 15px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      li {
+        margin: 0 15px;
+        justify-content: space-between;
+        font-size: 1em;
+      }
+      a {
+        font-size: 1em;
+        text-decoration: none;
+        .active {
+          color: tomato;
+        }
+      }
+      a.active {
+        color: #222;
+      }
     }
     ul.collapsed {
       width: 100%;
@@ -266,13 +231,19 @@ class Mobileheader extends Component {
           <i />
           <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
             <NavLink activeClassName='active' to='/'>
-              <li>home</li>
+              <li>Home</li>
             </NavLink>
-            <NavLink activeClassName='active' to='/about'>
-              <li>about</li>
+            <NavLink activeClassName='active' to='/aboutus'>
+              <li>About</li>
+            </NavLink>
+            <NavLink activeClassName='active' to='/services'>
+              <li>Services</li>
             </NavLink>
             <NavLink activeClassName='active' to='/contact'>
-              <li>contact</li>
+              <li>Contact</li>
+            </NavLink>
+            <NavLink activeClassName='active' to='/location'>
+              <li>Location</li>
             </NavLink>
           </ul>
         </nav>
