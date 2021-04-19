@@ -127,6 +127,8 @@ const Navigation = styled.header`
     font-size: 2rem;
   }
   nav {
+    align-self: flex-start;
+    margin-top: 15px;
     ul {
       display: flex;
       justify-content: space-between;
@@ -158,10 +160,12 @@ const Navigation = styled.header`
   @media only screen and (max-width: 600px) {
     height: auto;
     min-height: 30px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
     .logo {
       width: 100%;
+      height: 17px;
       display: block;
       padding-top: 20px;
       margin: 0px;
@@ -173,11 +177,11 @@ const Navigation = styled.header`
     .fa-bars {
       display: inline-block;
       position: absolute;
-      top: -6px;
+      top: 3px;
       right: -8px;
       cursor: pointer;
-      width: 90px;
-      height: 65px;
+      width: 70px;
+      height: 54px;
     }
     ul.collapsed {
       width: 100%;
@@ -257,6 +261,7 @@ class Mobileheader extends Component {
             </em>
           </Link>
         </div>
+
         <nav className='nav'>
           <i />
           <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
