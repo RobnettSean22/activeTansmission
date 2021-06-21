@@ -224,6 +224,7 @@ const ProfilePicContain = styled.div`
     height: 147.1px;
   }
 `;
+//End of styled components and quieries
 const AboutUs = (props) => {
   return (
     <Wrapper>

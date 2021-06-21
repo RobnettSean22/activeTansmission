@@ -126,6 +126,7 @@ const Carousel = ({
   console.log(repairOptions);
   return (
     <Wrapper>
+      {/*code to initiate*/}
       {forRepair ? (
         <CarouselCase>
           <Container>
