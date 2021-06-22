@@ -3,6 +3,7 @@ import { OptionWrapper } from "../styled/options";
 const EngineOptions = ({ repTireOps, setRepTireOps }) => {
   return (
     <OptionWrapper>
+      {/*navigation method for engine maintenance services*/}
       <div
         onClick={(e) => setRepTireOps(1)}
         className={repTireOps === 1 ? "targeted" : "untargeted"}

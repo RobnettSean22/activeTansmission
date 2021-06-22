@@ -4,6 +4,7 @@ import { OptionWrapper } from "../styled/options";
 const TransmissionOptions = ({ repUthOps, setRepUthOps }) => {
   return (
     <OptionWrapper>
+      {/*navigation method for transmission maintenance services*/}
       <div
         onClick={(e) => setRepUthOps(1)}
         className={repUthOps === 1 ? "targeted" : "untargeted"}

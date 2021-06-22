@@ -3,6 +3,7 @@ import { OptionWrapper } from "../styled/options";
 const HoodOptions = ({ mainUthOps, setMainUthOps }) => {
   return (
     <OptionWrapper>
+      {/*navigation method for hood maintenance services*/}
       <div
         onClick={(e) => setMainUthOps(1)}
         className={mainUthOps === 1 ? "targeted" : "untargeted"}

@@ -3,6 +3,7 @@ import { OptionWrapper } from "../styled/options";
 const TireOptions = ({ mainTireOps, setMainTireOps }) => {
   return (
     <OptionWrapper>
+      {/*navigation method for tire maintenance services*/}
       <div
         onClick={(e) => setMainTireOps(1)}
         className={mainTireOps === 1 ? "targeted" : "untargeted"}

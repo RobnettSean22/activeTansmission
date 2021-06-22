@@ -3,6 +3,7 @@ import { OptionWrapper } from "../styled/options";
 const MainBrakeOptions = ({ mainFrameOps, setMainFrameOps }) => {
   return (
     <OptionWrapper>
+      {/*navigation method for brake maintenance services*/}
       <div
         onClick={(e) => setMainFrameOps(1)}
         className={mainFrameOps === 1 ? "targeted" : "untargeted"}

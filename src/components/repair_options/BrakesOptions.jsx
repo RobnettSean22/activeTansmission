@@ -4,6 +4,7 @@ import { OptionWrapper } from "../styled/options";
 const BrakesOptions = ({ repFrameOps, setRepFrameOps }) => {
   return (
     <OptionWrapper>
+      {/*navigation method for brake repair services*/}
       <div
         onClick={(e) => setRepFrameOps(1)}
         className={repFrameOps === 1 ? "targeted" : "untargeted"}
