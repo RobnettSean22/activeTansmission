@@ -375,6 +375,9 @@ const Contact = (props) => {
   const [inquiry, setInquiry] = useState("");
 
   const sendEmail = async () => {
+    {
+      /* endpoint for inquiry messaging */
+    }
     const res = await axios.post("/message", {
       customerName: contactName,
       customerEmail: contactEmail,
@@ -404,6 +407,7 @@ const Contact = (props) => {
       <ContactInfo>
         <h1>Contact us or Stop By</h1>
         <ContactMethods>
+          {/*contact email and numbers and g map link */}
           <a
             style={{ textDecoration: "none" }}
             href='mailto:activebroomfield@gmail.com'
